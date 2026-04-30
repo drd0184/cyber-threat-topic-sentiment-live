@@ -1,0 +1,9 @@
+pandas
+feedparser
+requests
+PyYAML
+nltk
+gensim>=4.4.0
+scipy
+numpy
+matplotlib

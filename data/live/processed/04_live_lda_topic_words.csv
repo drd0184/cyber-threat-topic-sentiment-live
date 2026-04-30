@@ -1,0 +1,11 @@
+topic_id,top_words,num_topics_selected
+0,"attack, attacker, device, system, said, network, user, data, address, access, security, hacker",10
+1,"file, system, command, attacker, payload, window, code, figure, script, agent, execution, using",10
+2,"phone, crime, fraud, use, reward, law, year, federal, police, group, help, online",10
+3,"pointer, buffer, write, heap, payload, data, dynamic, exploit, object, process, call, skip",10
+4,"access, process, attack, adversary, window, security, api, handle, system, target, used, check",10
+5,"module, code, exploit, request, update, add, metasploit, cve, digicat, rce, user, pull",10
+6,"security, team, data, risk, vulnerability, exposure, environment, remediation, model, time, organization, attack",10
+7,"job, version, tool, year, exploit, cpanel, cybersecurity, list, security, user, actually, data",10
+8,"vulnerability, cve, exploitation, window, likely, less, privilege, elevation, microsoft, service, remote, code",10
+9,"file, window, ransomware, platform, email, encryption, talos, figure, system, malware, ddos, example",10

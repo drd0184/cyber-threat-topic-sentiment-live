@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+node_modules/
+dashboard/node_modules/
+logs/
+data/nltk_data/
+
+!data/live/raw/live_items_raw.csv
+!data/live/processed/
+!reports/live/
+!models/live_lda_model/
+!dashboard/src/data/

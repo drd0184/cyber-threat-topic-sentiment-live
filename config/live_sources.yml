@@ -1,0 +1,175 @@
+reddit_rss:
+  - name: reddit_cybersecurity_new
+    url: https://www.reddit.com/r/cybersecurity/new/.rss
+    source: reddit
+    source_name: cybersecurity
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_netsec_new
+    url: https://www.reddit.com/r/netsec/new/.rss
+    source: reddit
+    source_name: netsec
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_blueteamsec_new
+    url: https://www.reddit.com/r/blueteamsec/new/.rss
+    source: reddit
+    source_name: blueteamsec
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_malware_new
+    url: https://www.reddit.com/r/Malware/new/.rss
+    source: reddit
+    source_name: Malware
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_ransomware_new
+    url: https://www.reddit.com/r/ransomware/new/.rss
+    source: reddit
+    source_name: ransomware
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_hacking_new
+    url: https://www.reddit.com/r/hacking/new/.rss
+    source: reddit
+    source_name: hacking
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_asknetsec_new
+    url: https://www.reddit.com/r/AskNetsec/new/.rss
+    source: reddit
+    source_name: AskNetsec
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_sysadmin_new
+    url: https://www.reddit.com/r/sysadmin/new/.rss
+    source: reddit
+    source_name: sysadmin
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_privacy_new
+    url: https://www.reddit.com/r/privacy/new/.rss
+    source: reddit
+    source_name: privacy
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_reverseengineering_new
+    url: https://www.reddit.com/r/ReverseEngineering/new/.rss
+    source: reddit
+    source_name: ReverseEngineering
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_osint_new
+    url: https://www.reddit.com/r/osint/new/.rss
+    source: reddit
+    source_name: osint
+    source_type: reddit_rss
+    enabled: true
+  - name: reddit_computersecurity_new
+    url: https://www.reddit.com/r/ComputerSecurity/new/.rss
+    source: reddit
+    source_name: ComputerSecurity
+    source_type: reddit_rss
+    enabled: true
+
+news_rss:
+  - name: the_hacker_news
+    url: https://feeds.feedburner.com/TheHackersNews
+    source: the_hacker_news
+    source_name: The Hacker News
+    source_type: news_rss
+    enabled: true
+  - name: bleepingcomputer
+    url: https://www.bleepingcomputer.com/feed/
+    source: bleepingcomputer
+    source_name: BleepingComputer
+    source_type: news_rss
+    enabled: true
+  - name: krebsonsecurity
+    url: https://krebsonsecurity.com/feed/
+    source: krebsonsecurity
+    source_name: KrebsOnSecurity
+    source_type: news_rss
+    enabled: true
+  - name: sans_isc
+    url: https://isc.sans.edu/rssfeed.xml
+    source: sans_isc
+    source_name: SANS Internet Storm Center
+    source_type: news_rss
+    enabled: true
+  - name: cisco_talos_blog
+    url: https://blog.talosintelligence.com/rss/
+    source: cisco_talos
+    source_name: Cisco Talos Blog
+    source_type: news_rss
+    enabled: true
+  - name: google_project_zero
+    url: https://googleprojectzero.blogspot.com/feeds/posts/default
+    source: google_project_zero
+    source_name: Google Project Zero
+    source_type: news_rss
+    enabled: true
+  - name: microsoft_security_response_center
+    url: https://msrc.microsoft.com/blog/feed
+    source: microsoft_security_response_center
+    source_name: Microsoft Security Response Center
+    source_type: news_rss
+    enabled: true
+  - name: mandiant_blog
+    url: https://cloud.google.com/blog/topics/threat-intelligence/rss
+    source: mandiant
+    source_name: Mandiant Blog
+    source_type: news_rss
+    enabled: true
+  - name: rapid7_blog
+    url: https://www.rapid7.com/blog/rss/
+    source: rapid7
+    source_name: Rapid7 Blog
+    source_type: news_rss
+    enabled: true
+  - name: unit42
+    url: https://unit42.paloaltonetworks.com/feed/
+    source: unit42
+    source_name: Unit 42
+    source_type: news_rss
+    enabled: true
+
+gdelt_doc_api:
+  enabled: true
+  url: https://api.gdeltproject.org/api/v2/doc/doc
+  source: gdelt
+  source_name: GDELT DOC API
+  source_type: news_api
+  mode: ArtList
+  format: json
+  sort: DateDesc
+  max_records_per_keyword: 50
+  startdatetime: ""
+  enddatetime: ""
+  keywords:
+    - ransomware
+    - malware
+    - phishing
+    - "data breach"
+    - "cyber attack"
+    - cyberattack
+    - "zero-day"
+    - "zero day"
+    - vulnerability
+    - exploit
+    - DDoS
+    - botnet
+    - infostealer
+    - "supply chain attack"
+    - "credential theft"
+    - APT
+    - "threat actor"
+
+nvd_api:
+  - name: nvd_cve_recent
+    url: https://services.nvd.nist.gov/rest/json/cves/2.0
+    source: NVD
+    source_name: NVD CVE
+    source_type: cve
+    # Disabled for P2 replication: CVE/NVD is technical context, not social/news sentiment.
+    enabled: false
