@@ -36,7 +36,6 @@ PIPELINE_STEPS = [
 LIVE_DASHBOARD_EXPORT_SCRIPT = PROJECT_ROOT / "scripts" / "11_export_live_dashboard_data.py"
 if LIVE_DASHBOARD_EXPORT_SCRIPT.exists():
     PIPELINE_STEPS.append(("Export live dashboard data", "scripts/11_export_live_dashboard_data.py"))
-# TODO: Keep dashboard UI changes outside the scheduled pipeline.
 
 
 class TeeLogger:
@@ -109,6 +108,10 @@ def main() -> int:
         logger.line("Mode: operational 12h run")
         logger.line("LDA retraining: disabled")
         logger.line("Dashboard modification: disabled")
+        logger.line(
+            "Live dashboard data export: "
+            + ("enabled" if LIVE_DASHBOARD_EXPORT_SCRIPT.exists() else "disabled")
+        )
         logger.line("Raw dataset deletion: disabled")
 
         for index, (name, script_path) in enumerate(PIPELINE_STEPS, start=1):

@@ -12,32 +12,33 @@ export function TopicDetailPanel({ topic, p2Rows = [], posts = [], alerts = [], 
     const q = query.trim().toLowerCase();
     return posts
       .filter((post) => sentiment === "all" || post.sentiment_class === sentiment)
-      .filter((post) => !q || post.text_raw.toLowerCase().includes(q))
+      .filter((post) => !q || `${post.title} ${post.text_raw} ${post.source_name}`.toLowerCase().includes(q))
       .slice(0, 150);
   }, [posts, sentiment, query]);
 
   if (!topic) {
     return (
       <Panel className="p-5">
-        <EmptyState title="Seleziona un topic per visualizzare il dettaglio." body="Usa Apri dettaglio su una card Topic per caricare timeline, post e alert collegati." />
+        <EmptyState title="Seleziona un topic per visualizzare il dettaglio." body="Usa Apri dettaglio su una card Topic per caricare timeline, documenti e alert collegati." />
       </Panel>
     );
   }
 
+  const confidence = topic.topic_confidence || topic.quality_score;
   const noisy = isNoisyTopic(topic);
-  const qualityNote = cleanQualityNote(topic.quality_score, topic.quality_note);
+  const qualityNote = cleanQualityNote(confidence, topic.note || topic.quality_note);
 
   return (
     <Panel className="p-5">
       <SectionHeader
         eyebrow="Dettaglio Topic"
-        title={`Topic ${topic.topic_id} — ${topic.topic_label}`}
+        title={`Topic ${topic.topic_id} - ${topic.topic_label}`}
         description={qualityNote}
         icon={FileSearch}
         action={
           <div className="flex flex-wrap gap-2">
-            <QualityBadge score={topic.quality_score} />
-            {noisy ? <SignalBadge tone="warning">NOISY SIGNAL</SignalBadge> : null}
+            <QualityBadge score={confidence} />
+            {noisy ? <SignalBadge tone="warning">LOW CONFIDENCE</SignalBadge> : null}
           </div>
         }
       />
@@ -48,33 +49,49 @@ export function TopicDetailPanel({ topic, p2Rows = [], posts = [], alerts = [], 
         ))}
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-6">
-        <MetricCard label="Documents" value={formatNumber(topic.total_docs)} />
+      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
+        <MetricCard label="Documents" value={formatNumber(topic.docs_assigned ?? topic.total_docs)} />
         <MetricCard label="Total volume" value={formatNumber(topic.total_volume)} />
         <MetricCard label="Max negative P2" value={formatP2(topic.max_negative_p2, 2)} tone="negative" />
+        <MetricCard label="Max positive P2" value={formatP2(topic.max_positive_p2, 2)} tone="positive" />
         <MetricCard label="Average sentiment" value={formatP2(topic.avg_sentiment, 3)} />
-        <MetricCard label="Threat %" value={`${formatNumber(topic.threat_pct, 1)}%`} tone="negative" />
-        <MetricCard label="Irrelevant %" value={`${formatNumber(topic.irrelevant_pct, 1)}%`} />
       </div>
 
-      <div className="mt-6 grid gap-4 xl:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
+      {confidence === "low" ? (
+        <p className="mt-4 rounded border border-amber-300/30 bg-amber-500/10 p-3 text-sm leading-6 text-amber-100">
+          Topic low-confidence: utile per monitoraggio ampio, ma gli alert vanno interpretati con cautela.
+        </p>
+      ) : null}
+
+      <div className="mt-6 grid gap-4 xl:grid-cols-3">
         <div className="h-80 rounded-lg border border-slate-800 bg-slate-950/35 p-4">
           <div className="mb-3">
             <h3 className="text-sm font-semibold text-slate-300">Distribuzione sentiment</h3>
-            <p className="mt-1 text-xs leading-5 text-slate-500">Ripartizione dei messaggi assegnati a questo Topic.</p>
+            <p className="mt-1 text-xs leading-5 text-slate-500">Ripartizione dei documenti assegnati a questo Topic.</p>
           </div>
           <div className="h-[250px]">
             <SentimentDistributionChart posts={posts} />
           </div>
         </div>
         <div className="rounded-lg border border-slate-800 bg-slate-950/35 p-4">
+          <h3 className="mb-3 text-sm font-semibold text-slate-300">Distribuzione fonti</h3>
+          <div className="space-y-2">
+            {Object.entries(topic.source_type_distribution || {}).map(([source, count]) => (
+              <div key={source} className="flex items-center justify-between rounded border border-slate-800 bg-slate-900/35 px-3 py-2 text-sm">
+                <span className="text-slate-300">{source}</span>
+                <span className="font-mono text-slate-100">{formatNumber(count)}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="rounded-lg border border-slate-800 bg-slate-950/35 p-4">
           <h3 className="mb-3 text-sm font-semibold text-slate-300">Alert relativi a questo Topic</h3>
           <div className="space-y-3">
-            {alerts.slice(0, 8).map((alert) => (
+            {alerts.slice(0, 10).map((alert) => (
               <TopicAlertCard key={`${alert.time_window}-${alert.dominant_topic}`} alert={alert} onInspectAlert={onInspectAlert} />
             ))}
           </div>
-          {alerts.length > 8 ? <p className="mt-3 text-xs text-slate-500">Mostrati i primi 8 alert per intensità.</p> : null}
+          {alerts.length > 10 ? <p className="mt-3 text-xs text-slate-500">Mostrati i primi 10 alert per intensita.</p> : null}
         </div>
       </div>
 
@@ -84,29 +101,27 @@ export function TopicDetailPanel({ topic, p2Rows = [], posts = [], alerts = [], 
         <ChartBox title="Sentiment timeline topic"><TopicAreaChart rows={p2Rows} dataKey="topic_sentiment_sum" color="#22C55E" /></ChartBox>
       </div>
 
-      <div className="mt-6">
-        <div className="rounded-lg border border-slate-800 bg-slate-950/35 p-4">
-          <div className="mb-3 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-            <h3 className="text-sm font-semibold text-slate-300">Post associati al Topic</h3>
-            <div className="flex gap-2">
-              <SearchInput value={query} onChange={setQuery} placeholder="Cerca nei post" />
-              <select value={sentiment} onChange={(event) => setSentiment(event.target.value)} className="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100">
-                <option value="all">Tutti</option>
-                <option value="negative">Negativi</option>
-                <option value="positive">Positivi</option>
-                <option value="neutral">Neutri</option>
-              </select>
-            </div>
+      <div className="mt-6 rounded-lg border border-slate-800 bg-slate-950/35 p-4">
+        <div className="mb-3 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+          <h3 className="text-sm font-semibold text-slate-300">Documenti associati al Topic</h3>
+          <div className="flex gap-2">
+            <SearchInput value={query} onChange={setQuery} placeholder="Cerca nei documenti" />
+            <select value={sentiment} onChange={(event) => setSentiment(event.target.value)} className="rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100">
+              <option value="all">Tutti</option>
+              <option value="negative">Negativi</option>
+              <option value="positive">Positivi</option>
+              <option value="neutral">Neutri</option>
+            </select>
           </div>
-          <PostsTable posts={filteredPosts} />
         </div>
+        <PostsTable posts={filteredPosts} />
       </div>
     </Panel>
   );
 }
 
 function TopicAlertCard({ alert, onInspectAlert }) {
-  const direction = alert.p2_direction || "neutral";
+  const direction = alert.p2_direction || alert.direction || "neutral";
   const tone = direction === "negative" ? "negative" : direction === "positive" ? "positive" : "muted";
   const accent = direction === "negative" ? "border-red-400/35 bg-red-500/10" : direction === "positive" ? "border-emerald-400/35 bg-emerald-500/10" : "border-slate-700 bg-slate-900/35";
   return (
@@ -157,7 +172,7 @@ function ChartBox({ title, children }) {
 }
 
 export function PostsTable({ posts }) {
-  if (!posts.length) return <EmptyState title="Nessun post trovato" body="Prova con un filtro sentiment o una ricerca diversa." />;
+  if (!posts.length) return <EmptyState title="Nessun documento trovato" body="Prova con un filtro sentiment o una ricerca diversa." />;
   return (
     <div className="thin-scrollbar max-h-[520px] overflow-y-auto">
       <table className="w-full border-collapse text-left text-sm">
@@ -165,7 +180,8 @@ export function PostsTable({ posts }) {
           <tr>
             <th className="border-b border-slate-800 py-2 pr-3">Tempo</th>
             <th className="border-b border-slate-800 py-2 pr-3">Sentiment</th>
-            <th className="border-b border-slate-800 py-2 pr-3">Testo</th>
+            <th className="border-b border-slate-800 py-2 pr-3">Fonte</th>
+            <th className="border-b border-slate-800 py-2 pr-3">Documento</th>
           </tr>
         </thead>
         <tbody>
@@ -176,7 +192,15 @@ export function PostsTable({ posts }) {
                 <span className="font-mono text-xs text-slate-200">{post.sentiment_class}</span>
                 <div className="font-mono text-xs text-slate-500">{formatP2(post.vader_compound, 3)}</div>
               </td>
-              <td className="border-b border-slate-900 py-3 pr-3 leading-6">{post.text_raw}</td>
+              <td className="border-b border-slate-900 py-3 pr-3">
+                <span className="block font-mono text-xs text-slate-200">{post.source_type}</span>
+                <span className="block text-xs text-slate-500">{post.source_name}</span>
+              </td>
+              <td className="border-b border-slate-900 py-3 pr-3 leading-6">
+                <div className="font-semibold text-slate-200">{post.title}</div>
+                <div className="mt-1 text-slate-400">{post.text_raw}</div>
+                {post.url ? <a href={post.url} target="_blank" rel="noreferrer" className="mt-2 inline-block text-xs font-semibold text-cyan-200 hover:text-cyan-100">Apri fonte</a> : null}
+              </td>
             </tr>
           ))}
         </tbody>

@@ -25,19 +25,45 @@ Il progetto implementa una pipeline NLP ispirata al paper su Reddit/Bitcoin, ria
 
 La baseline statica e gia stata usata per validare la pipeline end-to-end. La fase corrente deve sostituire quella sorgente con raccolta live/online da fonti pubbliche recenti.
 
+## Current Operational Scope
+
+La pipeline live operativa corrente usa solo fonti social/news recenti:
+
+- Reddit RSS;
+- news/blog RSS;
+- GDELT DOC API.
+
+Il modello ufficiale corrente e il modello LDA live a 10 topic salvato in `models/live_lda_model/`.
+La pipeline schedulata non riaddestra LDA: usa il modello ufficiale solo per assegnare topic ai documenti live preprocessati.
+Il retraining LDA resta uno step manuale o periodico separato e non fa parte del run operativo.
+
+GitHub Actions esegue solo la pipeline operativa ogni 12 ore, alle 00:00 e alle 12:00 UTC, oltre al trigger manuale `workflow_dispatch`.
+Il workflow cloud non ha trigger `push`, non modifica la dashboard UI e non esegue esperimenti o training.
+
+## Excluded / Future Technical Context Sources
+
+NVD/CVE/CISA/vendor advisories non sono usati nel P2 principale e non sono usati per addestrare o aggiornare il modello LDA live ufficiale.
+Queste fonti tecnico-descrittive possono restare documentate come contesto futuro separato, ma non fanno parte dello scope operativo social/news.
+
+Motivazione:
+
+- il P2 live replica/adatta il paper su fonti social/news, quindi deve misurare momentum da discussioni pubbliche e fonti editoriali;
+- testi tecnico-standardizzati su vulnerabilita e advisory sono lessicalmente orientati al rischio e possono alterare VADER e P2;
+- eventuali record tecnico-descrittivi gia presenti nel raw live non vengono cancellati, ma non contribuiscono a sentiment, aggregazione temporale, P2, CYBERCON o dashboard live P2.
+
 ## 1b. Live Pipeline Plan
 
 La versione live dovra implementare questa sequenza:
 
 1. Raccolta dati da RSS cyber news.
 2. Raccolta da Reddit RSS per subreddit cyber/security selezionati.
-3. Raccolta da NVD/CISA per vulnerabilita, advisory e known exploited vulnerabilities.
-4. Normalizzazione in uno schema comune con campi minimi come `id`, `source`, `source_type`, `created_at`, `title`, `text_raw`, `url`, `tags`, `cve_ids`.
+3. Raccolta da GDELT DOC API come fonte news/API pubblica.
+4. Normalizzazione in uno schema comune con campi minimi come `id`, `source`, `source_type`, `created_at`, `title`, `text_raw`, `url`, `tags`.
 5. Preprocessing del testo per topic assignment, mantenendo `text_raw` intatto per VADER.
-6. Topic assignment usando il modello/topic mapping confermato o una futura strategia live approvata.
+6. Topic assignment usando il modello LDA live ufficiale a 10 topic.
 7. Sentiment analysis con VADER su `text_raw`.
 8. Aggregazione su finestre da 12h.
-9. Calcolo indice P2.
+9. Calcolo indice P2 sul solo ramo social/news.
 10. Export dashboard in JSON live, separato dagli output statici legacy.
 
 Aggiornamento raccolta live:
@@ -45,25 +71,21 @@ Aggiornamento raccolta live:
 - Fonti Reddit RSS ampliate: `cybersecurity`, `netsec`, `blueteamsec`, `Malware`, `ransomware`, `hacking`, `AskNetsec`, `sysadmin`, `privacy`, `ReverseEngineering`, `osint`, `ComputerSecurity`.
 - Fonti news/blog RSS ampliate: The Hacker News, BleepingComputer, KrebsOnSecurity, SANS Internet Storm Center, Cisco Talos Blog, Google Project Zero, Microsoft Security Response Center, Mandiant Blog, Rapid7 Blog, Unit 42.
 - GDELT DOC API aggiunta come fonte `news_api` gratuita senza API key per ampliare il corpus social/news recente.
-- NVD CVE API 2.0 resta documentata in configurazione, ma e disabilitata per il ramo P2 live e non viene usata per il consolidamento social/news.
-- Motivazione: ridurre lo sbilanciamento del dataset live verso CVE/NVD e aumentare segnali recenti provenienti da discussioni pubbliche e fonti editoriali cyber.
 - Se una fonte RSS/API fallisce, il collector deve registrare un warning e continuare con le altre fonti.
 
 Correzione metodologica P2 live:
 
 - La pipeline P2 live replica/adatta il paper su fonti social/news, quindi il calcolo P2 deve usare solo fonti social/news: `reddit_rss`, `news_rss`, `news_api` ed eventuali `social_news_api`.
-- NVD/CVE e stato disabilitato in `config/live_sources.yml` per il ramo P2 con la nota: `Disabled for P2 replication: CVE/NVD is technical context, not social/news sentiment.`
-- I record CVE/NVD gia presenti nel raw live non vengono cancellati: restano in `data/live/raw/live_items_raw.csv` come possibile estensione futura o contesto tecnico separato.
-- CVE/NVD non contribuisce piu a sentiment, aggregazione temporale, P2, CYBERCON o dashboard live P2.
-- Motivazione: le descrizioni NVD/CVE sono testi tecnico-standardizzati e lessicalmente orientati al rischio; usarli con VADER altera il sentiment e puo generare picchi P2 artificiali.
+- Le fonti escluse dallo scope operativo sono documentate solo nella sezione `Excluded / Future Technical Context Sources`.
+- Motivazione: ridurre lo sbilanciamento del dataset live verso testi tecnico-descrittivi e aumentare segnali recenti provenienti da discussioni pubbliche e fonti editoriali cyber.
 
 Step live implementati:
 
 - `scripts/00_collect_live_sources.py`: raccoglie fonti live pubbliche e aggiorna `data/live/raw/live_items_raw.csv`, senza modificare dataset statici.
 - `scripts/00_collect_live_sources.py`: ora supporta anche `gdelt_doc_api`, normalizzando articoli GDELT nello schema comune e deduplicando incrementalmente su `id` e `url`.
 - `scripts/00b_inspect_live_dataset.py`: ispeziona qualita e distribuzione del raw live, generando report in `reports/live/`.
-- `scripts/01_prepare_live_sentiment_dataset.py`: crea `data/live/processed/01_live_sentiment_dataset.csv`, privilegiando social/news e limitando CVE/NVD come contesto tecnico.
-- `scripts/01_prepare_live_social_news_dataset.py`: crea `data/live/processed/01_live_social_news_dataset.csv`, usando solo `reddit_rss`, `news_rss`, `news_api` e `social_news_api` come fonti primarie P2 ed escludendo CVE/NVD.
+- `scripts/01_prepare_live_sentiment_dataset.py`: crea `data/live/processed/01_live_sentiment_dataset.csv`, privilegiando social/news e mantenendo il contesto tecnico fuori dal ramo P2 principale.
+- `scripts/01_prepare_live_social_news_dataset.py`: crea `data/live/processed/01_live_social_news_dataset.csv`, usando solo `reddit_rss`, `news_rss`, `news_api` e `social_news_api` come fonti primarie P2.
 - `scripts/02_live_filter_noise.py`: crea `data/live/processed/02_live_filtered_dataset.csv`, rimuovendo solo record troppo corti o dominati da URL e preservando `text_raw`.
 - `scripts/03_live_preprocess_text.py`: crea `data/live/processed/03_live_preprocessed_dataset.csv`, preservando `text_raw` per VADER e aggiungendo `text_clean` per topic modeling/topic assignment.
 - `scripts/03b_live_corpus_quality_check.py`: valuta la qualita del corpus social/news preprocessato prima di un eventuale nuovo LDA live, generando report e campioni in `reports/live/`.
@@ -71,7 +93,7 @@ Step live implementati:
 - `scripts/04b_live_topic_interpretation_helper.py`: genera tabella e report di supporto per interpretare manualmente i topic LDA live.
 - `scripts/04c_live_lda_tuning_experiments.py`: esegue esperimenti LDA non distruttivi su unigram/bigram/trigram e griglia di iperparametri, salvando solo report sperimentali in `reports/live/`.
 - `scripts/04c_apply_live_topic_labels.py`: applica le label manuali ufficiali e la confidenza ai 10 topic LDA live, senza modificare il modello.
-- `scripts/04_live_assign_topics_existing_lda.py`: crea `data/live/processed/04_live_topics_dataset.csv`, assegnando topic ai documenti live con il modello LDA statico gia addestrato, senza riaddestrare o modificare i modelli.
+- `scripts/04_live_assign_topics_existing_lda.py`: helper legacy non schedulato; la pipeline operativa usa invece `scripts/04_live_assign_topics_existing_live_lda.py`.
 - `scripts/05_live_sentiment_vader.py`: crea `data/live/processed/05_live_sentiment_dataset.csv`, applicando VADER solo a `text_raw` e preservando tutte le colonne gia presenti.
 - `scripts/06_live_temporal_aggregation.py`: crea `data/live/processed/06_live_temporal_aggregation_12h.csv`, aggregando topic e sentiment live su finestre temporali da 12 ore.
 - `scripts/07_live_compute_p2_index.py`: crea `data/live/processed/07_live_p2_index_12h.csv`, calcolando P2 live da volume e sentiment aggregati.
@@ -199,12 +221,12 @@ TOPIC_LABELS = {
     0: "Generic Vulnerability Signals",
     1: "Data Leak / Botnet / Cloud",
     2: "DDoS / Attack Protection",
-    3: "CVE / Remote Exploit / Buffer Overflow",
+    3: "Vulnerability ID / Remote Exploit / Buffer Overflow",
     4: "Ransomware / Malware / Attacks",
     5: "SQL Injection / DoS / Microsoft",
     6: "Ransomware / Business Risk / WannaCry",
     7: "Zero-day / Browser Exploit Signals",
-    8: "CVE / Patch / RSA BSAFE",
+    8: "Vulnerability ID / Patch / RSA BSAFE",
     9: "Cybersecurity / IoT / Botnet",
 }
 ```
@@ -216,12 +238,12 @@ Queste label sono interpretazioni manuali basate sulle `top_words` LDA, non labe
 | 0 | Generic Vulnerability Signals | vulnerability, security, website, team, courage, thank, story, management, notify, obb |
 | 1 | Data Leak / Botnet / Cloud | north, data, email, technology, botnet, keep, vulnerability, well, leak, cloud |
 | 2 | DDoS / Attack Protection | ddos, attack, protection, site, first, scripting, functionality, cross, server, video |
-| 3 | CVE / Remote Exploit / Buffer Overflow | cve, discovered, campaign, remote, buffer, overflow, exploit, business, vuln, based |
+| 3 | Vulnerability ID / Remote Exploit / Buffer Overflow | vuln-id, discovered, campaign, remote, buffer, overflow, exploit, business, vuln, based |
 | 4 | Ransomware / Malware / Attacks | ransomware, cybersecurity, attack, hacker, via, hack, target, malware, contain, threat |
-| 5 | SQL Injection / DoS / Microsoft | vulnerability, service, denial, injection, sql, security, cve, exists, microsoft, exploitable |
+| 5 | SQL Injection / DoS / Microsoft | vulnerability, service, denial, injection, sql, security, vuln-id, exists, microsoft, exploitable |
 | 6 | Ransomware / Business Risk / WannaCry | ransomware, cyber, attack, vulnerability, risk, business, cybersecurity, wannacry, korean, key |
 | 7 | Zero-day / Browser Exploit Signals | vulnerability, window, time, exploit, daytoday, really, economy, zero, browser, emotional |
-| 8 | CVE / Patch / RSA BSAFE | vulnerability, cve, version, prior, rsa, file, bsafe, patch, contains, bug |
+| 8 | Vulnerability ID / Patch / RSA BSAFE | vulnerability, vuln-id, version, prior, rsa, file, bsafe, patch, contains, bug |
 | 9 | Cybersecurity / IoT / Botnet | cybersecurity, infosec, security, vulnerability, iot, botnet, infographic, patch, latest, corruption |
 
 ## 8. Dashboard HTML
@@ -290,7 +312,7 @@ Output generati:
 Risultati principali:
 
 - topic quality counts: high = 4, medium = 5, low = 1;
-- topic piu affidabili: T3 `CVE / Remote Exploit / Buffer Overflow`, T8 `CVE / Patch / RSA BSAFE`, T2 `DDoS / Attack Protection`, T5 `SQL Injection / DoS / Microsoft`, T4 `Ransomware / Malware / Attacks`;
+- topic piu affidabili: T3 `Vulnerability ID / Remote Exploit / Buffer Overflow`, T8 `Vulnerability ID / Patch / RSA BSAFE`, T2 `DDoS / Attack Protection`, T5 `SQL Injection / DoS / Microsoft`, T4 `Ransomware / Malware / Attacks`;
 - topic da leggere con cautela: T6 `Ransomware / Business Risk / WannaCry`, T7 `Zero-day / Browser Exploit Signals`, T0 `Generic Vulnerability Signals`;
 - principale hot topic P2 negativo: T4 `Ransomware / Malware / Attacks`;
 - threat_pct sul principale hot topic negativo: 17.1%. Il segnale P2 va interpretato come priorita informativa, non come conferma di attacco.
@@ -394,7 +416,7 @@ Live pipeline corrente:
 - consolidamento fonti social/news con GDELT completato con `scripts/00_collect_live_sources.py`;
 - raw live totale dopo integrazione GDELT: 2603 righe;
 - nuove righe aggiunte nel run riuscito: 887;
-- distribuzione raw aggiornata: cve=1295, news_api=783, reddit_rss=367, news_rss=158;
+- distribuzione raw aggiornata: technical_context=1295, news_api=783, reddit_rss=367, news_rss=158;
 - item GDELT raccolti per keyword nel run riuscito: ransomware=50, malware=50, phishing=50, data breach=50, cyber attack=50, cyberattack=50, zero-day=0, zero day=50, vulnerability=50, exploit=50, DDoS=50, botnet=50, infostealer=50, supply chain attack=50, credential theft=50, APT=50, threat actor=50;
 - keyword GDELT fallita nel run riuscito: `zero-day`;
 - fonti fallite nel run riuscito: `reddit_ransomware_new` HTTP 403, `microsoft_security_response_center` feed non valido, `mandiant_blog` feed non valido;
@@ -406,7 +428,7 @@ Live pipeline corrente:
 - report: `reports/live/live_social_news_dataset_report.md`;
 - righe raw iniziali: 2603;
 - righe social/news mantenute: 1245;
-- CVE esclusi dal ramo P2: 1295;
+- record tecnico-descrittivi esclusi dal ramo P2: 1295;
 - duplicati testuali normalizzati rimossi: 63;
 - distribuzione social/news: news_api=727, reddit_rss=360, news_rss=158;
 - range temporale social/news: 2025-12-16 09:00:00+00:00 -> 2026-04-30 10:52:33+00:00;
@@ -417,14 +439,14 @@ Live pipeline corrente:
 - righe preprocessate: 1078;
 - distribuzione preprocessata: news_api=578, reddit_rss=348, news_rss=152;
 - lunghezza media `text_clean`: 77.78 token;
-- top 30 token preprocessati: vulnerability (694), cve (516), security (508), window (487), data (416), system (394), link (390), exploitation (389), comment (372), submitted (347), access (340), attack (338), process (316), file (305), likely (303), user (279), code (277), time (262), attacker (254), exploit (254), privilege (251), less (250), device (245), use (237), service (235), team (230), using (214), threat (213), used (207), elevation (204);
+- top 30 token preprocessati: vulnerability (694), vuln-id (516), security (508), window (487), data (416), system (394), link (390), exploitation (389), comment (372), submitted (347), access (340), attack (338), process (316), file (305), likely (303), user (279), code (277), time (262), attacker (254), exploit (254), privilege (251), less (250), device (245), use (237), service (235), team (230), using (214), threat (213), used (207), elevation (204);
 - quality check corpus live completato con `scripts/03b_live_corpus_quality_check.py`;
 - report quality: `reports/live/live_corpus_quality_check.md`;
 - campioni quality: `reports/live/live_corpus_samples.csv`;
 - campioni esportati: 60, con 20 record per `reddit_rss`, 20 per `news_rss`, 20 per `news_api`;
 - warning quality: nessuna soglia attivata;
 - metriche quality: `news_api`=53.62%, `reddit_rss`=32.28%, `news_rss`=14.10%; source_name maggiore `The Hacker News`=5.01%; media/mediana `text_raw`=867.89/101.00 caratteri; media/mediana `text_clean`=77.78/10.00 token;
-- keyword coverage quality: cve=5.47%, vulnerability=8.44%, ransomware=4.73%, malware=8.35%, phishing=2.78%, breach=3.15%, exploit=7.05%, ddos=4.36%, botnet=0.65%, zeroday=0.00%, zero-day=1.21%, data leak=0.19%;
+- keyword coverage quality: vuln-id=5.47%, vulnerability=8.44%, ransomware=4.73%, malware=8.35%, phishing=2.78%, breach=3.15%, exploit=7.05%, ddos=4.36%, botnet=0.65%, zeroday=0.00%, zero-day=1.21%, data leak=0.19%;
 - LDA baseline live addestrato con `scripts/04_live_train_lda_baseline.py`;
 - input LDA live: `data/live/processed/03_live_preprocessed_dataset.csv`;
 - output topic dataset live: `data/live/processed/04_live_lda_topics_dataset.csv`;
@@ -447,12 +469,12 @@ Live pipeline corrente:
 - campi interpretativi prodotti: top words, documenti assegnati, percentuale documenti, probabilita media topic, distribuzione source_type, top 10 source_name, top 10 titoli rappresentativi, top 10 token e suggested_label preliminare;
 - stopword Reddit/RSS aggiunte a `scripts/03_live_preprocess_text.py`: comment, comments, link, links, submitted, submit, post, posted, thread, subreddit, reddit, article, source, anyone, something, looking, trying;
 - preprocessing rieseguito dopo stopword: righe preprocessate=1078, media `text_clean`=76.24 token;
-- top 30 token aggiornati dopo stopword: vulnerability (694), cve (516), security (508), window (487), data (416), system (394), exploitation (389), access (340), attack (338), process (316), file (305), likely (303), user (279), code (277), time (262), attacker (254), exploit (254), privilege (251), less (250), device (245), use (237), service (235), team (230), using (214), threat (213), used (207), elevation (204), payload (203), microsoft (202), pointer (196);
+- top 30 token aggiornati dopo stopword: vulnerability (694), vuln-id (516), security (508), window (487), data (416), system (394), exploitation (389), access (340), attack (338), process (316), file (305), likely (303), user (279), code (277), time (262), attacker (254), exploit (254), privilege (251), less (250), device (245), use (237), service (235), team (230), using (214), threat (213), used (207), elevation (204), payload (203), microsoft (202), pointer (196);
 - quality check, LDA live e topic interpretation helper rieseguiti dopo stopword;
 - LDA live post-stopword: vocabolario=3464, coherence c_v 8=0.4321, 10=0.5082, 12=0.5203, 15=0.4837;
 - configurazione selezionata post-stopword: 10 topic, perche 12 topic ha coherence maggiore ma differenza da 10 topic = 0.0121, sotto soglia 0.02;
 - distribuzione topic LDA live post-stopword: T0=175, T1=87, T2=137, T3=28, T4=87, T5=99, T6=99, T7=153, T8=69, T9=102, empty_bow=-1=42;
-- topic words finali post-stopword: T0 `attack, attacker, device, system, said, network, user, data, address, access, security, hacker`; T1 `file, system, command, attacker, payload, window, code, figure, script, agent, execution, using`; T2 `phone, crime, fraud, use, reward, law, year, federal, police, group, help, online`; T3 `pointer, buffer, write, heap, payload, data, dynamic, exploit, object, process, call, skip`; T4 `access, process, attack, adversary, window, security, api, handle, system, target, used, check`; T5 `module, code, exploit, request, update, add, metasploit, cve, digicat, rce, user, pull`; T6 `security, team, data, risk, vulnerability, exposure, environment, remediation, model, time, organization, attack`; T7 `job, version, tool, year, exploit, cpanel, cybersecurity, list, security, user, actually, data`; T8 `vulnerability, cve, exploitation, window, likely, less, privilege, elevation, microsoft, service, remote, code`; T9 `file, window, ransomware, platform, email, encryption, talos, figure, system, malware, ddos, example`;
+- topic words finali post-stopword: T0 `attack, attacker, device, system, said, network, user, data, address, access, security, hacker`; T1 `file, system, command, attacker, payload, window, code, figure, script, agent, execution, using`; T2 `phone, crime, fraud, use, reward, law, year, federal, police, group, help, online`; T3 `pointer, buffer, write, heap, payload, data, dynamic, exploit, object, process, call, skip`; T4 `access, process, attack, adversary, window, security, api, handle, system, target, used, check`; T5 `module, code, exploit, request, update, add, metasploit, vuln-id, digicat, rce, user, pull`; T6 `security, team, data, risk, vulnerability, exposure, environment, remediation, model, time, organization, attack`; T7 `job, version, tool, year, exploit, cpanel, cybersecurity, list, security, user, actually, data`; T8 `vulnerability, vuln-id, exploitation, window, likely, less, privilege, elevation, microsoft, service, remote, code`; T9 `file, window, ransomware, platform, email, encryption, talos, figure, system, malware, ddos, example`;
 - tuning sperimentale LDA completato con `scripts/04c_live_lda_tuning_experiments.py`;
 - output tuning: `reports/live/live_lda_tuning_results.csv` e `reports/live/live_lda_tuning_report.md`;
 - esperimenti tuning eseguiti: 384;
@@ -487,7 +509,7 @@ Live pipeline corrente:
 - finestre temporali: 162;
 - range temporale: 2025-12-16 00:00:00+00:00 -> 2026-04-30 00:00:00+00:00;
 - topic presenti: 10;
-- `cve_count` aggregato nel P2 corretto: 0;
+- conteggio fonti tecnico-descrittive nel P2 corretto: 0;
 - P2 live social/news completato con `scripts/07_live_compute_p2_index.py`;
 - input: `data/live/processed/06_live_temporal_aggregation_12h.csv`;
 - output: `data/live/processed/07_live_p2_index_12h.csv`;
@@ -593,6 +615,7 @@ Automazione implementata:
 
 - `scripts/04_live_assign_topics_existing_live_lda.py`: assegna topic al dataset live preprocessato usando il modello LDA live ufficiale in `models/live_lda_model/`, senza riaddestrare il modello.
 - `scripts/run_live_pipeline.py`: orchestratore operativo della pipeline live.
+- `scripts/11_export_live_dashboard_data.py`: esporta JSON dashboard live dagli output gia prodotti dalla pipeline live, senza ricalcolare LDA, VADER o P2.
 - `run_live_pipeline.bat`: launcher Windows dalla root del progetto.
 - `docs/live_scheduling_windows.md`: istruzioni per configurare Windows Task Scheduler.
 
@@ -608,6 +631,7 @@ Sequenza operativa schedulata:
 8. `scripts/05_live_sentiment_vader.py`
 9. `scripts/06_live_temporal_aggregation.py`
 10. `scripts/07_live_compute_p2_index.py`
+11. `scripts/11_export_live_dashboard_data.py`, se presente
 
 Policy operativa:
 
@@ -617,6 +641,7 @@ Policy operativa:
 - Il retraining LDA resta manuale o periodico separato.
 - La pipeline schedulata non modifica la dashboard.
 - La pipeline schedulata non cancella il raw dataset.
+- La pipeline schedulata esporta i dati dashboard live finali in `dashboard/src/data/live_*.json` quando lo script export e presente.
 
 Logging:
 
@@ -650,7 +675,7 @@ Automazione cloud implementata:
 - Runner: `ubuntu-latest`
 - Python: 3.11
 - Dipendenze: `requirements.txt`
-- Entry point: `python scripts/run_live_pipeline.py`
+- Entry point: `python -u scripts/run_live_pipeline.py`
 
 Policy cloud:
 
@@ -658,12 +683,54 @@ Policy cloud:
 - Non richiede il PC locale acceso.
 - Usa solo fonti pubbliche social/news configurate: Reddit RSS, news/blog RSS e GDELT DOC API.
 - Non usa sorgenti tecnico-descrittive come input P2.
-- Non usa CVE/NVD nella pipeline live social/news.
+- Non usa fonti tecnico-descrittive nella pipeline live social/news.
 - Non riaddestra LDA.
 - Non chiama `scripts/04_live_train_lda_baseline.py`.
 - Usa `models/live_lda_model/` solo per assegnare topic.
 - Aggiorna dataset live, report live ed eventuali dashboard data esportati da script live dedicati.
 - Non modifica la dashboard UI.
+
+## Live Dashboard Export and UI
+
+Export live implementato:
+
+- Script: `scripts/11_export_live_dashboard_data.py`
+- Input ufficiali:
+  - `data/live/processed/07_live_p2_index_12h.csv`
+  - `data/live/processed/06_live_temporal_aggregation_12h.csv`
+  - `data/live/processed/05_live_sentiment_dataset.csv`
+  - `data/live/processed/04_live_lda_topics_dataset.csv`
+  - `data/live/processed/04_live_lda_topic_words.csv`
+- Output JSON:
+  - `dashboard/src/data/live_summary.json`
+  - `dashboard/src/data/live_p2.json`
+  - `dashboard/src/data/live_topics.json`
+  - `dashboard/src/data/live_posts.json`
+  - `dashboard/src/data/live_alerts.json`
+  - `dashboard/src/data/live_metadata.json`
+
+Dashboard live:
+
+- La dashboard React legge i file `live_*.json` e non usa i vecchi JSON statici legacy.
+- Lo scope dati dashboard resta social/news only: Reddit RSS, news/blog RSS e GDELT DOC API.
+- Le fonti tecnico-descrittive escluse non sono usate nella dashboard principale.
+- La UI mantiene le topic label ufficiali in inglese per il modello LDA live a 10 topic.
+- La dashboard live e stata ridisegnata come monitoring cyber intelligence scalabile, con layout centrale max-width 1440px.
+- La pagina Panoramica include header compatto, `Stato aggiornamento`, hero CYBERCON + alert principale, KPI, trend P2 compatto, top alert, top topic e summary fonti/sentiment.
+- La vecchia timeline a micro-linee/barrette nella home e stata rimossa.
+- Il trend principale ora usa un grafico compatto `Trend P2 nel tempo` basato sul massimo `p2_abs` per finestra temporale.
+- L'export dashboard include aggregazioni UI in `live_summary.json`: `p2_trend`, `top_alerts`, `top_topics`, `latest_alerts` e `topic_distribution`.
+- La pagina Alert usa filtri, ordinamento e paginazione a 20 alert per pagina, invece di renderizzare tutti gli alert come card infinite.
+- Topic Explorer mostra i 10 topic ufficiali in card ordinate per rilevanza, con confidence, top words, max P2, sentiment mini-bar e source distribution.
+- Topic Detail concentra il drill-down temporale in grafici Recharts leggibili per P2, volume e sentiment, piu donut sentiment, fonti, alert top 10 e documenti rappresentativi.
+- La pagina Panoramica include la sezione `Stato aggiornamento` con ora locale, UTC, ultimo export, ultimo documento raccolto/pubblicato e schedule 00:00 / 12:00 UTC.
+- Se il documento piu recente e piu vecchio di 24h rispetto all'export, la dashboard mostra un warning dataset.
+- CYBERCON e calcolato sul massimo `p2_abs` tra tutti i topic, senza escludere topic low-confidence.
+- Tutti i topic sono inclusi in P2, alert e dashboard.
+- `topic_confidence` viene mostrato in modo visibile su alert, topic card, dettaglio topic e console dati.
+- Se un alert o CYBERCON deriva da un topic low-confidence, la dashboard mostra un warning ambra di cautela.
+- Topic 7 resta incluso e mostra una nota di cautela come topic generico.
+- La UI e pensata per scalare da 162 finestre temporali a centinaia di finestre usando sintesi, top N, paginazione, filtri e drill-down.
 
 Commit automatico output:
 
@@ -693,13 +760,13 @@ Snapshot ispezione hotspot precedente:
 
 Prossimi step live:
 
-1. Esportare JSON live separati dagli output statici legacy.
-2. Collegare o affiancare gli output live alla dashboard senza sovrascrivere i JSON statici legacy.
+1. Monitorare i prossimi run GitHub Actions e verificare che i JSON `live_*.json` vengano aggiornati correttamente.
+2. Mantenere separati output live e output statici legacy.
 
 Prossimi step dashboard/statici:
 
 1. Avviare la dashboard da `dashboard/` con `npm run dev`.
-2. Eventuale prossimo miglioramento: code splitting o lazy loading dei JSON per ridurre il warning sul bundle grande.
+2. Eventuale prossimo miglioramento: code splitting o lazy loading dei JSON per ridurre il warning Vite sul bundle grande.
 3. Iniziare relazione finale e presentazione.
 
 ## Static Baseline Snapshot
@@ -734,9 +801,9 @@ Questa cartella e gia la copia `cyber-threat-topic-sentiment-live`. Le modifiche
 Proposta operativa:
 
 - mantenere la baseline statica originale come riferimento separato;
-- aggiungere collector da fonti gratuite, preferibilmente RSS, CISA e NVD;
-- usare il modello LDA gia addestrato in `models/lda_model/` per assegnare Topic ai nuovi documenti social/news;
+- mantenere collector operativi da Reddit RSS, news/blog RSS e GDELT DOC API;
+- usare il modello LDA live ufficiale in `models/live_lda_model/` per assegnare Topic ai nuovi documenti social/news;
 - applicare VADER sui nuovi `text_raw` social/news;
 - aggregare i nuovi documenti social/news in finestre temporali incrementali;
-- aggiornare i JSON live della dashboard da `data/live/processed`, escludendo CVE/NVD dal calcolo P2 e CYBERCON;
+- aggiornare i JSON live della dashboard da `data/live/processed`, mantenendo fuori dal calcolo P2 e CYBERCON le fonti tecnico-descrittive escluse;
 - mantenere separati dati live e output statici legacy, cosi la baseline resta confrontabile e ripristinabile.

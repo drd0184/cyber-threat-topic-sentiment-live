@@ -28,7 +28,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run live pipeline
-        run: python scripts/run_live_pipeline.py
+        run: python -u scripts/run_live_pipeline.py
 
       - name: Commit live pipeline outputs
         run: |

@@ -12,9 +12,10 @@ export function TopicExplorer({ data, selectedTopic, setSelectedTopicId, openAle
   const filteredTopics = useMemo(() => {
     const q = query.trim().toLowerCase();
     return data.topics
-      .filter((topic) => quality === "all" || topic.quality_score === quality)
+      .filter((topic) => quality === "all" || topic.topic_confidence === quality || topic.quality_score === quality)
       .filter((topic) => noisy === "all" || (noisy === "yes" ? topic.is_noisy : !topic.is_noisy))
-      .filter((topic) => !q || topic.topic_label.toLowerCase().includes(q) || topic.top_words.join(" ").toLowerCase().includes(q));
+      .filter((topic) => !q || topic.topic_label.toLowerCase().includes(q) || topic.top_words.join(" ").toLowerCase().includes(q))
+      .sort((a, b) => b.max_abs_p2 - a.max_abs_p2 || b.total_volume - a.total_volume);
   }, [data.topics, query, quality, noisy]);
 
   const topicRows = selectedTopic ? data.p2ByTopic.get(selectedTopic.topic_id) || [] : [];
@@ -24,7 +25,7 @@ export function TopicExplorer({ data, selectedTopic, setSelectedTopicId, openAle
   return (
     <div className="space-y-6">
       <Panel className="p-5">
-        <SectionHeader eyebrow="Esplora Topic" title="Cluster semantici monitorati" description="Esplora i Topic LDA, la confidenza e i segnali P2 collegati." icon={Tags} />
+        <SectionHeader eyebrow="Topic Explorer" title="Cluster semantici monitorati" description="Esplora i 10 topic LDA live ufficiali, inclusi quelli low-confidence." icon={Tags} />
         <div className="mb-5 grid gap-3 md:grid-cols-[1fr_180px_180px]">
           <SearchInput value={query} onChange={setQuery} placeholder="Cerca topic / top words" />
           <select value={quality} onChange={(event) => setQuality(event.target.value)} className="rounded-lg border border-slate-700 bg-slate-950/75 px-3 py-2 text-sm text-slate-100">
@@ -34,9 +35,9 @@ export function TopicExplorer({ data, selectedTopic, setSelectedTopicId, openAle
             <option value="low">Bassa</option>
           </select>
           <select value={noisy} onChange={(event) => setNoisy(event.target.value)} className="rounded-lg border border-slate-700 bg-slate-950/75 px-3 py-2 text-sm text-slate-100">
-            <option value="all">Tutti i Signal</option>
-            <option value="yes">NOISY SIGNAL</option>
-            <option value="no">Signal puliti</option>
+            <option value="all">Tutti i topic</option>
+            <option value="yes">Low-confidence</option>
+            <option value="no">Non low-confidence</option>
           </select>
         </div>
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">

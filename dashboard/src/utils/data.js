@@ -1,54 +1,71 @@
+import liveSummary from "../data/live_summary.json";
+import liveP2 from "../data/live_p2.json";
+import liveTopics from "../data/live_topics.json";
+import livePosts from "../data/live_posts.json";
+import liveAlerts from "../data/live_alerts.json";
+import liveMetadata from "../data/live_metadata.json";
 import { cleanQualityNote, isNoisyTopic } from "./formatters.js";
 
 export const TOPIC_LABELS = {
-  0: "Generic Vulnerability Signals",
-  1: "Data Leak / Botnet / Cloud",
-  2: "DDoS / Attack Protection",
-  3: "CVE / Remote Exploit / Buffer Overflow",
-  4: "Ransomware / Malware / Attacks",
-  5: "SQL Injection / DoS / Microsoft",
-  6: "Ransomware / Business Risk / WannaCry",
-  7: "Zero-day / Browser Exploit Signals",
-  8: "CVE / Patch / RSA BSAFE",
-  9: "Cybersecurity / IoT / Botnet",
+  0: "Network Attacks / Device Access",
+  1: "Command Execution / Payload Delivery",
+  2: "Cybercrime / Fraud / Law Enforcement",
+  3: "Memory Exploitation / Buffer & Heap Bugs",
+  4: "Access Control / Process & API Abuse",
+  5: "Exploit Tooling / Metasploit / RCE",
+  6: "Security Risk / Exposure Management",
+  7: "Cybersecurity Tools / Generic Discussion",
+  8: "Microsoft / Privilege Escalation / Patch Exploitation",
+  9: "Ransomware / Malware / Email Campaigns",
 };
 
 const EMPTY_SUMMARY = {
+  total_documents: 0,
   total_posts: 0,
   total_topics: 0,
   total_time_windows: 0,
+  average_vader_compound: 0,
   average_sentiment: 0,
   cybercon_level: 5,
-  high_quality_topics_count: 0,
-  medium_quality_topics_count: 0,
-  low_quality_topics_count: 0,
-  most_reliable_topics: [],
-  noisy_topics: [],
+  cybercon_label: "NOMINAL",
+  cybercon_warning: null,
+  hottest_negative_alert: null,
+  hottest_positive_alert: null,
   hottest_negative: null,
   hottest_positive: null,
+  source_type_distribution: {},
+  topic_confidence_distribution: {},
+  severity_distribution: {},
 };
 
 function topicIdOf(row) {
   return Number(row?.dominant_topic ?? row?.topic_id);
 }
 
-function withOfficialTopic(row) {
+function withOfficialTopic(row, topicMap = new Map()) {
   if (!row) return row;
   const topicId = topicIdOf(row);
-  const qualityScore = row.quality_score ?? row.topic_quality?.quality_score;
-  const topicQuality = row.topic_quality
-    ? {
-        ...row.topic_quality,
-        quality_note: cleanQualityNote(row.topic_quality.quality_score, row.topic_quality.quality_note),
-      }
-    : row.topic_quality;
-
+  const topic = topicMap.get(topicId);
+  const topicConfidence = row.topic_confidence || row.quality_score || topic?.topic_confidence || topic?.quality_score || "none";
+  const topicQuality = {
+    quality_score: topicConfidence,
+    quality_note: cleanQualityNote(topicConfidence, row.note || topic?.note),
+  };
+  const topWords = row.top_words || topic?.top_words || [];
   const enriched = {
     ...row,
-    topic_label_raw: row.topic_label,
+    dominant_topic: Number.isFinite(topicId) ? topicId : row.dominant_topic,
+    topic_id: row.topic_id ?? (Number.isFinite(topicId) ? topicId : undefined),
     topic_label: TOPIC_LABELS[topicId] || row.topic_label || `Topic ${topicId}`,
+    topic_confidence: topicConfidence,
+    quality_score: topicConfidence,
     topic_quality: topicQuality,
-    quality_note: cleanQualityNote(qualityScore, row.quality_note),
+    top_words: topWords,
+    top_5_words: row.top_5_words || topWords.slice(0, 5),
+    warning:
+      row.warning ||
+      (topicConfidence === "low" ? "Low-confidence topic. Interpretare il segnale con cautela." : null),
+    is_low_confidence: topicConfidence === "low",
   };
 
   return {
@@ -57,49 +74,46 @@ function withOfficialTopic(row) {
   };
 }
 
-function buildDashboardData(raw = {}) {
-  const p2 = raw.p2 || [];
-  const posts = raw.posts || [];
-  const summary = { ...EMPTY_SUMMARY, ...(raw.summary || {}) };
-  const topics = raw.topics || [];
-  const topicQuality = raw.topicQuality || raw.topic_quality || [];
-  const hotTopicsQuality = raw.hotTopicsQuality || raw.hot_topics_quality || [];
-  const validation = raw.validation || [];
+function buildDashboardData() {
+  const summary = { ...EMPTY_SUMMARY, ...liveSummary };
+  const rawTopics = liveTopics || [];
+  const topicMap = new Map(rawTopics.map((topic) => [Number(topic.topic_id), topic]));
 
-  const hotQualityMap = new Map(
-    hotTopicsQuality.map((row) => {
-      const enriched = withOfficialTopic(row);
-      return [`${row.time_window}-${row.dominant_topic}`, enriched];
-    })
-  );
-
-  const enrichedP2 = p2.map((row) => {
-    const enriched = withOfficialTopic(row);
-    return {
-      ...enriched,
-      hot_quality: hotQualityMap.get(`${row.time_window}-${row.dominant_topic}`) || null,
-    };
+  const topics = rawTopics.map((topic) => withOfficialTopic(topic, topicMap));
+  const p2 = (liveP2 || []).map((row) => withOfficialTopic(row, topicMap));
+  const alerts = (liveAlerts || []).map((row) => {
+    const enriched = withOfficialTopic(
+      {
+        ...row,
+        p2_direction: row.direction || row.p2_direction,
+        negative_count: row.sentiment_counts?.negative ?? row.negative_count,
+        neutral_count: row.sentiment_counts?.neutral ?? row.neutral_count,
+        positive_count: row.sentiment_counts?.positive ?? row.positive_count,
+        reddit_count: row.source_counts?.reddit_rss ?? row.reddit_count,
+        news_count: (row.source_counts?.news_rss ?? 0) + (row.source_counts?.news_api ?? 0),
+        news_api_count: row.source_counts?.news_api ?? row.news_api_count,
+      },
+      topicMap
+    );
+    return enriched;
   });
+  const posts = (livePosts || []).map((row) => withOfficialTopic(row, topicMap));
 
-  const enrichedPosts = posts.map(withOfficialTopic);
-  const enrichedTopics = topics.map(withOfficialTopic);
-  const enrichedTopicQuality = topicQuality.map(withOfficialTopic);
-  const enrichedValidation = validation.map(withOfficialTopic);
-  const enrichedSummary = {
-    ...summary,
-    hottest_negative: withOfficialTopic(summary.hottest_negative),
-    hottest_positive: withOfficialTopic(summary.hottest_positive),
-  };
+  const alertByKey = new Map(alerts.map((alert) => [`${alert.time_window}-${alert.dominant_topic}`, alert]));
+  const p2WithAlert = p2.map((row) => ({
+    ...row,
+    alert: alertByKey.get(`${row.time_window}-${row.dominant_topic}`) || null,
+  }));
 
   const p2ByTopic = new Map();
-  for (const row of enrichedP2) {
+  for (const row of p2WithAlert) {
     if (!p2ByTopic.has(row.dominant_topic)) p2ByTopic.set(row.dominant_topic, []);
     p2ByTopic.get(row.dominant_topic).push(row);
   }
 
   const postsByTopic = new Map();
   const postsByAlert = new Map();
-  for (const post of enrichedPosts) {
+  for (const post of posts) {
     if (!postsByTopic.has(post.dominant_topic)) postsByTopic.set(post.dominant_topic, []);
     postsByTopic.get(post.dominant_topic).push(post);
     const key = `${post.time_window}-${post.dominant_topic}`;
@@ -107,27 +121,35 @@ function buildDashboardData(raw = {}) {
     postsByAlert.get(key).push(post);
   }
 
-  const topTopicIds = [...enrichedP2]
+  const topTopicIds = [...p2WithAlert]
     .sort((a, b) => b.p2_abs - a.p2_abs)
     .filter((row, index, rows) => rows.findIndex((item) => item.dominant_topic === row.dominant_topic) === index)
     .slice(0, 5)
     .map((row) => row.dominant_topic);
 
+  const enrichedSummary = {
+    ...summary,
+    hottest_negative: withOfficialTopic(summary.hottest_negative_alert || summary.hottest_negative, topicMap),
+    hottest_positive: withOfficialTopic(summary.hottest_positive_alert || summary.hottest_positive, topicMap),
+  };
+
   return {
     summary: enrichedSummary,
-    p2: enrichedP2,
-    posts: enrichedPosts,
-    topics: enrichedTopics,
-    topicQuality: enrichedTopicQuality,
-    hotTopicsQuality: hotTopicsQuality.map(withOfficialTopic),
-    validation: enrichedValidation,
+    metadata: liveMetadata || {},
+    p2: p2WithAlert,
+    alerts,
+    posts,
+    topics,
+    topicQuality: topics,
+    hotTopicsQuality: [],
+    validation: [],
     p2ByTopic,
     postsByTopic,
     postsByAlert,
     topTopicIds,
-    hasLiveData: enrichedP2.length > 0 || enrichedPosts.length > 0,
-    dataMode: "live-pending",
-    dataSource: "data/live/processed exports",
+    hasLiveData: p2WithAlert.length > 0 || posts.length > 0,
+    dataMode: "live",
+    dataSource: "dashboard/src/data/live_*.json",
   };
 }
 

@@ -20,7 +20,7 @@ export default function App() {
 
   const selectedAlert = useMemo(() => {
     if (!selectedAlertKey) return null;
-    return dashboardData.p2.find((row) => `${row.time_window}-${row.dominant_topic}` === selectedAlertKey) || null;
+    return dashboardData.alerts.find((row) => `${row.time_window}-${row.dominant_topic}` === selectedAlertKey) || null;
   }, [selectedAlertKey]);
 
   const openTopic = (topicId) => {

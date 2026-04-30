@@ -25,8 +25,8 @@ export function AppShell({ activeView, setActiveView, children }) {
         <Sidebar activeView={activeView} setActiveView={setActiveView} />
         <main className="min-w-0 flex-1 lg:ml-72">
           <Header title={active.label} subtitle={active.subtitle} />
-          <div className="mx-auto max-w-[1480px] px-4 py-5 sm:px-6 xl:px-8">{children}</div>
-          <footer className="mx-auto max-w-[1480px] px-4 pb-8 pt-2 text-xs leading-6 text-slate-500 sm:px-6 xl:px-8">
+          <div className="mx-auto max-w-[1440px] px-4 py-5 sm:px-6 xl:px-8">{children}</div>
+          <footer className="mx-auto max-w-[1440px] px-4 pb-8 pt-2 text-xs leading-6 text-slate-500 sm:px-6 xl:px-8">
             Demo locale per finalità didattiche. P2 misura momentum semantico, non incidenti verificati.
           </footer>
         </main>
@@ -79,7 +79,7 @@ function Sidebar({ activeView, setActiveView }) {
 function Header({ title, subtitle }) {
   return (
     <header className="sticky top-0 z-20 border-b border-slate-800/90 bg-[#05070B]/88 px-4 py-3 backdrop-blur-xl sm:px-6 xl:px-8">
-      <div className="mx-auto flex max-w-[1480px] items-center justify-between gap-4">
+      <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4">
         <div className="min-w-0">
           <h1 className="truncate text-base font-semibold text-slate-50">{title}</h1>
           <p className="truncate text-sm text-slate-500">{subtitle}</p>

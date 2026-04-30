@@ -7,9 +7,9 @@ export const CYBERCON_SCALE = [
 ];
 
 export const QUALITY_NOTES = {
-  high: "Topic coerente e ben interpretabile rispetto alla validazione ex post.",
-  medium: "Topic interpretabile, ma con segnali misti o parzialmente rumorosi.",
-  low: "Topic ampio o rumoroso. Interpretare con cautela.",
+  high: "Topic coerente e ben interpretabile.",
+  medium: "Topic interpretabile, con segnali parzialmente misti.",
+  low: "Topic ampio o rumoroso. Incluso nel P2, ma da interpretare con cautela.",
 };
 
 export function formatNumber(value, digits = 0) {
@@ -56,7 +56,7 @@ export function getSeverity(p2Abs) {
   if (p2Abs >= 15) return "high";
   if (p2Abs >= 8) return "elevated";
   if (p2Abs >= 3) return "watch";
-  return "nominal";
+  return "low";
 }
 
 export function severityLabel(severity) {
@@ -65,8 +65,9 @@ export function severityLabel(severity) {
     high: "HIGH",
     elevated: "ELEVATED",
     watch: "WATCH",
+    low: "LOW",
     nominal: "NOMINAL",
-  }[severity] || "NOMINAL";
+  }[severity] || "LOW";
 }
 
 export function directionLabel(direction) {
@@ -105,12 +106,12 @@ export function qualityShortLabel(score) {
 }
 
 export function cleanQualityNote(score, note) {
-  return QUALITY_NOTES[score] || "Confidenza del Topic non disponibile.";
+  return note || QUALITY_NOTES[score] || "Confidenza del Topic non disponibile.";
 }
 
 export function isNoisyTopic(topic) {
   const topicId = Number(topic?.topic_id ?? topic?.dominant_topic);
-  return topicId === 0 || topicId === 7 || topic?.quality_score === "low" || topic?.topic_quality?.quality_score === "low";
+  return topicId === 7 || topic?.quality_score === "low" || topic?.topic_confidence === "low" || topic?.topic_quality?.quality_score === "low";
 }
 
 export function severityColor(severity) {
@@ -118,6 +119,7 @@ export function severityColor(severity) {
   if (severity === "high") return "text-orange-100 border-orange-400/40 bg-orange-500/10";
   if (severity === "elevated") return "text-amber-100 border-amber-400/40 bg-amber-500/10";
   if (severity === "watch") return "text-cyan-100 border-cyan-400/30 bg-cyan-500/10";
+  if (severity === "low") return "text-slate-200 border-slate-500/40 bg-slate-500/10";
   return "text-slate-200 border-slate-500/40 bg-slate-500/10";
 }
 

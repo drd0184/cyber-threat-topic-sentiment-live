@@ -1,0 +1,2380 @@
+{
+  "total_documents": 1078,
+  "total_posts": 1078,
+  "total_topics": 10,
+  "total_time_windows": 162,
+  "sentiment_distribution": {
+    "negative": 418,
+    "neutral": 371,
+    "positive": 289
+  },
+  "average_vader_compound": -0.04919369202226345,
+  "average_sentiment": -0.04919369202226345,
+  "latest_document_created_at": "2026-04-30T10:52:33Z",
+  "latest_collected_at": "2026-04-30T10:55:06Z",
+  "generated_at_utc": "2026-04-30T15:18:42.400914Z",
+  "hottest_negative_alert": {
+    "alert_id": "LIVE-0002",
+    "time_window": "2026-04-30T00:00:00Z",
+    "dominant_topic": 7,
+    "topic_label": "Cybersecurity Tools / Generic Discussion",
+    "topic_confidence": "low",
+    "p2_index": -42.809194072217565,
+    "p2_abs": 42.809194072217565,
+    "direction": "negative",
+    "severity": "critical",
+    "cybercon_level": 1,
+    "topic_volume": 30,
+    "topic_sentiment_sum": -2.9738,
+    "topic_sentiment_mean": -0.0991266666666666,
+    "source_counts": {
+      "reddit_rss": 11,
+      "news_rss": 1,
+      "news_api": 18
+    },
+    "sentiment_counts": {
+      "negative": 13,
+      "neutral": 10,
+      "positive": 7
+    },
+    "warning": "Low-confidence topic. Interpret this alert with caution."
+  },
+  "hottest_positive_alert": {
+    "alert_id": "LIVE-0001",
+    "time_window": "2026-04-29T00:00:00Z",
+    "dominant_topic": 7,
+    "topic_label": "Cybersecurity Tools / Generic Discussion",
+    "topic_confidence": "low",
+    "p2_index": 44.272779639949874,
+    "p2_abs": 44.272779639949874,
+    "direction": "positive",
+    "severity": "critical",
+    "cybercon_level": 1,
+    "topic_volume": 17,
+    "topic_sentiment_sum": 5.4273,
+    "topic_sentiment_mean": 0.3192529411764706,
+    "source_counts": {
+      "reddit_rss": 15,
+      "news_rss": 1,
+      "news_api": 1
+    },
+    "sentiment_counts": {
+      "negative": 4,
+      "neutral": 2,
+      "positive": 11
+    },
+    "warning": "Low-confidence topic. Interpret this alert with caution."
+  },
+  "hottest_negative": {
+    "alert_id": "LIVE-0002",
+    "time_window": "2026-04-30T00:00:00Z",
+    "dominant_topic": 7,
+    "topic_label": "Cybersecurity Tools / Generic Discussion",
+    "topic_confidence": "low",
+    "p2_index": -42.809194072217565,
+    "p2_abs": 42.809194072217565,
+    "direction": "negative",
+    "severity": "critical",
+    "cybercon_level": 1,
+    "topic_volume": 30,
+    "topic_sentiment_sum": -2.9738,
+    "topic_sentiment_mean": -0.0991266666666666,
+    "source_counts": {
+      "reddit_rss": 11,
+      "news_rss": 1,
+      "news_api": 18
+    },
+    "sentiment_counts": {
+      "negative": 13,
+      "neutral": 10,
+      "positive": 7
+    },
+    "warning": "Low-confidence topic. Interpret this alert with caution."
+  },
+  "hottest_positive": {
+    "alert_id": "LIVE-0001",
+    "time_window": "2026-04-29T00:00:00Z",
+    "dominant_topic": 7,
+    "topic_label": "Cybersecurity Tools / Generic Discussion",
+    "topic_confidence": "low",
+    "p2_index": 44.272779639949874,
+    "p2_abs": 44.272779639949874,
+    "direction": "positive",
+    "severity": "critical",
+    "cybercon_level": 1,
+    "topic_volume": 17,
+    "topic_sentiment_sum": 5.4273,
+    "topic_sentiment_mean": 0.3192529411764706,
+    "source_counts": {
+      "reddit_rss": 15,
+      "news_rss": 1,
+      "news_api": 1
+    },
+    "sentiment_counts": {
+      "negative": 4,
+      "neutral": 2,
+      "positive": 11
+    },
+    "warning": "Low-confidence topic. Interpret this alert with caution."
+  },
+  "max_abs_p2": 44.272779639949874,
+  "cybercon_level": 1,
+  "cybercon_label": "CRITICAL",
+  "cybercon_warning": "CYBERCON is currently driven by a low-confidence topic. Interpret with caution.",
+  "source_type_distribution": {
+    "news_api": 578,
+    "reddit_rss": 348,
+    "news_rss": 152
+  },
+  "topic_distribution": {
+    "-1": 42,
+    "0": 176,
+    "1": 86,
+    "2": 136,
+    "3": 28,
+    "4": 88,
+    "5": 99,
+    "6": 100,
+    "7": 151,
+    "8": 69,
+    "9": 103
+  },
+  "topic_confidence_distribution": {
+    "medium": 500,
+    "high": 385,
+    "low": 151,
+    "none": 42
+  },
+  "severity_distribution": {
+    "low": 436,
+    "watch": 26,
+    "elevated": 13,
+    "high": 7,
+    "critical": 3
+  },
+  "high_quality_topics_count": 5,
+  "medium_quality_topics_count": 4,
+  "low_quality_topics_count": 1,
+  "p2_trend": [
+    {
+      "time_window": "2025-12-16T00:00:00Z",
+      "max_abs_p2": 0.3048904945604474,
+      "p2_index": -0.3048904945604474,
+      "topic_label": "Memory Exploitation / Buffer & Heap Bugs",
+      "dominant_topic": 3,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2025-12-20T12:00:00Z",
+      "max_abs_p2": 0.4486169049035294,
+      "p2_index": 0.4486169049035294,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2025-12-22T12:00:00Z",
+      "max_abs_p2": 0.639227080210476,
+      "p2_index": 0.639227080210476,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2025-12-27T12:00:00Z",
+      "max_abs_p2": 0.129997352839458,
+      "p2_index": -0.129997352839458,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2025-12-29T00:00:00Z",
+      "max_abs_p2": 1.1129276197335254,
+      "p2_index": -1.1129276197335254,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-01-04T12:00:00Z",
+      "max_abs_p2": 0.5468733473679366,
+      "p2_index": 0.5468733473679366,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-01-10T12:00:00Z",
+      "max_abs_p2": 0.2076822967321532,
+      "p2_index": -0.2076822967321532,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-01-14T12:00:00Z",
+      "max_abs_p2": 5.093839936317433,
+      "p2_index": 5.093839936317433,
+      "topic_label": "Memory Exploitation / Buffer & Heap Bugs",
+      "dominant_topic": 3,
+      "topic_confidence": "high",
+      "severity": "watch",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-01-26T00:00:00Z",
+      "max_abs_p2": 1.2755648766150267,
+      "p2_index": 1.2755648766150267,
+      "topic_label": "Memory Exploitation / Buffer & Heap Bugs",
+      "dominant_topic": 3,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-01-29T12:00:00Z",
+      "max_abs_p2": 0.3478641983563509,
+      "p2_index": 0.3478641983563509,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-01-30T00:00:00Z",
+      "max_abs_p2": 1.2740340456799952,
+      "p2_index": 1.2740340456799952,
+      "topic_label": "Memory Exploitation / Buffer & Heap Bugs",
+      "dominant_topic": 3,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-02-02T00:00:00Z",
+      "max_abs_p2": 0.2295594687397592,
+      "p2_index": -0.2295594687397592,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-05T00:00:00Z",
+      "max_abs_p2": 0.0166183581916871,
+      "p2_index": -0.0166183581916871,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-05T12:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-02-06T00:00:00Z",
+      "max_abs_p2": 0.182433500291772,
+      "p2_index": 0.182433500291772,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-02-06T12:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-02-07T00:00:00Z",
+      "max_abs_p2": 0.2588727967922111,
+      "p2_index": -0.2588727967922111,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-07T12:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-02-08T12:00:00Z",
+      "max_abs_p2": 2.208341945181101,
+      "p2_index": -2.208341945181101,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-09T00:00:00Z",
+      "max_abs_p2": 0.3972531279015947,
+      "p2_index": -0.3972531279015947,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-09T12:00:00Z",
+      "max_abs_p2": 0.3056154382114396,
+      "p2_index": 0.3056154382114396,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-02-10T00:00:00Z",
+      "max_abs_p2": 0.5305856548924608,
+      "p2_index": -0.5305856548924608,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-10T12:00:00Z",
+      "max_abs_p2": 3.668608705259908,
+      "p2_index": -3.668608705259908,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-11T00:00:00Z",
+      "max_abs_p2": 6.99912266343667,
+      "p2_index": -6.99912266343667,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-11T12:00:00Z",
+      "max_abs_p2": 2.2719350509051623,
+      "p2_index": -2.2719350509051623,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-12T00:00:00Z",
+      "max_abs_p2": 1.3763607668215894,
+      "p2_index": -1.3763607668215894,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-12T12:00:00Z",
+      "max_abs_p2": 0.1298196788076249,
+      "p2_index": 0.1298196788076249,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-02-13T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-02-13T12:00:00Z",
+      "max_abs_p2": 0.3075828814919276,
+      "p2_index": 0.3075828814919276,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-02-14T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-02-15T00:00:00Z",
+      "max_abs_p2": 0.5690177374626507,
+      "p2_index": -0.5690177374626507,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-16T00:00:00Z",
+      "max_abs_p2": 0.1068567214130272,
+      "p2_index": -0.1068567214130272,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-16T12:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-02-17T00:00:00Z",
+      "max_abs_p2": 0.3070531530998932,
+      "p2_index": -0.3070531530998932,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-17T12:00:00Z",
+      "max_abs_p2": 1.7555273507433358,
+      "p2_index": -1.7555273507433358,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-18T00:00:00Z",
+      "max_abs_p2": 0.3933324406122125,
+      "p2_index": -0.3933324406122125,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-18T12:00:00Z",
+      "max_abs_p2": 0.3213748541139856,
+      "p2_index": 0.3213748541139856,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-02-19T00:00:00Z",
+      "max_abs_p2": 0.5013204721158943,
+      "p2_index": -0.5013204721158943,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-19T12:00:00Z",
+      "max_abs_p2": 2.624415361797316,
+      "p2_index": -2.624415361797316,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-20T00:00:00Z",
+      "max_abs_p2": 1.0304670323667064,
+      "p2_index": -1.0304670323667064,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-20T12:00:00Z",
+      "max_abs_p2": 0.5305856548924608,
+      "p2_index": -0.5305856548924608,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-21T00:00:00Z",
+      "max_abs_p2": 0.3493075832306944,
+      "p2_index": -0.3493075832306944,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-21T12:00:00Z",
+      "max_abs_p2": 0.169408967596775,
+      "p2_index": -0.169408967596775,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-22T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-02-22T12:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-02-23T12:00:00Z",
+      "max_abs_p2": 1.3279227615496951,
+      "p2_index": -1.3279227615496951,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-24T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-02-25T12:00:00Z",
+      "max_abs_p2": 0.5780679151737624,
+      "p2_index": -0.5780679151737624,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-26T00:00:00Z",
+      "max_abs_p2": 0.8927681826429784,
+      "p2_index": 0.8927681826429784,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-02-26T12:00:00Z",
+      "max_abs_p2": 0.2286401108009228,
+      "p2_index": -0.2286401108009228,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-27T00:00:00Z",
+      "max_abs_p2": 0.435040276072305,
+      "p2_index": -0.435040276072305,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-27T12:00:00Z",
+      "max_abs_p2": 0.4682125802146262,
+      "p2_index": -0.4682125802146262,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-02-28T12:00:00Z",
+      "max_abs_p2": 0.5839613773869585,
+      "p2_index": -0.5839613773869585,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-01T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-02T12:00:00Z",
+      "max_abs_p2": 0.8181949127573902,
+      "p2_index": -0.8181949127573902,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-03T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-03T12:00:00Z",
+      "max_abs_p2": 0.1026006005640925,
+      "p2_index": -0.1026006005640925,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-04T00:00:00Z",
+      "max_abs_p2": 1.3343110616427143,
+      "p2_index": -1.3343110616427143,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-04T12:00:00Z",
+      "max_abs_p2": 0.0247601768122315,
+      "p2_index": 0.0247601768122315,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-05T00:00:00Z",
+      "max_abs_p2": 1.2744167534137532,
+      "p2_index": 1.2744167534137532,
+      "topic_label": "Memory Exploitation / Buffer & Heap Bugs",
+      "dominant_topic": 3,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-05T12:00:00Z",
+      "max_abs_p2": 0.3075828814919276,
+      "p2_index": 0.3075828814919276,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-06T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-06T12:00:00Z",
+      "max_abs_p2": 1.2725282342440714,
+      "p2_index": -1.2725282342440714,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-07T12:00:00Z",
+      "max_abs_p2": 0.1928510670704625,
+      "p2_index": -0.1928510670704625,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-08T12:00:00Z",
+      "max_abs_p2": 2.029351229825635,
+      "p2_index": 2.029351229825635,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-09T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-09T12:00:00Z",
+      "max_abs_p2": 0.0788405830489341,
+      "p2_index": -0.0788405830489341,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-10T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-10T12:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-11T00:00:00Z",
+      "max_abs_p2": 1.0506633688532487,
+      "p2_index": -1.0506633688532487,
+      "topic_label": "Microsoft / Privilege Escalation / Patch Exploitation",
+      "dominant_topic": 8,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-11T12:00:00Z",
+      "max_abs_p2": 2.177004923111011,
+      "p2_index": -2.177004923111011,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-12T00:00:00Z",
+      "max_abs_p2": 0.7264626030147978,
+      "p2_index": 0.7264626030147978,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-12T12:00:00Z",
+      "max_abs_p2": 0.3784332340328019,
+      "p2_index": 0.3784332340328019,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-13T00:00:00Z",
+      "max_abs_p2": 0.2481095603968099,
+      "p2_index": 0.2481095603968099,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-13T12:00:00Z",
+      "max_abs_p2": 0.740246193373217,
+      "p2_index": 0.740246193373217,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-14T12:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-15T00:00:00Z",
+      "max_abs_p2": 0.2527361458721388,
+      "p2_index": -0.2527361458721388,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-16T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-17T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-17T12:00:00Z",
+      "max_abs_p2": 2.17126198875078,
+      "p2_index": -2.17126198875078,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-18T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-18T12:00:00Z",
+      "max_abs_p2": 0.9104151045413708,
+      "p2_index": -0.9104151045413708,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-19T00:00:00Z",
+      "max_abs_p2": 0.182433500291772,
+      "p2_index": -0.182433500291772,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-19T12:00:00Z",
+      "max_abs_p2": 0.7286442259546538,
+      "p2_index": 0.7286442259546538,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-20T00:00:00Z",
+      "max_abs_p2": 1.2373591506291055,
+      "p2_index": -1.2373591506291055,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-20T12:00:00Z",
+      "max_abs_p2": 2.398118374802255,
+      "p2_index": -2.398118374802255,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-21T00:00:00Z",
+      "max_abs_p2": 0.490182341964841,
+      "p2_index": 0.490182341964841,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-21T12:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-22T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-03-23T00:00:00Z",
+      "max_abs_p2": 0.2159742442508793,
+      "p2_index": -0.2159742442508793,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-23T12:00:00Z",
+      "max_abs_p2": 0.8904460565176565,
+      "p2_index": -0.8904460565176565,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-24T00:00:00Z",
+      "max_abs_p2": 0.4386773961577925,
+      "p2_index": 0.4386773961577925,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-24T12:00:00Z",
+      "max_abs_p2": 0.5388697395375203,
+      "p2_index": -0.5388697395375203,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-25T12:00:00Z",
+      "max_abs_p2": 2.9947827355205434,
+      "p2_index": -2.9947827355205434,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-26T00:00:00Z",
+      "max_abs_p2": 0.6128626719984112,
+      "p2_index": 0.6128626719984112,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-26T12:00:00Z",
+      "max_abs_p2": 0.7602849753915789,
+      "p2_index": 0.7602849753915789,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-27T12:00:00Z",
+      "max_abs_p2": 0.6816250368284938,
+      "p2_index": 0.6816250368284938,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-28T12:00:00Z",
+      "max_abs_p2": 1.1475052283566738,
+      "p2_index": 1.1475052283566738,
+      "topic_label": "Microsoft / Privilege Escalation / Patch Exploitation",
+      "dominant_topic": 8,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-29T12:00:00Z",
+      "max_abs_p2": 1.583074841310857,
+      "p2_index": 1.583074841310857,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-30T00:00:00Z",
+      "max_abs_p2": 0.700179774119821,
+      "p2_index": 0.700179774119821,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-03-30T12:00:00Z",
+      "max_abs_p2": 0.4591545982080293,
+      "p2_index": -0.4591545982080293,
+      "topic_label": "Microsoft / Privilege Escalation / Patch Exploitation",
+      "dominant_topic": 8,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-31T00:00:00Z",
+      "max_abs_p2": 0.5232821910869558,
+      "p2_index": -0.5232821910869558,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-03-31T12:00:00Z",
+      "max_abs_p2": 3.8951910171211575,
+      "p2_index": -3.8951910171211575,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-01T00:00:00Z",
+      "max_abs_p2": 0.4473303434052443,
+      "p2_index": 0.4473303434052443,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-01T12:00:00Z",
+      "max_abs_p2": 1.7139077055741052,
+      "p2_index": -1.7139077055741052,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-02T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-04-02T12:00:00Z",
+      "max_abs_p2": 0.3784332340328019,
+      "p2_index": 0.3784332340328019,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-03T00:00:00Z",
+      "max_abs_p2": 1.232850293755392,
+      "p2_index": 1.232850293755392,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-03T12:00:00Z",
+      "max_abs_p2": 6.419646004552307,
+      "p2_index": -6.419646004552307,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-04T00:00:00Z",
+      "max_abs_p2": 0.4257528938234372,
+      "p2_index": -0.4257528938234372,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-04T12:00:00Z",
+      "max_abs_p2": 0.5305856548924608,
+      "p2_index": 0.5305856548924608,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-05T00:00:00Z",
+      "max_abs_p2": 0.8688189214529836,
+      "p2_index": -0.8688189214529836,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-05T12:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-04-06T00:00:00Z",
+      "max_abs_p2": 1.080450931423874,
+      "p2_index": 1.080450931423874,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-06T12:00:00Z",
+      "max_abs_p2": 1.0390218352047664,
+      "p2_index": 1.0390218352047664,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-07T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-04-07T12:00:00Z",
+      "max_abs_p2": 0.6262802197588129,
+      "p2_index": -0.6262802197588129,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-08T00:00:00Z",
+      "max_abs_p2": 3.258854492543221,
+      "p2_index": -3.258854492543221,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-08T12:00:00Z",
+      "max_abs_p2": 1.599484769829357,
+      "p2_index": -1.599484769829357,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-09T00:00:00Z",
+      "max_abs_p2": 0.6792807463851498,
+      "p2_index": 0.6792807463851498,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-09T12:00:00Z",
+      "max_abs_p2": 0.5248246936393697,
+      "p2_index": 0.5248246936393697,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-10T00:00:00Z",
+      "max_abs_p2": 1.4257542914802566,
+      "p2_index": 1.4257542914802566,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-10T12:00:00Z",
+      "max_abs_p2": 1.171978650011226,
+      "p2_index": 1.171978650011226,
+      "topic_label": "Memory Exploitation / Buffer & Heap Bugs",
+      "dominant_topic": 3,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-11T00:00:00Z",
+      "max_abs_p2": 0.0,
+      "p2_index": 0.0,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "neutral"
+    },
+    {
+      "time_window": "2026-04-11T12:00:00Z",
+      "max_abs_p2": 0.4582249280457369,
+      "p2_index": -0.4582249280457369,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-12T00:00:00Z",
+      "max_abs_p2": 0.3784332340328019,
+      "p2_index": 0.3784332340328019,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-12T12:00:00Z",
+      "max_abs_p2": 0.4311437764687996,
+      "p2_index": 0.4311437764687996,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-13T00:00:00Z",
+      "max_abs_p2": 1.0990927323336508,
+      "p2_index": -1.0990927323336508,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-13T12:00:00Z",
+      "max_abs_p2": 0.7246988365590351,
+      "p2_index": 0.7246988365590351,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-14T00:00:00Z",
+      "max_abs_p2": 0.0655505920261669,
+      "p2_index": -0.0655505920261669,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-14T12:00:00Z",
+      "max_abs_p2": 4.759957134827533,
+      "p2_index": -4.759957134827533,
+      "topic_label": "Microsoft / Privilege Escalation / Patch Exploitation",
+      "dominant_topic": 8,
+      "topic_confidence": "high",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-15T00:00:00Z",
+      "max_abs_p2": 1.3138679911473352,
+      "p2_index": -1.3138679911473352,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-15T12:00:00Z",
+      "max_abs_p2": 0.8354470160735915,
+      "p2_index": -0.8354470160735915,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-16T00:00:00Z",
+      "max_abs_p2": 2.826228434870855,
+      "p2_index": 2.826228434870855,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-16T12:00:00Z",
+      "max_abs_p2": 2.1272529048176505,
+      "p2_index": -2.1272529048176505,
+      "topic_label": "Microsoft / Privilege Escalation / Patch Exploitation",
+      "dominant_topic": 8,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-17T00:00:00Z",
+      "max_abs_p2": 0.3388179351935501,
+      "p2_index": -0.3388179351935501,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-17T12:00:00Z",
+      "max_abs_p2": 2.044324111317584,
+      "p2_index": 2.044324111317584,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-18T00:00:00Z",
+      "max_abs_p2": 0.3843508984147052,
+      "p2_index": -0.3843508984147052,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-18T12:00:00Z",
+      "max_abs_p2": 0.2513338761625054,
+      "p2_index": -0.2513338761625054,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-19T00:00:00Z",
+      "max_abs_p2": 0.7809800885357178,
+      "p2_index": -0.7809800885357178,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-19T12:00:00Z",
+      "max_abs_p2": 0.4704091654642423,
+      "p2_index": -0.4704091654642423,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-20T00:00:00Z",
+      "max_abs_p2": 0.4733054731569733,
+      "p2_index": 0.4733054731569733,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-20T12:00:00Z",
+      "max_abs_p2": 4.112592766755187,
+      "p2_index": -4.112592766755187,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-21T00:00:00Z",
+      "max_abs_p2": 2.0351691683121924,
+      "p2_index": -2.0351691683121924,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-21T12:00:00Z",
+      "max_abs_p2": 13.465378992140268,
+      "p2_index": -13.465378992140268,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "elevated",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-22T00:00:00Z",
+      "max_abs_p2": 11.348766249707682,
+      "p2_index": -11.348766249707682,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "elevated",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-22T12:00:00Z",
+      "max_abs_p2": 4.064595541297018,
+      "p2_index": -4.064595541297018,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "dominant_topic": 2,
+      "topic_confidence": "medium",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-23T00:00:00Z",
+      "max_abs_p2": 1.0190005592297215,
+      "p2_index": 1.0190005592297215,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-23T12:00:00Z",
+      "max_abs_p2": 9.836814335732347,
+      "p2_index": 9.836814335732347,
+      "topic_label": "Security Risk / Exposure Management",
+      "dominant_topic": 6,
+      "topic_confidence": "medium",
+      "severity": "elevated",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-24T00:00:00Z",
+      "max_abs_p2": 6.730412737412928,
+      "p2_index": -6.730412737412928,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-24T12:00:00Z",
+      "max_abs_p2": 2.5270984121531685,
+      "p2_index": 2.5270984121531685,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-25T00:00:00Z",
+      "max_abs_p2": 2.23433189527605,
+      "p2_index": 2.23433189527605,
+      "topic_label": "Access Control / Process & API Abuse",
+      "dominant_topic": 4,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-25T12:00:00Z",
+      "max_abs_p2": 1.6955878334805088,
+      "p2_index": -1.6955878334805088,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-26T00:00:00Z",
+      "max_abs_p2": 0.1664412308810832,
+      "p2_index": 0.1664412308810832,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-26T12:00:00Z",
+      "max_abs_p2": 0.9800228422485912,
+      "p2_index": 0.9800228422485912,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-27T00:00:00Z",
+      "max_abs_p2": 2.500390585035946,
+      "p2_index": -2.500390585035946,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "dominant_topic": 9,
+      "topic_confidence": "high",
+      "severity": "low",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-27T12:00:00Z",
+      "max_abs_p2": 4.713349055511326,
+      "p2_index": -4.713349055511326,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-28T00:00:00Z",
+      "max_abs_p2": 4.09998939365174,
+      "p2_index": -4.09998939365174,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "dominant_topic": 5,
+      "topic_confidence": "high",
+      "severity": "watch",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-28T12:00:00Z",
+      "max_abs_p2": 16.82615208132425,
+      "p2_index": -16.82615208132425,
+      "topic_label": "Network Attacks / Device Access",
+      "dominant_topic": 0,
+      "topic_confidence": "medium",
+      "severity": "high",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-29T00:00:00Z",
+      "max_abs_p2": 44.272779639949874,
+      "p2_index": 44.272779639949874,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "critical",
+      "direction": "positive"
+    },
+    {
+      "time_window": "2026-04-29T12:00:00Z",
+      "max_abs_p2": 18.72505305485304,
+      "p2_index": -18.72505305485304,
+      "topic_label": "Command Execution / Payload Delivery",
+      "dominant_topic": 1,
+      "topic_confidence": "high",
+      "severity": "high",
+      "direction": "negative"
+    },
+    {
+      "time_window": "2026-04-30T00:00:00Z",
+      "max_abs_p2": 42.809194072217565,
+      "p2_index": -42.809194072217565,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "dominant_topic": 7,
+      "topic_confidence": "low",
+      "severity": "critical",
+      "direction": "negative"
+    }
+  ],
+  "top_alerts": [
+    {
+      "alert_id": "LIVE-0001",
+      "time_window": "2026-04-29T00:00:00Z",
+      "dominant_topic": 7,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "topic_confidence": "low",
+      "p2_index": 44.272779639949874,
+      "p2_abs": 44.272779639949874,
+      "direction": "positive",
+      "severity": "critical",
+      "cybercon_level": 1,
+      "topic_volume": 17,
+      "topic_sentiment_sum": 5.4273,
+      "topic_sentiment_mean": 0.3192529411764706,
+      "source_counts": {
+        "reddit_rss": 15,
+        "news_rss": 1,
+        "news_api": 1
+      },
+      "sentiment_counts": {
+        "negative": 4,
+        "neutral": 2,
+        "positive": 11
+      },
+      "warning": "Low-confidence topic. Interpret this alert with caution."
+    },
+    {
+      "alert_id": "LIVE-0002",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 7,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "topic_confidence": "low",
+      "p2_index": -42.809194072217565,
+      "p2_abs": 42.809194072217565,
+      "direction": "negative",
+      "severity": "critical",
+      "cybercon_level": 1,
+      "topic_volume": 30,
+      "topic_sentiment_sum": -2.9738,
+      "topic_sentiment_mean": -0.0991266666666666,
+      "source_counts": {
+        "reddit_rss": 11,
+        "news_rss": 1,
+        "news_api": 18
+      },
+      "sentiment_counts": {
+        "negative": 13,
+        "neutral": 10,
+        "positive": 7
+      },
+      "warning": "Low-confidence topic. Interpret this alert with caution."
+    },
+    {
+      "alert_id": "LIVE-0003",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 2,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "topic_confidence": "medium",
+      "p2_index": 37.58042360951975,
+      "p2_abs": 37.58042360951975,
+      "direction": "positive",
+      "severity": "critical",
+      "cybercon_level": 1,
+      "topic_volume": 21,
+      "topic_sentiment_sum": 1.6078,
+      "topic_sentiment_mean": 0.0765619047619047,
+      "source_counts": {
+        "reddit_rss": 7,
+        "news_rss": 0,
+        "news_api": 14
+      },
+      "sentiment_counts": {
+        "negative": 8,
+        "neutral": 5,
+        "positive": 8
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0004",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 6,
+      "topic_label": "Security Risk / Exposure Management",
+      "topic_confidence": "medium",
+      "p2_index": 23.747733599980545,
+      "p2_abs": 23.747733599980545,
+      "direction": "positive",
+      "severity": "high",
+      "cybercon_level": 2,
+      "topic_volume": 14,
+      "topic_sentiment_sum": 2.3245,
+      "topic_sentiment_mean": 0.1660357142857143,
+      "source_counts": {
+        "reddit_rss": 7,
+        "news_rss": 0,
+        "news_api": 7
+      },
+      "sentiment_counts": {
+        "negative": 4,
+        "neutral": 4,
+        "positive": 6
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0005",
+      "time_window": "2026-04-29T12:00:00Z",
+      "dominant_topic": 1,
+      "topic_label": "Command Execution / Payload Delivery",
+      "topic_confidence": "high",
+      "p2_index": -18.72505305485304,
+      "p2_abs": 18.72505305485304,
+      "direction": "negative",
+      "severity": "high",
+      "cybercon_level": 2,
+      "topic_volume": 11,
+      "topic_sentiment_sum": -2.0048000000000004,
+      "topic_sentiment_mean": -0.1822545454545454,
+      "source_counts": {
+        "reddit_rss": 6,
+        "news_rss": 1,
+        "news_api": 4
+      },
+      "sentiment_counts": {
+        "negative": 5,
+        "neutral": 4,
+        "positive": 2
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0006",
+      "time_window": "2026-04-29T00:00:00Z",
+      "dominant_topic": 0,
+      "topic_label": "Network Attacks / Device Access",
+      "topic_confidence": "medium",
+      "p2_index": 17.389565953815282,
+      "p2_abs": 17.389565953815282,
+      "direction": "positive",
+      "severity": "high",
+      "cybercon_level": 2,
+      "topic_volume": 9,
+      "topic_sentiment_sum": 2.9997,
+      "topic_sentiment_mean": 0.3333,
+      "source_counts": {
+        "reddit_rss": 6,
+        "news_rss": 1,
+        "news_api": 2
+      },
+      "sentiment_counts": {
+        "negative": 1,
+        "neutral": 3,
+        "positive": 5
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0007",
+      "time_window": "2026-04-28T12:00:00Z",
+      "dominant_topic": 0,
+      "topic_label": "Network Attacks / Device Access",
+      "topic_confidence": "medium",
+      "p2_index": -16.82615208132425,
+      "p2_abs": 16.82615208132425,
+      "direction": "negative",
+      "severity": "high",
+      "cybercon_level": 2,
+      "topic_volume": 14,
+      "topic_sentiment_sum": -1.8659000000000003,
+      "topic_sentiment_mean": -0.1332785714285714,
+      "source_counts": {
+        "reddit_rss": 10,
+        "news_rss": 3,
+        "news_api": 1
+      },
+      "sentiment_counts": {
+        "negative": 9,
+        "neutral": 0,
+        "positive": 5
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0008",
+      "time_window": "2026-04-29T12:00:00Z",
+      "dominant_topic": 9,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "topic_confidence": "high",
+      "p2_index": -16.275632527625127,
+      "p2_abs": 16.275632527625127,
+      "direction": "negative",
+      "severity": "high",
+      "cybercon_level": 2,
+      "topic_volume": 9,
+      "topic_sentiment_sum": -1.0962999999999998,
+      "topic_sentiment_mean": -0.121811111111111,
+      "source_counts": {
+        "reddit_rss": 3,
+        "news_rss": 0,
+        "news_api": 6
+      },
+      "sentiment_counts": {
+        "negative": 3,
+        "neutral": 4,
+        "positive": 2
+      },
+      "warning": null
+    }
+  ],
+  "top_topics": [
+    {
+      "topic_id": 7,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "topic_confidence": "low",
+      "docs_assigned": 151,
+      "max_abs_p2": 44.272779639949874,
+      "max_negative_p2": -42.809194072217565,
+      "max_positive_p2": 44.272779639949874,
+      "avg_sentiment": -0.03150529801324503,
+      "top_words": [
+        "job",
+        "version",
+        "tool",
+        "year",
+        "exploit",
+        "cpanel",
+        "cybersecurity",
+        "list"
+      ],
+      "note": "Generic discussion topic. Useful for monitoring broad signals, but interpret alerts with caution."
+    },
+    {
+      "topic_id": 2,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "topic_confidence": "medium",
+      "docs_assigned": 136,
+      "max_abs_p2": 37.58042360951975,
+      "max_negative_p2": -14.928523259239856,
+      "max_positive_p2": 37.58042360951975,
+      "avg_sentiment": -0.03331764705882352,
+      "top_words": [
+        "phone",
+        "crime",
+        "fraud",
+        "use",
+        "reward",
+        "law",
+        "year",
+        "federal"
+      ],
+      "note": "Included in the live P2 dashboard."
+    },
+    {
+      "topic_id": 6,
+      "topic_label": "Security Risk / Exposure Management",
+      "topic_confidence": "medium",
+      "docs_assigned": 100,
+      "max_abs_p2": 23.747733599980545,
+      "max_negative_p2": -2.624415361797316,
+      "max_positive_p2": 23.747733599980545,
+      "avg_sentiment": 0.212732,
+      "top_words": [
+        "security",
+        "team",
+        "data",
+        "risk",
+        "vulnerability",
+        "exposure",
+        "environment",
+        "remediation"
+      ],
+      "note": "Included in the live P2 dashboard."
+    },
+    {
+      "topic_id": 1,
+      "topic_label": "Command Execution / Payload Delivery",
+      "topic_confidence": "high",
+      "docs_assigned": 86,
+      "max_abs_p2": 18.72505305485304,
+      "max_negative_p2": -18.72505305485304,
+      "max_positive_p2": 2.779616814208033,
+      "avg_sentiment": -0.004390697674418602,
+      "top_words": [
+        "file",
+        "system",
+        "command",
+        "attacker",
+        "payload",
+        "window",
+        "code",
+        "figure"
+      ],
+      "note": "Included in the live P2 dashboard."
+    },
+    {
+      "topic_id": 0,
+      "topic_label": "Network Attacks / Device Access",
+      "topic_confidence": "medium",
+      "docs_assigned": 176,
+      "max_abs_p2": 17.389565953815282,
+      "max_negative_p2": -16.82615208132425,
+      "max_positive_p2": 17.389565953815282,
+      "avg_sentiment": -0.21614715909090912,
+      "top_words": [
+        "attack",
+        "attacker",
+        "device",
+        "system",
+        "said",
+        "network",
+        "user",
+        "data"
+      ],
+      "note": "Included in the live P2 dashboard."
+    },
+    {
+      "topic_id": 9,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "topic_confidence": "high",
+      "docs_assigned": 103,
+      "max_abs_p2": 16.275632527625127,
+      "max_negative_p2": -16.275632527625127,
+      "max_positive_p2": 13.0303043596612,
+      "avg_sentiment": -0.07485728155339805,
+      "top_words": [
+        "file",
+        "window",
+        "ransomware",
+        "platform",
+        "email",
+        "encryption",
+        "talos",
+        "figure"
+      ],
+      "note": "Included in the live P2 dashboard."
+    }
+  ],
+  "latest_alerts": [
+    {
+      "alert_id": "LIVE-0002",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 7,
+      "topic_label": "Cybersecurity Tools / Generic Discussion",
+      "topic_confidence": "low",
+      "p2_index": -42.809194072217565,
+      "p2_abs": 42.809194072217565,
+      "direction": "negative",
+      "severity": "critical",
+      "cybercon_level": 1,
+      "topic_volume": 30,
+      "topic_sentiment_sum": -2.9738,
+      "topic_sentiment_mean": -0.0991266666666666,
+      "source_counts": {
+        "reddit_rss": 11,
+        "news_rss": 1,
+        "news_api": 18
+      },
+      "sentiment_counts": {
+        "negative": 13,
+        "neutral": 10,
+        "positive": 7
+      },
+      "warning": "Low-confidence topic. Interpret this alert with caution."
+    },
+    {
+      "alert_id": "LIVE-0003",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 2,
+      "topic_label": "Cybercrime / Fraud / Law Enforcement",
+      "topic_confidence": "medium",
+      "p2_index": 37.58042360951975,
+      "p2_abs": 37.58042360951975,
+      "direction": "positive",
+      "severity": "critical",
+      "cybercon_level": 1,
+      "topic_volume": 21,
+      "topic_sentiment_sum": 1.6078,
+      "topic_sentiment_mean": 0.0765619047619047,
+      "source_counts": {
+        "reddit_rss": 7,
+        "news_rss": 0,
+        "news_api": 14
+      },
+      "sentiment_counts": {
+        "negative": 8,
+        "neutral": 5,
+        "positive": 8
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0004",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 6,
+      "topic_label": "Security Risk / Exposure Management",
+      "topic_confidence": "medium",
+      "p2_index": 23.747733599980545,
+      "p2_abs": 23.747733599980545,
+      "direction": "positive",
+      "severity": "high",
+      "cybercon_level": 2,
+      "topic_volume": 14,
+      "topic_sentiment_sum": 2.3245,
+      "topic_sentiment_mean": 0.1660357142857143,
+      "source_counts": {
+        "reddit_rss": 7,
+        "news_rss": 0,
+        "news_api": 7
+      },
+      "sentiment_counts": {
+        "negative": 4,
+        "neutral": 4,
+        "positive": 6
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0013",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 9,
+      "topic_label": "Ransomware / Malware / Email Campaigns",
+      "topic_confidence": "high",
+      "p2_index": 13.0303043596612,
+      "p2_abs": 13.0303043596612,
+      "direction": "positive",
+      "severity": "elevated",
+      "cybercon_level": 3,
+      "topic_volume": 9,
+      "topic_sentiment_sum": 0.8777,
+      "topic_sentiment_mean": 0.0975222222222222,
+      "source_counts": {
+        "reddit_rss": 5,
+        "news_rss": 0,
+        "news_api": 4
+      },
+      "sentiment_counts": {
+        "negative": 1,
+        "neutral": 3,
+        "positive": 5
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0016",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 4,
+      "topic_label": "Access Control / Process & API Abuse",
+      "topic_confidence": "medium",
+      "p2_index": -12.44552428120586,
+      "p2_abs": 12.44552428120586,
+      "direction": "negative",
+      "severity": "elevated",
+      "cybercon_level": 3,
+      "topic_volume": 11,
+      "topic_sentiment_sum": -1.2668,
+      "topic_sentiment_mean": -0.1151636363636363,
+      "source_counts": {
+        "reddit_rss": 3,
+        "news_rss": 0,
+        "news_api": 8
+      },
+      "sentiment_counts": {
+        "negative": 2,
+        "neutral": 8,
+        "positive": 1
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0018",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 0,
+      "topic_label": "Network Attacks / Device Access",
+      "topic_confidence": "medium",
+      "p2_index": -10.063317656441283,
+      "p2_abs": 10.063317656441283,
+      "direction": "negative",
+      "severity": "elevated",
+      "cybercon_level": 3,
+      "topic_volume": 11,
+      "topic_sentiment_sum": -1.4203,
+      "topic_sentiment_mean": -0.1291181818181818,
+      "source_counts": {
+        "reddit_rss": 4,
+        "news_rss": 0,
+        "news_api": 7
+      },
+      "sentiment_counts": {
+        "negative": 7,
+        "neutral": 2,
+        "positive": 2
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0020",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 8,
+      "topic_label": "Microsoft / Privilege Escalation / Patch Exploitation",
+      "topic_confidence": "high",
+      "p2_index": 9.5729648721052,
+      "p2_abs": 9.5729648721052,
+      "direction": "positive",
+      "severity": "elevated",
+      "cybercon_level": 3,
+      "topic_volume": 11,
+      "topic_sentiment_sum": 0.7989000000000002,
+      "topic_sentiment_mean": 0.0726272727272727,
+      "source_counts": {
+        "reddit_rss": 3,
+        "news_rss": 1,
+        "news_api": 7
+      },
+      "sentiment_counts": {
+        "negative": 4,
+        "neutral": 0,
+        "positive": 7
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0022",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 5,
+      "topic_label": "Exploit Tooling / Metasploit / RCE",
+      "topic_confidence": "high",
+      "p2_index": 9.015918815853585,
+      "p2_abs": 9.015918815853585,
+      "direction": "positive",
+      "severity": "elevated",
+      "cybercon_level": 3,
+      "topic_volume": 9,
+      "topic_sentiment_sum": 0.9628,
+      "topic_sentiment_mean": 0.1069777777777777,
+      "source_counts": {
+        "reddit_rss": 3,
+        "news_rss": 0,
+        "news_api": 6
+      },
+      "sentiment_counts": {
+        "negative": 1,
+        "neutral": 6,
+        "positive": 2
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0048",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 3,
+      "topic_label": "Memory Exploitation / Buffer & Heap Bugs",
+      "topic_confidence": "high",
+      "p2_index": -3.284780478843917,
+      "p2_abs": 3.284780478843917,
+      "direction": "negative",
+      "severity": "watch",
+      "cybercon_level": 4,
+      "topic_volume": 3,
+      "topic_sentiment_sum": -0.8583000000000001,
+      "topic_sentiment_mean": -0.2861,
+      "source_counts": {
+        "reddit_rss": 3,
+        "news_rss": 0,
+        "news_api": 0
+      },
+      "sentiment_counts": {
+        "negative": 2,
+        "neutral": 0,
+        "positive": 1
+      },
+      "warning": null
+    },
+    {
+      "alert_id": "LIVE-0147",
+      "time_window": "2026-04-30T00:00:00Z",
+      "dominant_topic": 1,
+      "topic_label": "Command Execution / Payload Delivery",
+      "topic_confidence": "high",
+      "p2_index": -0.8620921772560531,
+      "p2_abs": 0.8620921772560531,
+      "direction": "negative",
+      "severity": "low",
+      "cybercon_level": 5,
+      "topic_volume": 11,
+      "topic_sentiment_sum": -0.0923,
+      "topic_sentiment_mean": -0.008390909090909,
+      "source_counts": {
+        "reddit_rss": 8,
+        "news_rss": 1,
+        "news_api": 2
+      },
+      "sentiment_counts": {
+        "negative": 3,
+        "neutral": 5,
+        "positive": 3
+      },
+      "warning": null
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "generated_at_utc": "2026-04-30T15:18:42.400914Z",
+  "generated_at_local": "2026-04-30T17:18:42.400914+02:00",
+  "latest_collected_at": "2026-04-30T10:55:06Z",
+  "latest_document_created_at": "2026-04-30T10:52:33Z",
+  "earliest_document_created_at": "2025-12-16T09:00:00Z",
+  "pipeline_schedule": "00:00 and 12:00 UTC",
+  "pipeline_mode": "GitHub Actions scheduled live pipeline",
+  "data_scope": "social/news only",
+  "excluded_sources_note": "Technical-descriptive sources are not used in the main P2 pipeline.",
+  "source_types_included": [
+    "news_api",
+    "news_rss",
+    "reddit_rss"
+  ],
+  "total_documents": 1078,
+  "total_topics": 10,
+  "total_time_windows": 162,
+  "input_files": {
+    "p2": "data/live/processed/07_live_p2_index_12h.csv",
+    "temporal_aggregation": "data/live/processed/06_live_temporal_aggregation_12h.csv",
+    "sentiment": "data/live/processed/05_live_sentiment_dataset.csv",
+    "topics": "data/live/processed/04_live_lda_topics_dataset.csv",
+    "topic_words": "data/live/processed/04_live_lda_topic_words.csv"
+  },
+  "official_model": "models/live_lda_model/",
+  "official_topic_model": "LDA live, 10 topics"
+}

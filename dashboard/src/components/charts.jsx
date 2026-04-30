@@ -15,7 +15,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { formatDate, formatNumber } from "../utils/formatters.js";
+import { formatDate, formatNumber, formatP2 } from "../utils/formatters.js";
 
 const grid = "rgba(148, 163, 184, 0.13)";
 const tick = "#94A3B8";
@@ -86,6 +86,66 @@ export function MiniTimeline({ p2, onSelectAlert }) {
   );
 }
 
+export function P2TrendChart({ trend = [] }) {
+  const data = trend.map((row) => ({
+    ...row,
+    label: formatDate(row.time_window, true),
+    signed_abs: row.direction === "negative" ? -Math.abs(row.max_abs_p2) : Math.abs(row.max_abs_p2),
+  }));
+
+  return (
+    <ResponsiveContainer width="100%" height="100%">
+      <AreaChart data={data} margin={{ top: 8, right: 16, bottom: 0, left: 0 }}>
+        <defs>
+          <linearGradient id="p2TrendFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#22D3EE" stopOpacity={0.28} />
+            <stop offset="100%" stopColor="#22D3EE" stopOpacity={0.03} />
+          </linearGradient>
+        </defs>
+        <CartesianGrid stroke={grid} vertical={false} />
+        <XAxis
+          dataKey="label"
+          stroke={tick}
+          fontSize={11}
+          tickLine={false}
+          axisLine={false}
+          minTickGap={34}
+          interval="preserveStartEnd"
+        />
+        <YAxis stroke={tick} fontSize={11} tickLine={false} axisLine={false} width={42} />
+        <Tooltip content={<P2TrendTooltip />} />
+        <Area
+          type="monotone"
+          dataKey="signed_abs"
+          name="P2 trend"
+          stroke="#22D3EE"
+          fill="url(#p2TrendFill)"
+          strokeWidth={2}
+          dot={false}
+          activeDot={{ r: 4 }}
+        />
+      </AreaChart>
+    </ResponsiveContainer>
+  );
+}
+
+function P2TrendTooltip({ active, payload }) {
+  if (!active || !payload?.length) return null;
+  const row = payload[0].payload;
+  return (
+    <div className="rounded-lg border border-slate-700 bg-slate-950/95 p-3 text-sm shadow-xl">
+      <div className="font-mono text-xs text-slate-500">{formatDate(row.time_window)}</div>
+      <div className="mt-1 font-semibold text-slate-100">{row.topic_label}</div>
+      <div className="mt-2 grid gap-1 font-mono text-xs text-slate-300">
+        <span>P2 {formatP2(row.p2_index, 2)}</span>
+        <span>|P2| {formatNumber(row.max_abs_p2, 2)}</span>
+        <span>severity {row.severity}</span>
+        <span>confidence {row.topic_confidence}</span>
+      </div>
+    </div>
+  );
+}
+
 export function TopicLineChart({ rows, dataKey, color = "#22D3EE" }) {
   const data = rows.map((row) => ({ ...row, label: formatDate(row.time_window, true) }));
   return (
@@ -95,7 +155,7 @@ export function TopicLineChart({ rows, dataKey, color = "#22D3EE" }) {
         <XAxis dataKey="label" stroke={tick} fontSize={11} tickLine={false} axisLine={false} />
         <YAxis stroke={tick} fontSize={11} tickLine={false} axisLine={false} />
         <Tooltip contentStyle={{ background: "#0B1120", border: "1px solid #1F2937", borderRadius: 8 }} />
-        <Line type="monotone" dataKey={dataKey} stroke={color} strokeWidth={2} dot={{ r: 3 }} />
+        <Line type="monotone" dataKey={dataKey} stroke={color} strokeWidth={2} dot={false} activeDot={{ r: 4 }} />
       </LineChart>
     </ResponsiveContainer>
   );

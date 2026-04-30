@@ -1,16 +1,19 @@
 import { Clock, ExternalLink } from "lucide-react";
 import { formatDate, formatNumber, formatP2, qualityShortLabel } from "../utils/formatters.js";
-import { QualityBadge, SeverityBadge, SignalBadge } from "./ui.jsx";
+import { DirectionBadge, QualityBadge, SeverityBadge, SignalBadge } from "./ui.jsx";
 
 export function AlertCard({ alert, onInspect, compact = false }) {
   const quality = alert.topic_quality || alert.hot_quality;
+  const confidence = alert.topic_confidence || quality?.quality_score;
+  const direction = alert.p2_direction || alert.direction;
   return (
     <article className="rounded-lg border border-slate-800 bg-slate-950/45 p-4 transition hover:border-cyan-300/35">
       <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
         <div className="min-w-0">
           <div className="flex flex-wrap gap-2">
             <SeverityBadge p2Abs={alert.p2_abs} />
-            <QualityBadge score={quality?.quality_score} />
+            <DirectionBadge direction={direction} />
+            <QualityBadge score={confidence} />
           </div>
           <h3 className="mt-3 text-lg font-semibold text-slate-50">{alert.topic_label}</h3>
           <p className="mt-1 flex items-center gap-2 font-mono text-xs text-slate-500">
@@ -27,9 +30,15 @@ export function AlertCard({ alert, onInspect, compact = false }) {
       <div className="mt-4 grid gap-2 sm:grid-cols-2 xl:grid-cols-4">
         <MiniMetric label="Volume" value={formatNumber(alert.topic_volume)} />
         <MiniMetric label="Sentiment" value={formatP2(alert.topic_sentiment_sum, 2)} />
-        <MiniMetric label="Confidenza" value={qualityShortLabel(quality?.quality_score)} />
-        <MiniMetric label="Threat %" value={quality?.threat_pct === undefined ? "n/a" : `${formatNumber(quality.threat_pct, 1)}%`} />
+        <MiniMetric label="Confidenza" value={qualityShortLabel(confidence)} />
+        <MiniMetric label="Fonti" value={`R ${alert.source_counts?.reddit_rss ?? alert.reddit_count ?? 0} / N ${alert.source_counts?.news_rss ?? 0} / G ${alert.source_counts?.news_api ?? alert.news_api_count ?? 0}`} />
       </div>
+
+      {confidence === "low" ? (
+        <p className="mt-3 rounded border border-amber-300/30 bg-amber-500/10 p-3 text-sm leading-6 text-amber-100">
+          Topic low-confidence: il segnale e incluso, ma va interpretato con cautela.
+        </p>
+      ) : null}
 
       {!compact ? (
         <div className="mt-3 flex flex-wrap gap-2">

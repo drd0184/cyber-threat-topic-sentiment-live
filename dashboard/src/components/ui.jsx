@@ -24,7 +24,7 @@ export function SectionHeader({ eyebrow, title, description, icon: Icon, action 
 export function MetricCard({ label, value, icon: Icon, tone = "neutral" }) {
   const toneClass = tone === "negative" ? "text-red-200" : tone === "positive" ? "text-emerald-200" : "text-cyan-100";
   return (
-    <div className="rounded-lg border border-slate-800 bg-slate-950/45 p-4 shadow-sm">
+    <div className="min-h-[112px] rounded-lg border border-slate-800 bg-slate-950/45 p-4 shadow-sm">
       <div className="flex items-center justify-between gap-3">
         <span className="font-mono text-xs font-bold uppercase tracking-[0.14em] text-slate-500">{label}</span>
         {Icon ? <Icon className="h-4 w-4 text-cyan-300" /> : null}
