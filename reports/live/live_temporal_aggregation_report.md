@@ -4,12 +4,12 @@
 
 | Metric | Value |
 | --- | --- |
-| Input rows | 1078 |
-| Rows used | 1036 |
-| Rows discarded | 42 |
-| Number of time windows | 162 |
+| Input rows | 1491 |
+| Rows used | 1413 |
+| Rows discarded | 78 |
+| Number of time windows | 164 |
 | Min time_window | 2025-12-16T00:00:00+00:00 |
-| Max time_window | 2026-04-30T00:00:00+00:00 |
+| Max time_window | 2026-04-30T12:00:00+00:00 |
 | Number of topics present | 10 |
 | Encoding used | utf-8 |
 
@@ -32,46 +32,46 @@
 
 | time_window | dominant_topic | topic_label | topic_confidence | topic_volume | topic_sentiment_sum | topic_sentiment_mean | avg_topic_probability | total_window_volume | topic_volume_share |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-04-30T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 30 | -2.9738 | -0.0991 | 0.7368 | 130 | 0.2308 |
-| 2026-04-30T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 21 | 1.6078 | 0.0766 | 0.6771 | 130 | 0.1615 |
-| 2026-04-29T12:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 17 | -1.8931 | -0.1114 | 0.8099 | 80 | 0.2125 |
-| 2026-04-29T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 17 | 5.4273 | 0.3193 | 0.7180 | 58 | 0.2931 |
-| 2026-04-30T00:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 14 | 2.3245 | 0.1660 | 0.5590 | 130 | 0.1077 |
-| 2026-04-28T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 14 | -1.8659 | -0.1333 | 0.6739 | 62 | 0.2258 |
-| 2026-04-30T00:00:00+00:00 | 8 | Microsoft / Privilege Escalation / Patch Exploitation | high | 11 | 0.7989 | 0.0726 | 0.6438 | 130 | 0.0846 |
-| 2026-04-30T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 11 | -1.4203 | -0.1291 | 0.7437 | 130 | 0.0846 |
-| 2026-04-30T00:00:00+00:00 | 1 | Command Execution / Payload Delivery | high | 11 | -0.0923 | -0.0084 | 0.6177 | 130 | 0.0846 |
-| 2026-04-29T12:00:00+00:00 | 1 | Command Execution / Payload Delivery | high | 11 | -2.0048 | -0.1823 | 0.5702 | 80 | 0.1375 |
+| 2026-04-30T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 37 | -1.7577 | -0.0475 | 0.7089 | 196 | 0.1888 |
+| 2026-04-30T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 29 | -1.1010 | -0.0380 | 0.6861 | 196 | 0.1480 |
+| 2026-04-30T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 26 | -3.0703 | -0.1181 | 0.6640 | 196 | 0.1327 |
+| 2026-04-30T00:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 26 | 3.4465 | 0.1326 | 0.5952 | 196 | 0.1327 |
+| 2026-04-29T12:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 23 | -2.5968 | -0.1129 | 0.7512 | 122 | 0.1885 |
+| 2026-04-29T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 22 | -2.6086 | -0.1186 | 0.6923 | 122 | 0.1803 |
+| 2026-04-28T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 21 | -2.9166 | -0.1389 | 0.7056 | 89 | 0.2360 |
+| 2026-04-29T12:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 19 | -0.9745 | -0.0513 | 0.6793 | 122 | 0.1557 |
+| 2026-04-29T00:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 19 | 0.3710 | 0.0195 | 0.6898 | 92 | 0.2065 |
+| 2026-04-30T12:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 18 | 0.6451 | 0.0358 | 0.6329 | 69 | 0.2609 |
 
 ## Top 10 Time Window / Topic by Strongest Negative Sentiment Sum
 
 | time_window | dominant_topic | topic_label | topic_confidence | topic_volume | topic_sentiment_sum | topic_sentiment_mean | avg_topic_probability | total_window_volume | topic_volume_share |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-04-21T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 5 | -4.1810 | -0.8362 | 0.7383 | 18 | 0.2778 |
-| 2026-04-30T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 30 | -2.9738 | -0.0991 | 0.7368 | 130 | 0.2308 |
-| 2026-04-29T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 6 | -2.2354 | -0.3726 | 0.8030 | 58 | 0.1034 |
-| 2026-04-22T00:00:00+00:00 | 4 | Access Control / Process & API Abuse | medium | 6 | -2.1178 | -0.3530 | 0.7931 | 14 | 0.4286 |
+| 2026-04-21T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 6 | -4.5210 | -0.7535 | 0.7259 | 20 | 0.3000 |
+| 2026-04-30T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 26 | -3.0703 | -0.1181 | 0.6640 | 196 | 0.1327 |
+| 2026-04-28T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 21 | -2.9166 | -0.1389 | 0.7056 | 89 | 0.2360 |
+| 2026-04-29T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 22 | -2.6086 | -0.1186 | 0.6923 | 122 | 0.1803 |
+| 2026-04-29T12:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 23 | -2.5968 | -0.1129 | 0.7512 | 122 | 0.1885 |
+| 2026-04-22T00:00:00+00:00 | 4 | Access Control / Process & API Abuse | medium | 9 | -2.5945 | -0.2883 | 0.8049 | 17 | 0.5294 |
+| 2026-04-23T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 7 | -2.2713 | -0.3245 | 0.6878 | 31 | 0.2258 |
 | 2026-02-11T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 3 | -2.0961 | -0.6987 | 0.9441 | 10 | 0.3000 |
-| 2026-04-29T12:00:00+00:00 | 1 | Command Execution / Payload Delivery | high | 11 | -2.0048 | -0.1823 | 0.5702 | 80 | 0.1375 |
-| 2026-04-03T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 5 | -1.9933 | -0.3987 | 0.6739 | 8 | 0.6250 |
-| 2026-04-29T12:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 17 | -1.8931 | -0.1114 | 0.8099 | 80 | 0.2125 |
-| 2026-04-21T12:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 3 | -1.8885 | -0.6295 | 0.5576 | 18 | 0.1667 |
-| 2026-04-23T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 6 | -1.8694 | -0.3116 | 0.7019 | 26 | 0.2308 |
+| 2026-04-08T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 7 | -2.0801 | -0.2972 | 0.7761 | 9 | 0.7778 |
+| 2026-04-29T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 13 | -2.0573 | -0.1583 | 0.7261 | 92 | 0.1413 |
 
 ## Total Distribution by Topic Label
 
 | dominant_topic | topic_label | topic_confidence | topic_volume | percent_used_rows |
 | --- | --- | --- | --- | --- |
-| 0 | Network Attacks / Device Access | medium | 176 | 16.99% |
-| 7 | Cybersecurity Tools / Generic Discussion | low | 151 | 14.58% |
-| 2 | Cybercrime / Fraud / Law Enforcement | medium | 136 | 13.13% |
-| 9 | Ransomware / Malware / Email Campaigns | high | 103 | 9.94% |
-| 6 | Security Risk / Exposure Management | medium | 100 | 9.65% |
-| 5 | Exploit Tooling / Metasploit / RCE | high | 99 | 9.56% |
-| 4 | Access Control / Process & API Abuse | medium | 88 | 8.49% |
-| 1 | Command Execution / Payload Delivery | high | 86 | 8.30% |
-| 8 | Microsoft / Privilege Escalation / Patch Exploitation | high | 69 | 6.66% |
-| 3 | Memory Exploitation / Buffer & Heap Bugs | high | 28 | 2.70% |
+| 0 | Network Attacks / Device Access | medium | 261 | 18.47% |
+| 7 | Cybersecurity Tools / Generic Discussion | low | 203 | 14.37% |
+| 6 | Security Risk / Exposure Management | medium | 190 | 13.45% |
+| 2 | Cybercrime / Fraud / Law Enforcement | medium | 185 | 13.09% |
+| 9 | Ransomware / Malware / Email Campaigns | high | 124 | 8.78% |
+| 4 | Access Control / Process & API Abuse | medium | 113 | 8.00% |
+| 1 | Command Execution / Payload Delivery | high | 111 | 7.86% |
+| 5 | Exploit Tooling / Metasploit / RCE | high | 108 | 7.64% |
+| 8 | Microsoft / Privilege Escalation / Patch Exploitation | high | 80 | 5.66% |
+| 3 | Memory Exploitation / Buffer & Heap Bugs | high | 38 | 2.69% |
 
 ## Methodological Note
 

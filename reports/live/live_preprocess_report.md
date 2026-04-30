@@ -6,42 +6,42 @@ Preprocessing report for `data/live/processed/02_live_filtered_dataset.csv`. `te
 
 | Metric | Value |
 | --- | --- |
-| Initial rows | 1186 |
-| Rows removed because text_clean is empty | 108 |
-| Final rows | 1078 |
-| Mean text_clean length in tokens | 76.24 |
+| Initial rows | 1632 |
+| Rows removed because text_clean is empty | 141 |
+| Final rows | 1491 |
+| Mean text_clean length in tokens | 58.27 |
 
 ## Source Type Distribution Before
 
 | source_type | rows | percent_dataset |
 | --- | --- | --- |
-| news_api | 686 | 57.84% |
-| reddit_rss | 348 | 29.34% |
-| news_rss | 152 | 12.82% |
+| news_api | 1102 | 67.52% |
+| reddit_rss | 374 | 22.92% |
+| news_rss | 156 | 9.56% |
 
 ## Source Type Distribution After
 
 | source_type | rows | percent_dataset |
 | --- | --- | --- |
-| news_api | 578 | 53.62% |
-| reddit_rss | 348 | 32.28% |
-| news_rss | 152 | 14.10% |
+| news_api | 961 | 64.45% |
+| reddit_rss | 374 | 25.08% |
+| news_rss | 156 | 10.46% |
 
 ## Analysis Role Distribution Before
 
 | analysis_role | rows | percent_dataset |
 | --- | --- | --- |
-| p2_primary_source | 1186 | 100.00% |
+| p2_primary_source | 1632 | 100.00% |
 
 ## Analysis Role Distribution After
 
 | analysis_role | rows | percent_dataset |
 | --- | --- | --- |
-| p2_primary_source | 1078 | 100.00% |
+| p2_primary_source | 1491 | 100.00% |
 
 ## Top 30 Tokens After Preprocessing
 
-vulnerability (694), cve (516), security (508), window (487), data (416), system (394), exploitation (389), access (340), attack (338), process (316), file (305), likely (303), user (279), code (277), time (262), attacker (254), exploit (254), privilege (251), less (250), device (245), use (237), service (235), team (230), using (214), threat (213), used (207), elevation (204), payload (203), microsoft (202), pointer (196)
+vulnerability (703), security (543), cve (520), window (496), data (451), system (402), exploitation (397), attack (361), access (353), process (317), file (312), likely (304), user (293), code (288), time (276), exploit (259), attacker (257), less (253), privilege (252), use (248), device (248), service (243), team (235), threat (225), using (223), used (211), microsoft (210), tool (205), elevation (204), payload (203)
 
 ## Methodological Note
 
