@@ -6,36 +6,36 @@ Diagnostic filtering report for `data/live/processed/01_live_social_news_dataset
 
 | Metric | Value |
 | --- | --- |
-| Initial rows | 1976 |
-| Rows removed: text_length < 30 | 59 |
+| Initial rows | 2181 |
+| Rows removed: text_length < 30 | 62 |
 | Rows removed: url_ratio > 0.20 | 22 |
-| Final rows | 1895 |
-| Percent kept | 95.90% |
+| Final rows | 2097 |
+| Percent kept | 96.15% |
 
 ## Source Type Distribution Before
 
 | source_type | rows | percent_dataset |
 | --- | --- | --- |
-| news_api | 1343 | 67.97% |
-| reddit_rss | 459 | 23.23% |
-| news_rss | 174 | 8.81% |
+| news_api | 1489 | 68.27% |
+| reddit_rss | 511 | 23.43% |
+| news_rss | 181 | 8.30% |
 
 ## Source Type Distribution After
 
 | source_type | rows | percent_dataset |
 | --- | --- | --- |
-| news_api | 1284 | 67.76% |
-| reddit_rss | 444 | 23.43% |
-| news_rss | 167 | 8.81% |
+| news_api | 1427 | 68.05% |
+| reddit_rss | 496 | 23.65% |
+| news_rss | 174 | 8.30% |
 
 ## Analysis Role Distribution Before
 
 | analysis_role | rows | percent_dataset |
 | --- | --- | --- |
-| p2_primary_source | 1976 | 100.00% |
+| p2_primary_source | 2181 | 100.00% |
 
 ## Analysis Role Distribution After
 
 | analysis_role | rows | percent_dataset |
 | --- | --- | --- |
-| p2_primary_source | 1895 | 100.00% |
+| p2_primary_source | 2097 | 100.00% |
