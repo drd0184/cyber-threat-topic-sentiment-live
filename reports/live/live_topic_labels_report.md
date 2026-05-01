@@ -6,31 +6,31 @@ Official manual labels and confidence levels applied to the live 10-topic LDA da
 
 | Metric | Value |
 | --- | --- |
-| Rows | 1078 |
+| Rows | 1723 |
 | Encoding used | utf-8 |
-| Output dataset | C:\Users\PC Gaming\Desktop\cyber-threat-topic-sentiment-live\data\live\processed\04_live_lda_topics_dataset.csv |
+| Output dataset | /home/runner/work/cyber-threat-topic-sentiment-live/cyber-threat-topic-sentiment-live/data/live/processed/04_live_lda_topics_dataset.csv |
 
 ## Topic Label Distribution
 
 | topic_label | rows | percent_dataset |
 | --- | --- | --- |
-| Network Attacks / Device Access | 176 | 16.33% |
-| Cybersecurity Tools / Generic Discussion | 151 | 14.01% |
-| Cybercrime / Fraud / Law Enforcement | 136 | 12.62% |
-| Ransomware / Malware / Email Campaigns | 103 | 9.55% |
-| Security Risk / Exposure Management | 100 | 9.28% |
-| Exploit Tooling / Metasploit / RCE | 99 | 9.18% |
-| Access Control / Process & API Abuse | 88 | 8.16% |
-| Command Execution / Payload Delivery | 86 | 7.98% |
-| Microsoft / Privilege Escalation / Patch Exploitation | 69 | 6.40% |
-| Unassigned / Empty BoW | 42 | 3.90% |
-| Memory Exploitation / Buffer & Heap Bugs | 28 | 2.60% |
+| Network Attacks / Device Access | 324 | 18.80% |
+| Cybersecurity Tools / Generic Discussion | 225 | 13.06% |
+| Cybercrime / Fraud / Law Enforcement | 225 | 13.06% |
+| Security Risk / Exposure Management | 225 | 13.06% |
+| Ransomware / Malware / Email Campaigns | 139 | 8.07% |
+| Command Execution / Payload Delivery | 124 | 7.20% |
+| Access Control / Process & API Abuse | 123 | 7.14% |
+| Exploit Tooling / Metasploit / RCE | 114 | 6.62% |
+| Unassigned / Empty BoW | 93 | 5.40% |
+| Microsoft / Privilege Escalation / Patch Exploitation | 86 | 4.99% |
+| Memory Exploitation / Buffer & Heap Bugs | 45 | 2.61% |
 
 ## Topic Confidence Distribution
 
 | topic_confidence | rows | percent_dataset |
 | --- | --- | --- |
-| medium | 500 | 46.38% |
-| high | 385 | 35.71% |
-| low | 151 | 14.01% |
-| none | 42 | 3.90% |
+| medium | 897 | 52.06% |
+| high | 508 | 29.48% |
+| low | 225 | 13.06% |
+| none | 93 | 5.40% |

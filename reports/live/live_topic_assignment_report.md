@@ -4,38 +4,38 @@
 
 | Metric | Value |
 | --- | --- |
-| Input rows | 1078 |
-| Assigned rows | 1036 |
-| Empty BOW rows | 42 |
-| Mean dominant_topic_probability | 0.7051 |
+| Input rows | 1723 |
+| Assigned rows | 1630 |
+| Empty BOW rows | 93 |
+| Mean dominant_topic_probability | 0.6607 |
 | Min dominant_topic_probability | 0.0000 |
 | Max dominant_topic_probability | 0.9999 |
 | Encoding used | utf-8 |
-| Model | C:\Users\PC Gaming\Desktop\cyber-threat-topic-sentiment-live\models\live_lda_model\lda_model.gensim |
-| Dictionary | C:\Users\PC Gaming\Desktop\cyber-threat-topic-sentiment-live\models\live_lda_model\dictionary.gensim |
+| Model | /home/runner/work/cyber-threat-topic-sentiment-live/cyber-threat-topic-sentiment-live/models/live_lda_model/lda_model.gensim |
+| Dictionary | /home/runner/work/cyber-threat-topic-sentiment-live/cyber-threat-topic-sentiment-live/models/live_lda_model/dictionary.gensim |
 
 ## Topic Assignment Status
 
 | topic_assignment_status | rows | percent_dataset |
 | --- | --- | --- |
-| assigned | 1036 | 96.10% |
-| empty_bow | 42 | 3.90% |
+| assigned | 1630 | 94.60% |
+| empty_bow | 93 | 5.40% |
 
 ## Dominant Topic Distribution
 
 | dominant_topic | rows | percent_dataset |
 | --- | --- | --- |
-| 0 | 176 | 16.33% |
-| 7 | 151 | 14.01% |
-| 2 | 136 | 12.62% |
-| 9 | 103 | 9.55% |
-| 6 | 100 | 9.28% |
-| 5 | 99 | 9.18% |
-| 4 | 88 | 8.16% |
-| 1 | 86 | 7.98% |
-| 8 | 69 | 6.40% |
-| -1 | 42 | 3.90% |
-| 3 | 28 | 2.60% |
+| 0 | 324 | 18.80% |
+| 7 | 225 | 13.06% |
+| 2 | 225 | 13.06% |
+| 6 | 225 | 13.06% |
+| 9 | 139 | 8.07% |
+| 1 | 124 | 7.20% |
+| 4 | 123 | 7.14% |
+| 5 | 114 | 6.62% |
+| -1 | 93 | 5.40% |
+| 8 | 86 | 4.99% |
+| 3 | 45 | 2.61% |
 
 ## Methodological Note
 
