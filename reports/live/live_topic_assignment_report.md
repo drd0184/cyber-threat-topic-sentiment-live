@@ -4,10 +4,10 @@
 
 | Metric | Value |
 | --- | --- |
-| Input rows | 1491 |
-| Assigned rows | 1413 |
-| Empty BOW rows | 78 |
-| Mean dominant_topic_probability | 0.6771 |
+| Input rows | 1723 |
+| Assigned rows | 1630 |
+| Empty BOW rows | 93 |
+| Mean dominant_topic_probability | 0.6607 |
 | Min dominant_topic_probability | 0.0000 |
 | Max dominant_topic_probability | 0.9999 |
 | Encoding used | utf-8 |
@@ -18,24 +18,24 @@
 
 | topic_assignment_status | rows | percent_dataset |
 | --- | --- | --- |
-| assigned | 1413 | 94.77% |
-| empty_bow | 78 | 5.23% |
+| assigned | 1630 | 94.60% |
+| empty_bow | 93 | 5.40% |
 
 ## Dominant Topic Distribution
 
 | dominant_topic | rows | percent_dataset |
 | --- | --- | --- |
-| 0 | 261 | 17.51% |
-| 7 | 203 | 13.62% |
-| 6 | 190 | 12.74% |
-| 2 | 185 | 12.41% |
-| 9 | 124 | 8.32% |
-| 4 | 113 | 7.58% |
-| 1 | 111 | 7.44% |
-| 5 | 108 | 7.24% |
-| 8 | 80 | 5.37% |
-| -1 | 78 | 5.23% |
-| 3 | 38 | 2.55% |
+| 0 | 324 | 18.80% |
+| 7 | 225 | 13.06% |
+| 2 | 225 | 13.06% |
+| 6 | 225 | 13.06% |
+| 9 | 139 | 8.07% |
+| 1 | 124 | 7.20% |
+| 4 | 123 | 7.14% |
+| 5 | 114 | 6.62% |
+| -1 | 93 | 5.40% |
+| 8 | 86 | 4.99% |
+| 3 | 45 | 2.61% |
 
 ## Methodological Note
 
