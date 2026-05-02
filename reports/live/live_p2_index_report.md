@@ -4,88 +4,88 @@
 
 | Metric | Value |
 | --- | --- |
-| Input rows | 560 |
-| Output rows | 560 |
+| Input rows | 568 |
+| Output rows | 568 |
 | Number of topics | 10 |
-| Number of time windows | 167 |
+| Number of time windows | 168 |
 | Min time_window | 2025-12-16T00:00:00+00:00 |
-| Max time_window | 2026-05-02T00:00:00+00:00 |
+| Max time_window | 2026-05-02T12:00:00+00:00 |
 | Encoding used | utf-8 |
 
 ## Strongest Negative Hot Topic
 
 | time_window | dominant_topic | topic_label | topic_confidence | topic_volume | topic_sentiment_sum | p2_index | p2_abs | severity | cybercon_level |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-05-01T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 41 | -10.0444 | -102.2086 | 102.2086 | critical | 1 |
+| 2026-05-01T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 41 | -10.0444 | -97.5997 | 97.5997 | critical | 1 |
 
 ## Strongest Positive Hot Topic
 
 | time_window | dominant_topic | topic_label | topic_confidence | topic_volume | topic_sentiment_sum | p2_index | p2_abs | severity | cybercon_level |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-05-01T12:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 40 | 8.9035 | 76.0523 | 76.0523 | critical | 1 |
+| 2026-05-01T12:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 39 | 8.6772 | 71.0946 | 71.0946 | critical | 1 |
 
 ## Top 10 Negative Hot Topics by P2 Index
 
 | time_window | dominant_topic | topic_label | topic_confidence | topic_volume | topic_sentiment_sum | volume_factor | sentiment_factor | p2_index | p2_abs | severity | cybercon_level |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-05-01T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 41 | -10.0444 | 9.1000 | -11.2317 | -102.2086 | 102.2086 | critical | 1 |
-| 2026-05-01T12:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 28 | -3.2120 | 7.5345 | -5.5352 | -41.7056 | 41.7056 | critical | 1 |
-| 2026-05-01T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 33 | -2.1253 | 8.8800 | -3.6625 | -32.5233 | 32.5233 | critical | 1 |
-| 2026-05-01T12:00:00+00:00 | 9 | Ransomware / Malware / Email Campaigns | high | 14 | -2.8420 | 5.1534 | -6.2199 | -32.0533 | 32.0533 | critical | 1 |
-| 2026-04-30T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 56 | -2.2233 | 12.4293 | -2.4861 | -30.9005 | 30.9005 | critical | 1 |
-| 2026-05-01T00:00:00+00:00 | 9 | Ransomware / Malware / Email Campaigns | high | 13 | -2.5181 | 4.7853 | -5.5110 | -26.3716 | 26.3716 | high | 2 |
-| 2026-04-30T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 26 | -3.0703 | 5.7707 | -3.4332 | -19.8123 | 19.8123 | high | 2 |
-| 2026-04-29T12:00:00+00:00 | 9 | Ransomware / Malware / Email Campaigns | high | 12 | -1.9612 | 4.4172 | -4.2922 | -18.9593 | 18.9593 | high | 2 |
-| 2026-04-30T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 38 | -1.7577 | 8.0282 | -2.2966 | -18.4373 | 18.4373 | high | 2 |
-| 2026-04-29T12:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 22 | -2.5968 | 4.6479 | -3.3929 | -15.7699 | 15.7699 | high | 2 |
+| 2026-05-01T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 41 | -10.0444 | 8.4764 | -11.5143 | -97.5997 | 97.5997 | critical | 1 |
+| 2026-05-02T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 32 | -3.7373 | 7.9734 | -6.2437 | -49.7838 | 49.7838 | critical | 1 |
+| 2026-05-01T12:00:00+00:00 | 9 | Ransomware / Malware / Email Campaigns | high | 18 | -3.1602 | 6.0674 | -6.6581 | -40.3972 | 40.3972 | critical | 1 |
+| 2026-05-01T12:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 29 | -3.0089 | 7.2259 | -5.0268 | -36.3234 | 36.3234 | critical | 1 |
+| 2026-05-01T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 33 | -2.1253 | 8.2226 | -3.5506 | -29.1954 | 29.1954 | high | 2 |
+| 2026-05-01T00:00:00+00:00 | 9 | Ransomware / Malware / Email Campaigns | high | 13 | -2.5181 | 4.3820 | -5.3052 | -23.2477 | 23.2477 | high | 2 |
+| 2026-04-30T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 57 | -1.4110 | 11.7843 | -1.6175 | -19.0609 | 19.0609 | high | 2 |
+| 2026-04-29T12:00:00+00:00 | 9 | Ransomware / Malware / Email Campaigns | high | 12 | -1.9612 | 4.0449 | -4.1319 | -16.7135 | 16.7135 | high | 2 |
+| 2026-04-30T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 38 | -1.7577 | 7.5260 | -2.1645 | -16.2902 | 16.2902 | high | 2 |
+| 2026-04-30T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 27 | -2.3273 | 5.5820 | -2.6679 | -14.8921 | 14.8921 | elevated | 3 |
 
 ## Top 10 Positive Hot Topics by P2 Index
 
 | time_window | dominant_topic | topic_label | topic_confidence | topic_volume | topic_sentiment_sum | volume_factor | sentiment_factor | p2_index | p2_abs | severity | cybercon_level |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-05-01T12:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 40 | 8.9035 | 8.0268 | 9.4748 | 76.0523 | 76.0523 | critical | 1 |
-| 2026-04-30T12:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 39 | 7.2040 | 7.8261 | 7.6663 | 59.9971 | 59.9971 | critical | 1 |
-| 2026-05-01T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 52 | 3.2895 | 11.5415 | 3.6783 | 42.4534 | 42.4534 | critical | 1 |
-| 2026-04-30T12:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 27 | 2.3497 | 7.2655 | 4.0492 | 29.4196 | 29.4196 | high | 2 |
-| 2026-04-29T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 18 | 5.6684 | 3.8028 | 7.4062 | 28.1645 | 28.1645 | high | 2 |
-| 2026-05-01T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 19 | 4.2109 | 4.0141 | 5.5019 | 22.0850 | 22.0850 | high | 2 |
-| 2026-05-01T12:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 31 | 2.4985 | 6.5493 | 3.2645 | 21.3801 | 21.3801 | high | 2 |
-| 2026-04-30T00:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 26 | 3.4465 | 5.2174 | 3.6677 | 19.1357 | 19.1357 | high | 2 |
-| 2026-04-30T12:00:00+00:00 | 9 | Ransomware / Malware / Email Campaigns | high | 17 | 1.3016 | 6.2577 | 2.8486 | 17.8257 | 17.8257 | high | 2 |
-| 2026-04-30T12:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 39 | 1.3277 | 8.2394 | 1.7347 | 14.2933 | 14.2933 | elevated | 3 |
+| 2026-05-01T12:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 39 | 8.6772 | 7.3426 | 9.6825 | 71.0946 | 71.0946 | critical | 1 |
+| 2026-04-30T12:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 41 | 6.1507 | 7.7191 | 6.8633 | 52.9787 | 52.9787 | critical | 1 |
+| 2026-05-01T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 51 | 2.9693 | 10.5438 | 3.4038 | 35.8893 | 35.8893 | critical | 1 |
+| 2026-04-30T12:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 27 | 2.2725 | 6.7276 | 3.7966 | 25.5416 | 25.5416 | high | 2 |
+| 2026-04-29T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 18 | 5.6684 | 3.5649 | 6.9804 | 24.8846 | 24.8846 | high | 2 |
+| 2026-04-30T12:00:00+00:00 | 9 | Ransomware / Malware / Email Campaigns | high | 16 | 2.0285 | 5.3933 | 4.2737 | 23.0494 | 23.0494 | high | 2 |
+| 2026-05-02T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 29 | 2.9229 | 5.7435 | 3.5994 | 20.6733 | 20.6733 | high | 2 |
+| 2026-05-01T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 19 | 4.2109 | 3.7630 | 5.1855 | 19.5131 | 19.5131 | high | 2 |
+| 2026-05-01T12:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 32 | 2.4985 | 6.3377 | 3.0768 | 19.4997 | 19.4997 | high | 2 |
+| 2026-04-30T00:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 25 | 2.7035 | 4.7068 | 3.0167 | 14.1990 | 14.1990 | elevated | 3 |
 
 ## Top 10 Absolute Hot Topics by P2 Abs
 
 | time_window | dominant_topic | topic_label | topic_confidence | topic_volume | topic_sentiment_sum | volume_factor | sentiment_factor | p2_index | p2_abs | severity | cybercon_level |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2026-05-01T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 41 | -10.0444 | 9.1000 | -11.2317 | -102.2086 | 102.2086 | critical | 1 |
-| 2026-05-01T12:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 40 | 8.9035 | 8.0268 | 9.4748 | 76.0523 | 76.0523 | critical | 1 |
-| 2026-04-30T12:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 39 | 7.2040 | 7.8261 | 7.6663 | 59.9971 | 59.9971 | critical | 1 |
-| 2026-05-01T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 52 | 3.2895 | 11.5415 | 3.6783 | 42.4534 | 42.4534 | critical | 1 |
-| 2026-05-01T12:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 28 | -3.2120 | 7.5345 | -5.5352 | -41.7056 | 41.7056 | critical | 1 |
-| 2026-05-01T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 33 | -2.1253 | 8.8800 | -3.6625 | -32.5233 | 32.5233 | critical | 1 |
-| 2026-05-01T12:00:00+00:00 | 9 | Ransomware / Malware / Email Campaigns | high | 14 | -2.8420 | 5.1534 | -6.2199 | -32.0533 | 32.0533 | critical | 1 |
-| 2026-04-30T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 56 | -2.2233 | 12.4293 | -2.4861 | -30.9005 | 30.9005 | critical | 1 |
-| 2026-04-30T12:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 27 | 2.3497 | 7.2655 | 4.0492 | 29.4196 | 29.4196 | high | 2 |
-| 2026-04-29T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 18 | 5.6684 | 3.8028 | 7.4062 | 28.1645 | 28.1645 | high | 2 |
+| 2026-05-01T00:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 41 | -10.0444 | 8.4764 | -11.5143 | -97.5997 | 97.5997 | critical | 1 |
+| 2026-05-01T12:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 39 | 8.6772 | 7.3426 | 9.6825 | 71.0946 | 71.0946 | critical | 1 |
+| 2026-04-30T12:00:00+00:00 | 6 | Security Risk / Exposure Management | medium | 41 | 6.1507 | 7.7191 | 6.8633 | 52.9787 | 52.9787 | critical | 1 |
+| 2026-05-02T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 32 | -3.7373 | 7.9734 | -6.2437 | -49.7838 | 49.7838 | critical | 1 |
+| 2026-05-01T12:00:00+00:00 | 9 | Ransomware / Malware / Email Campaigns | high | 18 | -3.1602 | 6.0674 | -6.6581 | -40.3972 | 40.3972 | critical | 1 |
+| 2026-05-01T12:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 29 | -3.0089 | 7.2259 | -5.0268 | -36.3234 | 36.3234 | critical | 1 |
+| 2026-05-01T12:00:00+00:00 | 0 | Network Attacks / Device Access | medium | 51 | 2.9693 | 10.5438 | 3.4038 | 35.8893 | 35.8893 | critical | 1 |
+| 2026-05-01T00:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 33 | -2.1253 | 8.2226 | -3.5506 | -29.1954 | 29.1954 | high | 2 |
+| 2026-04-30T12:00:00+00:00 | 2 | Cybercrime / Fraud / Law Enforcement | medium | 27 | 2.2725 | 6.7276 | 3.7966 | 25.5416 | 25.5416 | high | 2 |
+| 2026-04-29T00:00:00+00:00 | 7 | Cybersecurity Tools / Generic Discussion | low | 18 | 5.6684 | 3.5649 | 6.9804 | 24.8846 | 24.8846 | high | 2 |
 
 ## Severity Distribution
 
 | severity | rows | percent_dataset |
 | --- | --- | --- |
-| low | 492 | 87.86% |
-| watch | 33 | 5.89% |
-| elevated | 15 | 2.68% |
-| high | 12 | 2.14% |
-| critical | 8 | 1.43% |
+| low | 498 | 87.68% |
+| watch | 34 | 5.99% |
+| elevated | 18 | 3.17% |
+| high | 11 | 1.94% |
+| critical | 7 | 1.23% |
 
 ## P2 Direction Distribution
 
 | p2_direction | rows | percent_dataset |
 | --- | --- | --- |
-| negative | 271 | 48.39% |
-| positive | 169 | 30.18% |
-| neutral | 120 | 21.43% |
+| negative | 278 | 48.94% |
+| positive | 170 | 29.93% |
+| neutral | 120 | 21.13% |
 
 ## Methodological Note
 
