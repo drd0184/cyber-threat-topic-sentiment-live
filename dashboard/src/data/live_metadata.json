@@ -1,8 +1,8 @@
 {
-  "generated_at_utc": "2026-05-02T13:14:33.540193Z",
-  "generated_at_local": "2026-05-02T13:14:33.540213+00:00",
-  "latest_collected_at": "2026-05-02T13:06:48Z",
-  "latest_document_created_at": "2026-05-02T13:03:33Z",
+  "generated_at_utc": "2026-05-03T02:46:35.291930Z",
+  "generated_at_local": "2026-05-03T02:46:35.291951+00:00",
+  "latest_collected_at": "2026-05-03T02:43:34Z",
+  "latest_document_created_at": "2026-05-03T02:30:00Z",
   "earliest_document_created_at": "2025-12-16T09:00:00Z",
   "pipeline_schedule": "00:00 and 12:00 UTC",
   "pipeline_mode": "GitHub Actions scheduled live pipeline",
@@ -13,9 +13,9 @@
     "news_rss",
     "reddit_rss"
   ],
-  "total_documents": 2379,
+  "total_documents": 2561,
   "total_topics": 10,
-  "total_time_windows": 168,
+  "total_time_windows": 169,
   "input_files": {
     "p2": "data/live/processed/07_live_p2_index_12h.csv",
     "temporal_aggregation": "data/live/processed/06_live_temporal_aggregation_12h.csv",
