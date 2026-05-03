@@ -6,101 +6,105 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 
 | Metric | Value |
 | --- | --- |
-| Total rows | 4545 |
+| Total rows | 4759 |
 | created_at min | 2025-12-16T09:00:00Z |
-| created_at max | 2026-05-03T02:30:00Z |
+| created_at max | 2026-05-03T13:01:57Z |
 | collected_at min | 2026-04-29T13:22:42Z |
-| collected_at max | 2026-05-03T02:43:34Z |
+| collected_at max | 2026-05-03T13:05:54Z |
 | Unparsable created_at | 0 (0.00%) |
 | Unparsable collected_at | 0 (0.00%) |
 | Null/empty text_raw | 0 (0.00%) |
-| Mean text_raw length | 451.1 |
-| Median text_raw length | 109.0 |
+| Mean text_raw length | 439.0 |
+| Median text_raw length | 106.0 |
 | Min text_raw length | 8 |
 | Max text_raw length | 66525 |
-| text_raw < 30 chars | 93 (2.05%) |
-| text_raw < 100 chars | 2094 (46.07%) |
+| text_raw < 30 chars | 97 (2.04%) |
+| text_raw < 100 chars | 2238 (47.03%) |
 | Duplicate id rows | 0 rows / 0 values |
 | Duplicate url rows | 0 rows / 0 values |
-| Duplicate normalized text_raw rows | 434 rows / 124 values |
+| Duplicate normalized text_raw rows | 457 rows / 131 values |
 
 ## Warnings
 
-- WARNING: Duplicate normalized text_raw rows found: 434.
+- WARNING: Duplicate normalized text_raw rows found: 457.
 
 ## Rows By source_type
 
 | source_type | rows | percent_dataset |
 | --- | --- | --- |
-| news_api | 2335 | 51.38% |
-| cve | 1295 | 28.49% |
-| reddit_rss | 720 | 15.84% |
-| news_rss | 195 | 4.29% |
+| news_api | 2502 | 52.57% |
+| cve | 1295 | 27.21% |
+| reddit_rss | 766 | 16.10% |
+| news_rss | 196 | 4.12% |
 
 ## Rows By source_name
 
 | source_name | rows | percent_dataset |
 | --- | --- | --- |
-| NVD CVE | 1295 | 28.49% |
-| cybersecurity | 177 | 3.89% |
-| sysadmin | 149 | 3.28% |
-| privacy | 89 | 1.96% |
-| blueteamsec | 76 | 1.67% |
-| The Hacker News | 65 | 1.43% |
-| BleepingComputer | 40 | 0.88% |
-| netsec | 38 | 0.84% |
-| hacking | 38 | 0.84% |
-| ReverseEngineering | 36 | 0.79% |
-| forbes.com | 35 | 0.77% |
-| osint | 33 | 0.73% |
-| AskNetsec | 31 | 0.68% |
-| techradar.com | 31 | 0.68% |
-| ascii.jp | 29 | 0.64% |
-| Malware | 28 | 0.62% |
-| ComputerSecurity | 25 | 0.55% |
-| Rapid7 Blog | 23 | 0.51% |
-| cnews.ru | 23 | 0.51% |
-| ithome.com.tw | 23 | 0.51% |
-| boredpanda.com | 21 | 0.46% |
-| bankinfosecurity.com | 18 | 0.40% |
-| theregister.com | 18 | 0.40% |
-| Unit 42 | 17 | 0.37% |
-| haberler.com | 17 | 0.37% |
-| 163.com | 17 | 0.37% |
-| Cisco Talos Blog | 16 | 0.35% |
-| manilatimes.net | 16 | 0.35% |
-| itbrief.co.nz | 16 | 0.35% |
-| fnnews.com | 15 | 0.33% |
-| SANS Internet Storm Center | 14 | 0.31% |
-| govinfosecurity.com | 14 | 0.31% |
-| finance.sina.com.cn | 13 | 0.29% |
-| esecurityplanet.com | 12 | 0.26% |
-| cointelegraph.com | 12 | 0.26% |
-| el-balad.com | 12 | 0.26% |
-| fool.com | 12 | 0.26% |
-| KrebsOnSecurity | 11 | 0.24% |
-| finanznachrichten.de | 11 | 0.24% |
-| economictimes.indiatimes.com | 11 | 0.24% |
-| baijiahao.baidu.com | 11 | 0.24% |
-| csoonline.com | 10 | 0.22% |
-| finance.yahoo.com | 10 | 0.22% |
-| techcrunch.com | 10 | 0.22% |
-| Google Project Zero | 9 | 0.20% |
-| jdsupra.com | 9 | 0.20% |
-| infosecurity-magazine.com | 9 | 0.20% |
-| timesofindia.indiatimes.com | 9 | 0.20% |
-| securitylab.ru | 9 | 0.20% |
-| moneycontrol.com | 8 | 0.18% |
-| edaily.co.kr | 8 | 0.18% |
-| channellife.co.nz | 8 | 0.18% |
-| biz.heraldcorp.com | 8 | 0.18% |
+| NVD CVE | 1295 | 27.21% |
+| cybersecurity | 198 | 4.16% |
+| sysadmin | 158 | 3.32% |
+| privacy | 92 | 1.93% |
+| blueteamsec | 80 | 1.68% |
+| The Hacker News | 66 | 1.39% |
+| hacking | 42 | 0.88% |
+| BleepingComputer | 40 | 0.84% |
+| netsec | 39 | 0.82% |
+| ReverseEngineering | 38 | 0.80% |
+| forbes.com | 35 | 0.74% |
+| osint | 33 | 0.69% |
+| AskNetsec | 32 | 0.67% |
+| techradar.com | 31 | 0.65% |
+| Malware | 29 | 0.61% |
+| ascii.jp | 29 | 0.61% |
+| ComputerSecurity | 25 | 0.53% |
+| Rapid7 Blog | 23 | 0.48% |
+| cnews.ru | 23 | 0.48% |
+| ithome.com.tw | 23 | 0.48% |
+| haberler.com | 21 | 0.44% |
+| boredpanda.com | 21 | 0.44% |
+| theregister.com | 19 | 0.40% |
+| bankinfosecurity.com | 18 | 0.38% |
+| Unit 42 | 17 | 0.36% |
+| 163.com | 17 | 0.36% |
+| fnnews.com | 17 | 0.36% |
+| Cisco Talos Blog | 16 | 0.34% |
+| manilatimes.net | 16 | 0.34% |
+| itbrief.co.nz | 16 | 0.34% |
+| rpp.pe | 15 | 0.32% |
+| SANS Internet Storm Center | 14 | 0.29% |
+| govinfosecurity.com | 14 | 0.29% |
+| finance.sina.com.cn | 13 | 0.27% |
+| esecurityplanet.com | 12 | 0.25% |
+| cointelegraph.com | 12 | 0.25% |
+| el-balad.com | 12 | 0.25% |
+| fool.com | 12 | 0.25% |
+| KrebsOnSecurity | 11 | 0.23% |
+| finanznachrichten.de | 11 | 0.23% |
+| economictimes.indiatimes.com | 11 | 0.23% |
+| baijiahao.baidu.com | 11 | 0.23% |
+| csoonline.com | 10 | 0.21% |
+| finance.yahoo.com | 10 | 0.21% |
+| moneycontrol.com | 10 | 0.21% |
+| techcrunch.com | 10 | 0.21% |
+| dostor.org | 10 | 0.21% |
+| Google Project Zero | 9 | 0.19% |
+| jdsupra.com | 9 | 0.19% |
+| infosecurity-magazine.com | 9 | 0.19% |
+| timesofindia.indiatimes.com | 9 | 0.19% |
+| securitylab.ru | 9 | 0.19% |
+| edaily.co.kr | 8 | 0.17% |
+| channellife.co.nz | 8 | 0.17% |
+| biz.heraldcorp.com | 8 | 0.17% |
+| govtech.com | 7 | 0.15% |
 | yahoo.com | 7 | 0.15% |
+| ddaily.co.kr | 7 | 0.15% |
 | zdnet.co.kr | 7 | 0.15% |
-| dostor.org | 7 | 0.15% |
+| bankingnews.gr | 7 | 0.15% |
+| sabah.com.tr | 7 | 0.15% |
 | excite.co.jp | 7 | 0.15% |
-| rpp.pe | 7 | 0.15% |
 | birgun.net | 7 | 0.15% |
-| govtech.com | 6 | 0.13% |
+| ensonhaber.com | 6 | 0.13% |
 | prnewswire.com | 6 | 0.13% |
 | laopcion.com.mx | 6 | 0.13% |
 | vz.ru | 6 | 0.13% |
@@ -109,127 +113,139 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | foxnews.com | 6 | 0.13% |
 | tvguide.co.uk | 6 | 0.13% |
 | eturbonews.com | 6 | 0.13% |
+| zazoom.it | 6 | 0.13% |
 | hothardware.com | 5 | 0.11% |
-| ensonhaber.com | 5 | 0.11% |
 | pcmag.com | 5 | 0.11% |
 | milliyet.com.tr | 5 | 0.11% |
-| ddaily.co.kr | 5 | 0.11% |
 | channellife.com.au | 5 | 0.11% |
 | aa.com.tr | 5 | 0.11% |
 | heise.de | 5 | 0.11% |
+| shorouknews.com | 5 | 0.11% |
+| europapress.es | 5 | 0.11% |
 | ibtimes.com.au | 5 | 0.11% |
+| inewsgr.com | 5 | 0.11% |
 | evrensel.net | 5 | 0.11% |
-| zazoom.it | 5 | 0.11% |
 | collider.com | 5 | 0.11% |
 | punchng.com | 5 | 0.11% |
 | maliactu.net | 5 | 0.11% |
-| japan.zdnet.com | 4 | 0.09% |
-| insurancebusinessmag.com | 4 | 0.09% |
-| winnipegfreepress.com | 4 | 0.09% |
-| thenews.com.pk | 4 | 0.09% |
-| thefastmode.com | 4 | 0.09% |
-| cbc.ca | 4 | 0.09% |
-| straitstimes.com | 4 | 0.09% |
-| turkiyegazetesi.com.tr | 4 | 0.09% |
-| trthaber.com | 4 | 0.09% |
-| n-tv.de | 4 | 0.09% |
-| kibrispostasi.com | 4 | 0.09% |
-| theglobeandmail.com | 4 | 0.09% |
-| coindesk.com | 4 | 0.09% |
-| 9to5mac.com | 4 | 0.09% |
-| interfax.ru | 4 | 0.09% |
-| europapress.es | 4 | 0.09% |
-| itnews.com.au | 4 | 0.09% |
-| time.mk | 4 | 0.09% |
-| it-online.co.za | 4 | 0.09% |
-| tn.com.ar | 4 | 0.09% |
-| natalie.mu | 4 | 0.09% |
-| computing.co.uk | 4 | 0.09% |
-| newjerseytelegraph.com | 4 | 0.09% |
-| wired.com | 4 | 0.09% |
-| aceshowbiz.com | 4 | 0.09% |
-| natlawreview.com | 4 | 0.09% |
-| ghanamma.com | 4 | 0.09% |
-| mainichi.jp | 4 | 0.09% |
-| alquds.co.uk | 4 | 0.09% |
-| iefimerida.gr | 4 | 0.09% |
-| anlatilaninotesi.com.tr | 4 | 0.09% |
-| androidauthority.com | 3 | 0.07% |
-| mondaq.com | 3 | 0.07% |
-| tomshardware.com | 3 | 0.07% |
-| cnnturk.com | 3 | 0.07% |
-| ura.news | 3 | 0.07% |
-| donanimgunlugu.com | 3 | 0.07% |
-| sb.by | 3 | 0.07% |
-| womannews.net | 3 | 0.07% |
-| miragenews.com | 3 | 0.07% |
-| wesh.com | 3 | 0.07% |
-| wbaltv.com | 3 | 0.07% |
-| glavcom.ua | 3 | 0.07% |
-| scoop.co.nz | 3 | 0.07% |
-| politis.com.cy | 3 | 0.07% |
-| koreaherald.com | 3 | 0.07% |
-| nzherald.co.nz | 3 | 0.07% |
-| sabah.com.tr | 3 | 0.07% |
-| eurointegration.com.ua | 3 | 0.07% |
-| bleedingcool.com | 3 | 0.07% |
-| wmur.com | 3 | 0.07% |
-| defensenews.com | 3 | 0.07% |
-| hindustantimes.com | 3 | 0.07% |
-| n.yam.com | 3 | 0.07% |
-| odatv.com | 3 | 0.07% |
-| finance.eastmoney.com | 3 | 0.07% |
-| shorouknews.com | 3 | 0.07% |
-| vietnamnet.vn | 3 | 0.07% |
-| freepressjournal.in | 3 | 0.07% |
-| ria.ru | 3 | 0.07% |
-| russian.rt.com | 3 | 0.07% |
-| mashable.com | 3 | 0.07% |
-| unian.net | 3 | 0.07% |
-| newswiretoday.com | 3 | 0.07% |
-| portal.sina.com.hk | 3 | 0.07% |
-| itbusinessnet.com | 3 | 0.07% |
-| biometricupdate.com | 3 | 0.07% |
-| itbear.com.cn | 3 | 0.07% |
-| businessday.co.za | 3 | 0.07% |
-| am.com.mx | 3 | 0.07% |
-| elsiglodetorreon.com.mx | 3 | 0.07% |
-| kmib.co.kr | 3 | 0.07% |
-| newspim.com | 3 | 0.07% |
-| etoday.co.kr | 3 | 0.07% |
-| divyabhaskar.co.in | 3 | 0.07% |
-| tribuneindia.com | 3 | 0.07% |
-| inewsgr.com | 3 | 0.07% |
-| marketscreener.com | 3 | 0.07% |
-| itweb.co.za | 3 | 0.07% |
-| haksozhaber.net | 3 | 0.07% |
-| sozcu.com.tr | 3 | 0.07% |
-| aninews.in | 3 | 0.07% |
-| nypost.com | 3 | 0.07% |
-| capital.ro | 3 | 0.07% |
-| thenextweb.com | 3 | 0.07% |
-| business.scoop.co.nz | 3 | 0.07% |
-| claimsjournal.com | 3 | 0.07% |
-| aljazeera.net | 3 | 0.07% |
-| itnewsonline.com | 3 | 0.07% |
-| eldiariodechihuahua.mx | 3 | 0.07% |
-| yorkregion.com | 3 | 0.07% |
-| insideottawavalley.com | 3 | 0.07% |
-| europesun.com | 3 | 0.07% |
-| alltoc.com | 3 | 0.07% |
-| thesun.ng | 3 | 0.07% |
-| dailymail.com | 3 | 0.07% |
-| newsway.co.kr | 3 | 0.07% |
-| vetogate.com | 3 | 0.07% |
-| newkerala.com | 3 | 0.07% |
-| eurasiareview.com | 3 | 0.07% |
-| ciudadccs.info | 3 | 0.07% |
-| abc.es | 3 | 0.07% |
-| busan.com | 3 | 0.07% |
-| mirror.co.uk | 3 | 0.07% |
-| sudanile.com | 3 | 0.07% |
-| vanguardngr.com | 3 | 0.07% |
-| oem.com.mx | 3 | 0.07% |
+| anlatilaninotesi.com.tr | 5 | 0.11% |
+| japan.zdnet.com | 4 | 0.08% |
+| insurancebusinessmag.com | 4 | 0.08% |
+| winnipegfreepress.com | 4 | 0.08% |
+| cnnturk.com | 4 | 0.08% |
+| ura.news | 4 | 0.08% |
+| thenews.com.pk | 4 | 0.08% |
+| thefastmode.com | 4 | 0.08% |
+| cbc.ca | 4 | 0.08% |
+| scoop.co.nz | 4 | 0.08% |
+| straitstimes.com | 4 | 0.08% |
+| turkiyegazetesi.com.tr | 4 | 0.08% |
+| trthaber.com | 4 | 0.08% |
+| n-tv.de | 4 | 0.08% |
+| kibrispostasi.com | 4 | 0.08% |
+| theglobeandmail.com | 4 | 0.08% |
+| bd-pratidin.com | 4 | 0.08% |
+| coindesk.com | 4 | 0.08% |
+| 9to5mac.com | 4 | 0.08% |
+| interfax.ru | 4 | 0.08% |
+| itnews.com.au | 4 | 0.08% |
+| time.mk | 4 | 0.08% |
+| it-online.co.za | 4 | 0.08% |
+| tn.com.ar | 4 | 0.08% |
+| natalie.mu | 4 | 0.08% |
+| etoday.co.kr | 4 | 0.08% |
+| computing.co.uk | 4 | 0.08% |
+| newjerseytelegraph.com | 4 | 0.08% |
+| wired.com | 4 | 0.08% |
+| sozcu.com.tr | 4 | 0.08% |
+| aceshowbiz.com | 4 | 0.08% |
+| natlawreview.com | 4 | 0.08% |
+| ghanamma.com | 4 | 0.08% |
+| mainichi.jp | 4 | 0.08% |
+| boerse-express.com | 4 | 0.08% |
+| alquds.co.uk | 4 | 0.08% |
+| iefimerida.gr | 4 | 0.08% |
+| vetogate.com | 4 | 0.08% |
+| mirror.co.uk | 4 | 0.08% |
+| sudanile.com | 4 | 0.08% |
+| vanguardngr.com | 4 | 0.08% |
+| androidauthority.com | 3 | 0.06% |
+| mondaq.com | 3 | 0.06% |
+| tomshardware.com | 3 | 0.06% |
+| donanimgunlugu.com | 3 | 0.06% |
+| etnews.com | 3 | 0.06% |
+| sb.by | 3 | 0.06% |
+| womannews.net | 3 | 0.06% |
+| miragenews.com | 3 | 0.06% |
+| wesh.com | 3 | 0.06% |
+| wbaltv.com | 3 | 0.06% |
+| glavcom.ua | 3 | 0.06% |
+| politis.com.cy | 3 | 0.06% |
+| koreaherald.com | 3 | 0.06% |
+| nzherald.co.nz | 3 | 0.06% |
+| dw.com | 3 | 0.06% |
+| yeniakit.com.tr | 3 | 0.06% |
+| eurointegration.com.ua | 3 | 0.06% |
+| bleedingcool.com | 3 | 0.06% |
+| wmur.com | 3 | 0.06% |
+| defensenews.com | 3 | 0.06% |
+| hindustantimes.com | 3 | 0.06% |
+| n.yam.com | 3 | 0.06% |
+| odatv.com | 3 | 0.06% |
+| finance.eastmoney.com | 3 | 0.06% |
+| vietnamnet.vn | 3 | 0.06% |
+| freepressjournal.in | 3 | 0.06% |
+| ria.ru | 3 | 0.06% |
+| russian.rt.com | 3 | 0.06% |
+| mashable.com | 3 | 0.06% |
+| unian.net | 3 | 0.06% |
+| newswiretoday.com | 3 | 0.06% |
+| portal.sina.com.hk | 3 | 0.06% |
+| itbusinessnet.com | 3 | 0.06% |
+| biometricupdate.com | 3 | 0.06% |
+| itbear.com.cn | 3 | 0.06% |
+| businessday.co.za | 3 | 0.06% |
+| am.com.mx | 3 | 0.06% |
+| elsiglodetorreon.com.mx | 3 | 0.06% |
+| kmib.co.kr | 3 | 0.06% |
+| newspim.com | 3 | 0.06% |
+| inews24.com | 3 | 0.06% |
+| divyabhaskar.co.in | 3 | 0.06% |
+| tribuneindia.com | 3 | 0.06% |
+| marketscreener.com | 3 | 0.06% |
+| itweb.co.za | 3 | 0.06% |
+| haksozhaber.net | 3 | 0.06% |
+| tgrthaber.com | 3 | 0.06% |
+| aninews.in | 3 | 0.06% |
+| nypost.com | 3 | 0.06% |
+| capital.ro | 3 | 0.06% |
+| thenextweb.com | 3 | 0.06% |
+| business.scoop.co.nz | 3 | 0.06% |
+| claimsjournal.com | 3 | 0.06% |
+| aljazeera.net | 3 | 0.06% |
+| index.hu | 3 | 0.06% |
+| itnewsonline.com | 3 | 0.06% |
+| eldiariodechihuahua.mx | 3 | 0.06% |
+| rediff.com | 3 | 0.06% |
+| yorkregion.com | 3 | 0.06% |
+| insideottawavalley.com | 3 | 0.06% |
+| simcoe.com | 3 | 0.06% |
+| europesun.com | 3 | 0.06% |
+| alltoc.com | 3 | 0.06% |
+| thesun.ng | 3 | 0.06% |
+| dailymail.com | 3 | 0.06% |
+| newsway.co.kr | 3 | 0.06% |
+| newkerala.com | 3 | 0.06% |
+| sapo.pt | 3 | 0.06% |
+| tumentoday.ru | 3 | 0.06% |
+| eurasiareview.com | 3 | 0.06% |
+| ciudadccs.info | 3 | 0.06% |
+| abc.es | 3 | 0.06% |
+| busan.com | 3 | 0.06% |
+| prokerala.com | 3 | 0.06% |
+| bursadabugun.com | 3 | 0.06% |
+| focus.de | 3 | 0.06% |
+| oem.com.mx | 3 | 0.06% |
 | businessghana.com | 2 | 0.04% |
 | digitaljournal.com | 2 | 0.04% |
 | securityinfowatch.com | 2 | 0.04% |
@@ -244,24 +260,23 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | propakistani.pk | 2 | 0.04% |
 | bgr.com | 2 | 0.04% |
 | life.ru | 2 | 0.04% |
-| etnews.com | 2 | 0.04% |
 | github.com | 2 | 0.04% |
 | hollywoodreporter.com | 2 | 0.04% |
 | t-online.de | 2 | 0.04% |
+| lexpress.fr | 2 | 0.04% |
 | freemalaysiatoday.com | 2 | 0.04% |
 | iz.ru | 2 | 0.04% |
 | lenta.ru | 2 | 0.04% |
 | bunburymail.com.au | 2 | 0.04% |
 | nvi.com.au | 2 | 0.04% |
 | ledauphine.com | 2 | 0.04% |
-| bankingnews.gr | 2 | 0.04% |
 | dailykos.com | 2 | 0.04% |
 | lalsace.fr | 2 | 0.04% |
 | elmanana.com | 2 | 0.04% |
+| eluniversal.com.mx | 2 | 0.04% |
 | aristeguinoticias.com | 2 | 0.04% |
 | news.cn | 2 | 0.04% |
 | wiwo.de | 2 | 0.04% |
-| yeniakit.com.tr | 2 | 0.04% |
 | welt.de | 2 | 0.04% |
 | dailynews.co.th | 2 | 0.04% |
 | wdrb.com | 2 | 0.04% |
@@ -271,7 +286,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | wwmt.com | 2 | 0.04% |
 | jpost.com | 2 | 0.04% |
 | udn.com | 2 | 0.04% |
-| bd-pratidin.com | 2 | 0.04% |
 | haberturk.com | 2 | 0.04% |
 | hurriyetdailynews.com | 2 | 0.04% |
 | wfmz.com | 2 | 0.04% |
@@ -290,9 +304,11 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | weser-kurier.de | 2 | 0.04% |
 | irishdentist.ie | 2 | 0.04% |
 | ntdtv.com | 2 | 0.04% |
+| chip.de | 2 | 0.04% |
 | comnews.ru | 2 | 0.04% |
 | securitybrief.news | 2 | 0.04% |
 | itwire.com | 2 | 0.04% |
+| tekniikkatalous.fi | 2 | 0.04% |
 | jugantor.com | 2 | 0.04% |
 | webpronews.com | 2 | 0.04% |
 | htxt.co.za | 2 | 0.04% |
@@ -313,10 +329,10 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | mariettatimes.com | 2 | 0.04% |
 | ohmynews.com | 2 | 0.04% |
 | insight.co.kr | 2 | 0.04% |
-| inews24.com | 2 | 0.04% |
 | segye.com | 2 | 0.04% |
 | thehindu.com | 2 | 0.04% |
 | hindi.webdunia.com | 2 | 0.04% |
+| digi24.ro | 2 | 0.04% |
 | rappler.com | 2 | 0.04% |
 | livehindustan.com | 2 | 0.04% |
 | geeky-gadgets.com | 2 | 0.04% |
@@ -325,10 +341,10 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | hawaiitelegraph.com | 2 | 0.04% |
 | tennesseedaily.com | 2 | 0.04% |
 | posta.com.tr | 2 | 0.04% |
+| dha.com.tr | 2 | 0.04% |
 | begeek.fr | 2 | 0.04% |
 | mersinhaber.com | 2 | 0.04% |
 | lrytas.lt | 2 | 0.04% |
-| tgrthaber.com | 2 | 0.04% |
 | lefigaro.fr | 2 | 0.04% |
 | yeniasya.com.tr | 2 | 0.04% |
 | pcwplus.hu | 2 | 0.04% |
@@ -353,16 +369,16 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | ecodibergamo.it | 2 | 0.04% |
 | daily.com.ua | 2 | 0.04% |
 | naftemporiki.gr | 2 | 0.04% |
+| diario.mx | 2 | 0.04% |
 | marca.com | 2 | 0.04% |
 | inosmi.ru | 2 | 0.04% |
+| brasil247.com | 2 | 0.04% |
 | libnanews.com | 2 | 0.04% |
 | techweez.com | 2 | 0.04% |
-| rediff.com | 2 | 0.04% |
 | dailypolitical.com | 2 | 0.04% |
 | thisdaylive.com | 2 | 0.04% |
 | amic.ru | 2 | 0.04% |
 | welivesecurity.com | 2 | 0.04% |
-| simcoe.com | 2 | 0.04% |
 | tmtpost.com | 2 | 0.04% |
 | pv-magazine.com | 2 | 0.04% |
 | massachusettssun.com | 2 | 0.04% |
@@ -378,7 +394,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | castanetkamloops.net | 2 | 0.04% |
 | cambridgetimes.ca | 2 | 0.04% |
 | abovethelaw.com | 2 | 0.04% |
-| boerse-express.com | 2 | 0.04% |
+| laleggepertutti.it | 2 | 0.04% |
 | newratings.de | 2 | 0.04% |
 | prensalibre.com | 2 | 0.04% |
 | morningstar.com | 2 | 0.04% |
@@ -408,33 +424,48 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | elpais.com | 2 | 0.04% |
 | focus.ua | 2 | 0.04% |
 | theguardian.com | 2 | 0.04% |
+| internasional.kompas.com | 2 | 0.04% |
 | business24.ro | 2 | 0.04% |
+| howtogeek.com | 2 | 0.04% |
+| ahaber.com.tr | 2 | 0.04% |
 | turktime.com | 2 | 0.04% |
 | haber7.com | 2 | 0.04% |
 | haberyazar.com | 2 | 0.04% |
 | news.mail.ru | 2 | 0.04% |
 | denizlihaber.com | 2 | 0.04% |
 | mk.ru | 2 | 0.04% |
+| t-l.ru | 2 | 0.04% |
 | nuevodiarioweb.com.ar | 2 | 0.04% |
 | vicnews.com | 2 | 0.04% |
 | storm.mg | 2 | 0.04% |
 | radiopolar.com | 2 | 0.04% |
 | townhall.com | 2 | 0.04% |
 | ziare.com | 2 | 0.04% |
+| breitbart.com | 2 | 0.04% |
 | koreatimes.com | 2 | 0.04% |
 | messengernewspapers.co.uk | 2 | 0.04% |
-| prokerala.com | 2 | 0.04% |
 | ianslive.in | 2 | 0.04% |
+| dogruhaber.com.tr | 2 | 0.04% |
 | tribune.net.ph | 2 | 0.04% |
 | antimafiaduemila.com | 2 | 0.04% |
 | habervitrini.com | 2 | 0.04% |
 | thereporterethiopia.com | 2 | 0.04% |
 | fr.allafrica.com | 2 | 0.04% |
+| correiodopovo.com.br | 2 | 0.04% |
 | correiobraziliense.com.br | 2 | 0.04% |
 | talk.ltn.com.tw | 2 | 0.04% |
+| kitabat.com | 2 | 0.04% |
 | sankei.com | 2 | 0.04% |
 | parisguardian.com | 2 | 0.04% |
+| lesnumeriques.com | 2 | 0.04% |
 | modernghana.com | 2 | 0.04% |
+| tanea.gr | 2 | 0.04% |
+| lindependant.fr | 2 | 0.04% |
+| insideclimatenews.org | 2 | 0.04% |
+| cna.com.tw | 2 | 0.04% |
+| malijet.com | 2 | 0.04% |
+| vol.at | 2 | 0.04% |
+| itc.ua | 2 | 0.04% |
 | bangkokpost.com | 1 | 0.02% |
 | governing.com | 1 | 0.02% |
 | abc7news.com | 1 | 0.02% |
@@ -467,7 +498,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | pjmedia.com | 1 | 0.02% |
 | regions.ru | 1 | 0.02% |
 | businesstimes.com.sg | 1 | 0.02% |
-| lexpress.fr | 1 | 0.02% |
 | pln-pskov.ru | 1 | 0.02% |
 | metroseoul.co.kr | 1 | 0.02% |
 | fedpress.ru | 1 | 0.02% |
@@ -503,9 +533,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | bbc.com | 1 | 0.02% |
 | groundup.org.za | 1 | 0.02% |
 | zetatijuana.com | 1 | 0.02% |
-| eluniversal.com.mx | 1 | 0.02% |
 | funkytaurusmedia.com | 1 | 0.02% |
-| dw.com | 1 | 0.02% |
 | botasot.info | 1 | 0.02% |
 | fnp.de | 1 | 0.02% |
 | tagesschau.de | 1 | 0.02% |
@@ -608,13 +636,11 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | corp.cnews.ru | 1 | 0.02% |
 | vesti-ua.net | 1 | 0.02% |
 | slguardian.org | 1 | 0.02% |
-| chip.de | 1 | 0.02% |
 | tivi.fi | 1 | 0.02% |
 | strategypage.com | 1 | 0.02% |
 | alaskasnewssource.com | 1 | 0.02% |
 | risky.biz | 1 | 0.02% |
 | zdnet.com | 1 | 0.02% |
-| tekniikkatalous.fi | 1 | 0.02% |
 | fakti.bg | 1 | 0.02% |
 | stcatharinesstandard.ca | 1 | 0.02% |
 | therecord.com | 1 | 0.02% |
@@ -672,7 +698,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | pitchfork.com | 1 | 0.02% |
 | mathrubhumi.com | 1 | 0.02% |
 | divyamarathi.bhaskar.com | 1 | 0.02% |
-| digi24.ro | 1 | 0.02% |
 | india.com | 1 | 0.02% |
 | firstpost.com | 1 | 0.02% |
 | thetoc.gr | 1 | 0.02% |
@@ -703,7 +728,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | vm.ru | 1 | 0.02% |
 | ibtimes.co.uk | 1 | 0.02% |
 | metronews.ru | 1 | 0.02% |
-| dha.com.tr | 1 | 0.02% |
 | mngz.ru | 1 | 0.02% |
 | cafebiz.vn | 1 | 0.02% |
 | lgz.ru | 1 | 0.02% |
@@ -790,7 +814,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | thehindubusinessline.com | 1 | 0.02% |
 | blikk.hu | 1 | 0.02% |
 | femina.hu | 1 | 0.02% |
-| index.hu | 1 | 0.02% |
 | economx.hu | 1 | 0.02% |
 | spartanavenue.com | 1 | 0.02% |
 | rnz.co.nz | 1 | 0.02% |
@@ -807,7 +830,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | toronto.citynews.ca | 1 | 0.02% |
 | nrc.nl | 1 | 0.02% |
 | elconfidencial.com | 1 | 0.02% |
-| diario.mx | 1 | 0.02% |
 | it.euronews.com | 1 | 0.02% |
 | downtoearth.org.in | 1 | 0.02% |
 | ly.fjsen.com | 1 | 0.02% |
@@ -819,7 +841,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | laut.de | 1 | 0.02% |
 | cjme.com | 1 | 0.02% |
 | megamodo.com | 1 | 0.02% |
-| brasil247.com | 1 | 0.02% |
 | closermag.fr | 1 | 0.02% |
 | elperiodicodearagon.com | 1 | 0.02% |
 | comingsoon.it | 1 | 0.02% |
@@ -911,7 +932,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | kiplinger.com | 1 | 0.02% |
 | mactech.com | 1 | 0.02% |
 | brooklyneagle.com | 1 | 0.02% |
-| laleggepertutti.it | 1 | 0.02% |
 | rtv.rs | 1 | 0.02% |
 | niezalezna.pl | 1 | 0.02% |
 | taz.de | 1 | 0.02% |
@@ -995,7 +1015,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | econotimes.com | 1 | 0.02% |
 | londonlovesbusiness.com | 1 | 0.02% |
 | blogs.diariovasco.com | 1 | 0.02% |
-| sapo.pt | 1 | 0.02% |
 | hespress.com | 1 | 0.02% |
 | diariodeburgos.es | 1 | 0.02% |
 | wosu.org | 1 | 0.02% |
@@ -1027,7 +1046,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | pleinevie.fr | 1 | 0.02% |
 | nile.eg | 1 | 0.02% |
 | uzmanpara.milliyet.com.tr | 1 | 0.02% |
-| internasional.kompas.com | 1 | 0.02% |
 | q947fm.iheart.com | 1 | 0.02% |
 | c101.iheart.com | 1 | 0.02% |
 | siol.net | 1 | 0.02% |
@@ -1049,8 +1067,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | healthcareitnews.com | 1 | 0.02% |
 | hackaday.com | 1 | 0.02% |
 | blueprint.ng | 1 | 0.02% |
-| howtogeek.com | 1 | 0.02% |
-| ahaber.com.tr | 1 | 0.02% |
 | son.tv | 1 | 0.02% |
 | hometownstation.com | 1 | 0.02% |
 | dakotawarcollege.com | 1 | 0.02% |
@@ -1071,9 +1087,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | newsprom.ru | 1 | 0.02% |
 | maldonandburnhamstandard.co.uk | 1 | 0.02% |
 | clactonandfrintongazette.co.uk | 1 | 0.02% |
-| tumentoday.ru | 1 | 0.02% |
 | notimerica.com | 1 | 0.02% |
-| t-l.ru | 1 | 0.02% |
 | pctechmag.com | 1 | 0.02% |
 | 13abc.com | 1 | 0.02% |
 | newsminer.com | 1 | 0.02% |
@@ -1143,7 +1157,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | understandingwar.org | 1 | 0.02% |
 | radiotamazuj.org | 1 | 0.02% |
 | tvline.com | 1 | 0.02% |
-| breitbart.com | 1 | 0.02% |
 | wcbm.com | 1 | 0.02% |
 | sbsun.com | 1 | 0.02% |
 | t3n.de | 1 | 0.02% |
@@ -1192,14 +1205,12 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | haber61.net | 1 | 0.02% |
 | ferra.ru | 1 | 0.02% |
 | yenialanya.com | 1 | 0.02% |
-| bursadabugun.com | 1 | 0.02% |
 | haberaktuel.com | 1 | 0.02% |
 | iphoneaddict.fr | 1 | 0.02% |
 | ozgurkocaeli.com.tr | 1 | 0.02% |
 | kamuajans.com | 1 | 0.02% |
 | haber.mynet.com | 1 | 0.02% |
 | vice.com | 1 | 0.02% |
-| dogruhaber.com.tr | 1 | 0.02% |
 | myhostnews.com | 1 | 0.02% |
 | wfaa.com | 1 | 0.02% |
 | news.cyol.com | 1 | 0.02% |
@@ -1226,7 +1237,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | zdg.md | 1 | 0.02% |
 | dnes.bg | 1 | 0.02% |
 | akhbarelyom.com | 1 | 0.02% |
-| correiodopovo.com.br | 1 | 0.02% |
 | elcorreodeburgos.com | 1 | 0.02% |
 | diumenge.ara.cat | 1 | 0.02% |
 | canal26.com | 1 | 0.02% |
@@ -1244,7 +1254,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | theeagleonline.com.ng | 1 | 0.02% |
 | newsday.co.zw | 1 | 0.02% |
 | egyptindependent.com | 1 | 0.02% |
-| kitabat.com | 1 | 0.02% |
 | dialogos.com.cy | 1 | 0.02% |
 | forbes.ru | 1 | 0.02% |
 | spiegel.de | 1 | 0.02% |
@@ -1254,7 +1263,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | alahalygate.com | 1 | 0.02% |
 | laprovence.com | 1 | 0.02% |
 | ilsimplicissimus2.com | 1 | 0.02% |
-| focus.de | 1 | 0.02% |
 | kath.net | 1 | 0.02% |
 | jhm.fr | 1 | 0.02% |
 | merdeka.com | 1 | 0.02% |
@@ -1284,7 +1292,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | business-review.eu | 1 | 0.02% |
 | timeturk.com | 1 | 0.02% |
 | gundemkibris.com | 1 | 0.02% |
-| lesnumeriques.com | 1 | 0.02% |
 | zavtra.ru | 1 | 0.02% |
 | times-standard.com | 1 | 0.02% |
 | abc.net.au | 1 | 0.02% |
@@ -1332,7 +1339,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | 9tv.co.il | 1 | 0.02% |
 | agenciagov.ebc.com.br | 1 | 0.02% |
 | publico.es | 1 | 0.02% |
-| tanea.gr | 1 | 0.02% |
 | warrackherald.com.au | 1 | 0.02% |
 | agi.it | 1 | 0.02% |
 | polityka.pl | 1 | 0.02% |
@@ -1344,7 +1350,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | maravipost.com | 1 | 0.02% |
 | tvanouvelles.ca | 1 | 0.02% |
 | ynet.co.il | 1 | 0.02% |
-| lindependant.fr | 1 | 0.02% |
 | oe24.at | 1 | 0.02% |
 | emaratalyoum.com | 1 | 0.02% |
 | watfordobserver.co.uk | 1 | 0.02% |
@@ -1357,405 +1362,501 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | devondispatch.ca | 1 | 0.02% |
 | wiartonecho.com | 1 | 0.02% |
 | morungexpress.com | 1 | 0.02% |
+| huffingtonpost.co.uk | 1 | 0.02% |
+| progressive-charlestown.com | 1 | 0.02% |
+| wlos.com | 1 | 0.02% |
+| cbnews.fr | 1 | 0.02% |
+| sangbadpratidin.in | 1 | 0.02% |
+| expert.ru | 1 | 0.02% |
+| t24.com.tr | 1 | 0.02% |
+| chilecomparte.cl | 1 | 0.02% |
+| iafrica.com | 1 | 0.02% |
+| mekomi.walla.co.il | 1 | 0.02% |
+| arynews.tv | 1 | 0.02% |
+| muskokaregion.com | 1 | 0.02% |
+| parrysound.com | 1 | 0.02% |
+| northbaynipissing.com | 1 | 0.02% |
+| newuniversity.org | 1 | 0.02% |
+| pplware.sapo.pt | 1 | 0.02% |
+| manoramanews.com | 1 | 0.02% |
+| pc.co.il | 1 | 0.02% |
+| gunes.com | 1 | 0.02% |
+| zvw.de | 1 | 0.02% |
+| wral.com | 1 | 0.02% |
+| en.globes.co.il | 1 | 0.02% |
+| portfolio.hu | 1 | 0.02% |
+| abcnyheter.no | 1 | 0.02% |
+| bollywoodhungama.com | 1 | 0.02% |
+| chaozhoudaily.com | 1 | 0.02% |
+| eeo.com.cn | 1 | 0.02% |
+| challenges.fr | 1 | 0.02% |
+| blitzquotidiano.it | 1 | 0.02% |
+| rtp.pt | 1 | 0.02% |
+| mdzol.com | 1 | 0.02% |
+| businessonline.it | 1 | 0.02% |
+| english.elpais.com | 1 | 0.02% |
+| tribunademinas.com.br | 1 | 0.02% |
+| dailyrecord.co.uk | 1 | 0.02% |
+| washingtonmonthly.com | 1 | 0.02% |
+| cosmopolitan.com | 1 | 0.02% |
+| capitalethiopia.com | 1 | 0.02% |
+| politicamentecorretto.com | 1 | 0.02% |
+| nakedcapitalism.com | 1 | 0.02% |
+| geo.tv | 1 | 0.02% |
+| news.ifeng.com | 1 | 0.02% |
+| yourtango.com | 1 | 0.02% |
+| blog.detail.dev | 1 | 0.02% |
+| praca.egospodarka.pl | 1 | 0.02% |
+| taxydromos.gr | 1 | 0.02% |
+| dailymaverick.co.za | 1 | 0.02% |
+| jutarnji.hr | 1 | 0.02% |
+| unsertirol24.com | 1 | 0.02% |
+| morningstaronline.co.uk | 1 | 0.02% |
+| alfajertv.com | 1 | 0.02% |
+| finance.walla.co.il | 1 | 0.02% |
+| beveiligingnieuws.nl | 1 | 0.02% |
+| ilpost.it | 1 | 0.02% |
+| thedailystar.net | 1 | 0.02% |
+| aiwaegypt.com | 1 | 0.02% |
+| suedtirolnews.it | 1 | 0.02% |
+| ladepeche.fr | 1 | 0.02% |
+| voria.gr | 1 | 0.02% |
+| infranken.de | 1 | 0.02% |
+| kikar.co.il | 1 | 0.02% |
+| lapresse.tn | 1 | 0.02% |
+| military.com | 1 | 0.02% |
+| ilfattonisseno.it | 1 | 0.02% |
+| newscentralasia.net | 1 | 0.02% |
 
 ## Source Distribution
 
 | source_type | source_name | rows | percent_dataset | percent_source_type |
 | --- | --- | --- | --- | --- |
-| cve | NVD CVE | 1295 | 28.49% | 100.00% |
-| reddit_rss | cybersecurity | 177 | 3.89% | 24.58% |
-| reddit_rss | sysadmin | 149 | 3.28% | 20.69% |
-| reddit_rss | privacy | 89 | 1.96% | 12.36% |
-| reddit_rss | blueteamsec | 76 | 1.67% | 10.56% |
-| news_rss | The Hacker News | 65 | 1.43% | 33.33% |
-| news_rss | BleepingComputer | 40 | 0.88% | 20.51% |
-| reddit_rss | hacking | 38 | 0.84% | 5.28% |
-| reddit_rss | netsec | 38 | 0.84% | 5.28% |
-| reddit_rss | ReverseEngineering | 36 | 0.79% | 5.00% |
-| news_api | forbes.com | 35 | 0.77% | 1.50% |
-| reddit_rss | osint | 33 | 0.73% | 4.58% |
-| news_api | techradar.com | 31 | 0.68% | 1.33% |
-| reddit_rss | AskNetsec | 31 | 0.68% | 4.31% |
-| news_api | ascii.jp | 29 | 0.64% | 1.24% |
-| reddit_rss | Malware | 28 | 0.62% | 3.89% |
-| reddit_rss | ComputerSecurity | 25 | 0.55% | 3.47% |
-| news_api | cnews.ru | 23 | 0.51% | 0.99% |
-| news_api | ithome.com.tw | 23 | 0.51% | 0.99% |
-| news_rss | Rapid7 Blog | 23 | 0.51% | 11.79% |
-| news_api | boredpanda.com | 21 | 0.46% | 0.90% |
-| news_api | bankinfosecurity.com | 18 | 0.40% | 0.77% |
-| news_api | theregister.com | 18 | 0.40% | 0.77% |
-| news_api | 163.com | 17 | 0.37% | 0.73% |
-| news_api | haberler.com | 17 | 0.37% | 0.73% |
-| news_rss | Unit 42 | 17 | 0.37% | 8.72% |
-| news_api | itbrief.co.nz | 16 | 0.35% | 0.69% |
-| news_api | manilatimes.net | 16 | 0.35% | 0.69% |
-| news_rss | Cisco Talos Blog | 16 | 0.35% | 8.21% |
-| news_api | fnnews.com | 15 | 0.33% | 0.64% |
-| news_api | govinfosecurity.com | 14 | 0.31% | 0.60% |
-| news_rss | SANS Internet Storm Center | 14 | 0.31% | 7.18% |
-| news_api | finance.sina.com.cn | 13 | 0.29% | 0.56% |
-| news_api | cointelegraph.com | 12 | 0.26% | 0.51% |
-| news_api | el-balad.com | 12 | 0.26% | 0.51% |
-| news_api | esecurityplanet.com | 12 | 0.26% | 0.51% |
-| news_api | fool.com | 12 | 0.26% | 0.51% |
-| news_api | baijiahao.baidu.com | 11 | 0.24% | 0.47% |
-| news_api | economictimes.indiatimes.com | 11 | 0.24% | 0.47% |
-| news_api | finanznachrichten.de | 11 | 0.24% | 0.47% |
-| news_rss | KrebsOnSecurity | 11 | 0.24% | 5.64% |
-| news_api | csoonline.com | 10 | 0.22% | 0.43% |
-| news_api | finance.yahoo.com | 10 | 0.22% | 0.43% |
-| news_api | techcrunch.com | 10 | 0.22% | 0.43% |
-| news_api | infosecurity-magazine.com | 9 | 0.20% | 0.39% |
-| news_api | jdsupra.com | 9 | 0.20% | 0.39% |
-| news_api | securitylab.ru | 9 | 0.20% | 0.39% |
-| news_api | timesofindia.indiatimes.com | 9 | 0.20% | 0.39% |
-| news_rss | Google Project Zero | 9 | 0.20% | 4.62% |
-| news_api | biz.heraldcorp.com | 8 | 0.18% | 0.34% |
-| news_api | channellife.co.nz | 8 | 0.18% | 0.34% |
-| news_api | edaily.co.kr | 8 | 0.18% | 0.34% |
-| news_api | moneycontrol.com | 8 | 0.18% | 0.34% |
-| news_api | birgun.net | 7 | 0.15% | 0.30% |
-| news_api | dostor.org | 7 | 0.15% | 0.30% |
-| news_api | excite.co.jp | 7 | 0.15% | 0.30% |
-| news_api | rpp.pe | 7 | 0.15% | 0.30% |
-| news_api | yahoo.com | 7 | 0.15% | 0.30% |
-| news_api | zdnet.co.kr | 7 | 0.15% | 0.30% |
-| news_api | eturbonews.com | 6 | 0.13% | 0.26% |
-| news_api | foxnews.com | 6 | 0.13% | 0.26% |
-| news_api | govtech.com | 6 | 0.13% | 0.26% |
-| news_api | laopcion.com.mx | 6 | 0.13% | 0.26% |
-| news_api | prnewswire.com | 6 | 0.13% | 0.26% |
-| news_api | screenrant.com | 6 | 0.13% | 0.26% |
-| news_api | tvguide.co.uk | 6 | 0.13% | 0.26% |
-| news_api | udayavani.com | 6 | 0.13% | 0.26% |
-| news_api | vz.ru | 6 | 0.13% | 0.26% |
-| news_api | aa.com.tr | 5 | 0.11% | 0.21% |
-| news_api | channellife.com.au | 5 | 0.11% | 0.21% |
-| news_api | collider.com | 5 | 0.11% | 0.21% |
-| news_api | ddaily.co.kr | 5 | 0.11% | 0.21% |
-| news_api | ensonhaber.com | 5 | 0.11% | 0.21% |
-| news_api | evrensel.net | 5 | 0.11% | 0.21% |
-| news_api | heise.de | 5 | 0.11% | 0.21% |
-| news_api | hothardware.com | 5 | 0.11% | 0.21% |
-| news_api | ibtimes.com.au | 5 | 0.11% | 0.21% |
-| news_api | maliactu.net | 5 | 0.11% | 0.21% |
-| news_api | milliyet.com.tr | 5 | 0.11% | 0.21% |
-| news_api | pcmag.com | 5 | 0.11% | 0.21% |
-| news_api | punchng.com | 5 | 0.11% | 0.21% |
-| news_api | zazoom.it | 5 | 0.11% | 0.21% |
-| news_api | 9to5mac.com | 4 | 0.09% | 0.17% |
-| news_api | aceshowbiz.com | 4 | 0.09% | 0.17% |
-| news_api | alquds.co.uk | 4 | 0.09% | 0.17% |
-| news_api | anlatilaninotesi.com.tr | 4 | 0.09% | 0.17% |
-| news_api | cbc.ca | 4 | 0.09% | 0.17% |
-| news_api | coindesk.com | 4 | 0.09% | 0.17% |
-| news_api | computing.co.uk | 4 | 0.09% | 0.17% |
-| news_api | europapress.es | 4 | 0.09% | 0.17% |
-| news_api | ghanamma.com | 4 | 0.09% | 0.17% |
-| news_api | iefimerida.gr | 4 | 0.09% | 0.17% |
-| news_api | insurancebusinessmag.com | 4 | 0.09% | 0.17% |
-| news_api | interfax.ru | 4 | 0.09% | 0.17% |
-| news_api | it-online.co.za | 4 | 0.09% | 0.17% |
-| news_api | itnews.com.au | 4 | 0.09% | 0.17% |
-| news_api | japan.zdnet.com | 4 | 0.09% | 0.17% |
-| news_api | kibrispostasi.com | 4 | 0.09% | 0.17% |
-| news_api | mainichi.jp | 4 | 0.09% | 0.17% |
-| news_api | n-tv.de | 4 | 0.09% | 0.17% |
-| news_api | natalie.mu | 4 | 0.09% | 0.17% |
-| news_api | natlawreview.com | 4 | 0.09% | 0.17% |
-| news_api | newjerseytelegraph.com | 4 | 0.09% | 0.17% |
-| news_api | straitstimes.com | 4 | 0.09% | 0.17% |
-| news_api | thefastmode.com | 4 | 0.09% | 0.17% |
-| news_api | theglobeandmail.com | 4 | 0.09% | 0.17% |
-| news_api | thenews.com.pk | 4 | 0.09% | 0.17% |
-| news_api | time.mk | 4 | 0.09% | 0.17% |
-| news_api | tn.com.ar | 4 | 0.09% | 0.17% |
-| news_api | trthaber.com | 4 | 0.09% | 0.17% |
-| news_api | turkiyegazetesi.com.tr | 4 | 0.09% | 0.17% |
-| news_api | winnipegfreepress.com | 4 | 0.09% | 0.17% |
-| news_api | wired.com | 4 | 0.09% | 0.17% |
-| news_api | abc.es | 3 | 0.07% | 0.13% |
-| news_api | aljazeera.net | 3 | 0.07% | 0.13% |
-| news_api | alltoc.com | 3 | 0.07% | 0.13% |
-| news_api | am.com.mx | 3 | 0.07% | 0.13% |
-| news_api | androidauthority.com | 3 | 0.07% | 0.13% |
-| news_api | aninews.in | 3 | 0.07% | 0.13% |
-| news_api | biometricupdate.com | 3 | 0.07% | 0.13% |
-| news_api | bleedingcool.com | 3 | 0.07% | 0.13% |
-| news_api | busan.com | 3 | 0.07% | 0.13% |
-| news_api | business.scoop.co.nz | 3 | 0.07% | 0.13% |
-| news_api | businessday.co.za | 3 | 0.07% | 0.13% |
-| news_api | capital.ro | 3 | 0.07% | 0.13% |
-| news_api | ciudadccs.info | 3 | 0.07% | 0.13% |
-| news_api | claimsjournal.com | 3 | 0.07% | 0.13% |
-| news_api | cnnturk.com | 3 | 0.07% | 0.13% |
-| news_api | dailymail.com | 3 | 0.07% | 0.13% |
-| news_api | defensenews.com | 3 | 0.07% | 0.13% |
-| news_api | divyabhaskar.co.in | 3 | 0.07% | 0.13% |
-| news_api | donanimgunlugu.com | 3 | 0.07% | 0.13% |
-| news_api | eldiariodechihuahua.mx | 3 | 0.07% | 0.13% |
-| news_api | elsiglodetorreon.com.mx | 3 | 0.07% | 0.13% |
-| news_api | etoday.co.kr | 3 | 0.07% | 0.13% |
-| news_api | eurasiareview.com | 3 | 0.07% | 0.13% |
-| news_api | eurointegration.com.ua | 3 | 0.07% | 0.13% |
-| news_api | europesun.com | 3 | 0.07% | 0.13% |
-| news_api | finance.eastmoney.com | 3 | 0.07% | 0.13% |
-| news_api | freepressjournal.in | 3 | 0.07% | 0.13% |
-| news_api | glavcom.ua | 3 | 0.07% | 0.13% |
-| news_api | haksozhaber.net | 3 | 0.07% | 0.13% |
-| news_api | hindustantimes.com | 3 | 0.07% | 0.13% |
-| news_api | inewsgr.com | 3 | 0.07% | 0.13% |
-| news_api | insideottawavalley.com | 3 | 0.07% | 0.13% |
-| news_api | itbear.com.cn | 3 | 0.07% | 0.13% |
-| news_api | itbusinessnet.com | 3 | 0.07% | 0.13% |
-| news_api | itnewsonline.com | 3 | 0.07% | 0.13% |
-| news_api | itweb.co.za | 3 | 0.07% | 0.13% |
-| news_api | kmib.co.kr | 3 | 0.07% | 0.13% |
-| news_api | koreaherald.com | 3 | 0.07% | 0.13% |
-| news_api | marketscreener.com | 3 | 0.07% | 0.13% |
-| news_api | mashable.com | 3 | 0.07% | 0.13% |
-| news_api | miragenews.com | 3 | 0.07% | 0.13% |
-| news_api | mirror.co.uk | 3 | 0.07% | 0.13% |
-| news_api | mondaq.com | 3 | 0.07% | 0.13% |
-| news_api | n.yam.com | 3 | 0.07% | 0.13% |
-| news_api | newkerala.com | 3 | 0.07% | 0.13% |
-| news_api | newspim.com | 3 | 0.07% | 0.13% |
-| news_api | newsway.co.kr | 3 | 0.07% | 0.13% |
-| news_api | newswiretoday.com | 3 | 0.07% | 0.13% |
-| news_api | nypost.com | 3 | 0.07% | 0.13% |
-| news_api | nzherald.co.nz | 3 | 0.07% | 0.13% |
-| news_api | odatv.com | 3 | 0.07% | 0.13% |
-| news_api | oem.com.mx | 3 | 0.07% | 0.13% |
-| news_api | politis.com.cy | 3 | 0.07% | 0.13% |
-| news_api | portal.sina.com.hk | 3 | 0.07% | 0.13% |
-| news_api | ria.ru | 3 | 0.07% | 0.13% |
-| news_api | russian.rt.com | 3 | 0.07% | 0.13% |
-| news_api | sabah.com.tr | 3 | 0.07% | 0.13% |
-| news_api | sb.by | 3 | 0.07% | 0.13% |
-| news_api | scoop.co.nz | 3 | 0.07% | 0.13% |
-| news_api | shorouknews.com | 3 | 0.07% | 0.13% |
-| news_api | sozcu.com.tr | 3 | 0.07% | 0.13% |
-| news_api | sudanile.com | 3 | 0.07% | 0.13% |
-| news_api | thenextweb.com | 3 | 0.07% | 0.13% |
-| news_api | thesun.ng | 3 | 0.07% | 0.13% |
-| news_api | tomshardware.com | 3 | 0.07% | 0.13% |
-| news_api | tribuneindia.com | 3 | 0.07% | 0.13% |
-| news_api | unian.net | 3 | 0.07% | 0.13% |
-| news_api | ura.news | 3 | 0.07% | 0.13% |
-| news_api | vanguardngr.com | 3 | 0.07% | 0.13% |
-| news_api | vetogate.com | 3 | 0.07% | 0.13% |
-| news_api | vietnamnet.vn | 3 | 0.07% | 0.13% |
-| news_api | wbaltv.com | 3 | 0.07% | 0.13% |
-| news_api | wesh.com | 3 | 0.07% | 0.13% |
-| news_api | wmur.com | 3 | 0.07% | 0.13% |
-| news_api | womannews.net | 3 | 0.07% | 0.13% |
-| news_api | yorkregion.com | 3 | 0.07% | 0.13% |
-| news_api | 1prime.ru | 2 | 0.04% | 0.09% |
-| news_api | abovethelaw.com | 2 | 0.04% | 0.09% |
-| news_api | allafrica.com | 2 | 0.04% | 0.09% |
-| news_api | americanbanker.com | 2 | 0.04% | 0.09% |
-| news_api | amic.ru | 2 | 0.04% | 0.09% |
-| news_api | androidheadlines.com | 2 | 0.04% | 0.09% |
-| news_api | antaranews.com | 2 | 0.04% | 0.09% |
-| news_api | antimafiaduemila.com | 2 | 0.04% | 0.09% |
-| news_api | aol.co.uk | 2 | 0.04% | 0.09% |
-| news_api | aristeguinoticias.com | 2 | 0.04% | 0.09% |
-| news_api | arkansasonline.com | 2 | 0.04% | 0.09% |
-| news_api | arstechnica.com | 2 | 0.04% | 0.09% |
-| news_api | austinglobe.com | 2 | 0.04% | 0.09% |
-| news_api | bankingnews.gr | 2 | 0.04% | 0.09% |
-| news_api | batonrougepost.com | 2 | 0.04% | 0.09% |
-| news_api | bd-pratidin.com | 2 | 0.04% | 0.09% |
-| news_api | begeek.fr | 2 | 0.04% | 0.09% |
-| news_api | bernerzeitung.ch | 2 | 0.04% | 0.09% |
-| news_api | bgr.com | 2 | 0.04% | 0.09% |
-| news_api | bignewsnetwork.com | 2 | 0.04% | 0.09% |
-| news_api | bjnews.com.cn | 2 | 0.04% | 0.09% |
-| news_api | bleepingcomputer.com | 2 | 0.04% | 0.09% |
-| news_api | boerse-express.com | 2 | 0.04% | 0.09% |
-| news_api | brisbanetimes.com.au | 2 | 0.04% | 0.09% |
-| news_api | bunburymail.com.au | 2 | 0.04% | 0.09% |
-| news_api | business24.ro | 2 | 0.04% | 0.09% |
-| news_api | businessghana.com | 2 | 0.04% | 0.09% |
-| news_api | cambridgetimes.ca | 2 | 0.04% | 0.09% |
-| news_api | castanetkamloops.net | 2 | 0.04% | 0.09% |
-| news_api | chinanationalnews.com | 2 | 0.04% | 0.09% |
-| news_api | cloud.watch.impress.co.jp | 2 | 0.04% | 0.09% |
-| news_api | comnews.ru | 2 | 0.04% | 0.09% |
-| news_api | computerweekly.com | 2 | 0.04% | 0.09% |
-| news_api | correiobraziliense.com.br | 2 | 0.04% | 0.09% |
-| news_api | daily.com.ua | 2 | 0.04% | 0.09% |
-| news_api | dailybreeze.com | 2 | 0.04% | 0.09% |
-| news_api | dailyemerald.com | 2 | 0.04% | 0.09% |
-| news_api | dailyinqilab.com | 2 | 0.04% | 0.09% |
-| news_api | dailykos.com | 2 | 0.04% | 0.09% |
-| news_api | dailynews.co.th | 2 | 0.04% | 0.09% |
-| news_api | dailynews.com | 2 | 0.04% | 0.09% |
-| news_api | dailypioneer.com | 2 | 0.04% | 0.09% |
-| news_api | dailypolitical.com | 2 | 0.04% | 0.09% |
-| news_api | danas.rs | 2 | 0.04% | 0.09% |
-| news_api | deadline.com | 2 | 0.04% | 0.09% |
-| news_api | denizlihaber.com | 2 | 0.04% | 0.09% |
-| news_api | diariosur.es | 2 | 0.04% | 0.09% |
-| news_api | digitaljournal.com | 2 | 0.04% | 0.09% |
-| news_api | ecodibergamo.it | 2 | 0.04% | 0.09% |
-| news_api | ecodisicilia.com | 2 | 0.04% | 0.09% |
-| news_api | ecommercenews.co.nz | 2 | 0.04% | 0.09% |
-| news_api | eldestapeweb.com | 2 | 0.04% | 0.09% |
-| news_api | eldia.com.bo | 2 | 0.04% | 0.09% |
-| news_api | elmanana.com | 2 | 0.04% | 0.09% |
-| news_api | elpais.com | 2 | 0.04% | 0.09% |
-| news_api | etnews.com | 2 | 0.04% | 0.09% |
-| news_api | filmfare.com | 2 | 0.04% | 0.09% |
-| news_api | focus.ua | 2 | 0.04% | 0.09% |
-| news_api | fontanka.ru | 2 | 0.04% | 0.09% |
-| news_api | fox4news.com | 2 | 0.04% | 0.09% |
-| news_api | fr.allafrica.com | 2 | 0.04% | 0.09% |
-| news_api | freemalaysiatoday.com | 2 | 0.04% | 0.09% |
-| news_api | gdnonline.com | 2 | 0.04% | 0.09% |
-| news_api | geeky-gadgets.com | 2 | 0.04% | 0.09% |
-| news_api | github.com | 2 | 0.04% | 0.09% |
-| news_api | gizmodo.com | 2 | 0.04% | 0.09% |
-| news_api | globalnews.ca | 2 | 0.04% | 0.09% |
-| news_api | greeleytribune.com | 2 | 0.04% | 0.09% |
-| news_api | haber1.com | 2 | 0.04% | 0.09% |
-| news_api | haber7.com | 2 | 0.04% | 0.09% |
-| news_api | haberturk.com | 2 | 0.04% | 0.09% |
-| news_api | habervitrini.com | 2 | 0.04% | 0.09% |
-| news_api | haberyazar.com | 2 | 0.04% | 0.09% |
-| news_api | hawaiitelegraph.com | 2 | 0.04% | 0.09% |
-| news_api | heraldk.com | 2 | 0.04% | 0.09% |
-| news_api | hindi.webdunia.com | 2 | 0.04% | 0.09% |
-| news_api | hinews.cn | 2 | 0.04% | 0.09% |
-| news_api | hollywoodreporter.com | 2 | 0.04% | 0.09% |
-| news_api | htxt.co.za | 2 | 0.04% | 0.09% |
-| news_api | hurriyetdailynews.com | 2 | 0.04% | 0.09% |
-| news_api | ianslive.in | 2 | 0.04% | 0.09% |
-| news_api | index.hr | 2 | 0.04% | 0.09% |
-| news_api | inews24.com | 2 | 0.04% | 0.09% |
-| news_api | inforum.com | 2 | 0.04% | 0.09% |
-| news_api | infoworld.com | 2 | 0.04% | 0.09% |
-| news_api | inosmi.ru | 2 | 0.04% | 0.09% |
-| news_api | insight.co.kr | 2 | 0.04% | 0.09% |
-| news_api | insurancejournal.com | 2 | 0.04% | 0.09% |
-| news_api | investegate.co.uk | 2 | 0.04% | 0.09% |
-| news_api | irishdentist.ie | 2 | 0.04% | 0.09% |
-| news_api | itwire.com | 2 | 0.04% | 0.09% |
-| news_api | iz.ru | 2 | 0.04% | 0.09% |
-| news_api | jamaicaobserver.com | 2 | 0.04% | 0.09% |
-| news_api | japanherald.com | 2 | 0.04% | 0.09% |
-| news_api | jawapos.com | 2 | 0.04% | 0.09% |
-| news_api | jpost.com | 2 | 0.04% | 0.09% |
-| news_api | jugantor.com | 2 | 0.04% | 0.09% |
-| news_api | kathimerini.com.cy | 2 | 0.04% | 0.09% |
-| news_api | kommersant.ru | 2 | 0.04% | 0.09% |
-| news_api | koreatimes.com | 2 | 0.04% | 0.09% |
-| news_api | kten.com | 2 | 0.04% | 0.09% |
-| news_api | lalsace.fr | 2 | 0.04% | 0.09% |
-| news_api | lbc.co.uk | 2 | 0.04% | 0.09% |
-| news_api | ledauphine.com | 2 | 0.04% | 0.09% |
-| news_api | lefigaro.fr | 2 | 0.04% | 0.09% |
-| news_api | lelezard.com | 2 | 0.04% | 0.09% |
-| news_api | lenta.ru | 2 | 0.04% | 0.09% |
-| news_api | libnanews.com | 2 | 0.04% | 0.09% |
-| news_api | life.ru | 2 | 0.04% | 0.09% |
-| news_api | livehindustan.com | 2 | 0.04% | 0.09% |
-| news_api | livenews.co.nz | 2 | 0.04% | 0.09% |
-| news_api | lrytas.lt | 2 | 0.04% | 0.09% |
-| news_api | macleayargus.com.au | 2 | 0.04% | 0.09% |
-| news_api | makeuseof.com | 2 | 0.04% | 0.09% |
-| news_api | marca.com | 2 | 0.04% | 0.09% |
-| news_api | mariettatimes.com | 2 | 0.04% | 0.09% |
-| news_api | massachusettssun.com | 2 | 0.04% | 0.09% |
-| news_api | medianama.com | 2 | 0.04% | 0.09% |
-| news_api | mersinhaber.com | 2 | 0.04% | 0.09% |
-| news_api | messengernewspapers.co.uk | 2 | 0.04% | 0.09% |
-| news_api | military.china.com | 2 | 0.04% | 0.09% |
-| news_api | mississauga.com | 2 | 0.04% | 0.09% |
-| news_api | mk.ru | 2 | 0.04% | 0.09% |
-| news_api | modernghana.com | 2 | 0.04% | 0.09% |
-| news_api | morningstar.com | 2 | 0.04% | 0.09% |
-| news_api | naftemporiki.gr | 2 | 0.04% | 0.09% |
-| news_api | newratings.de | 2 | 0.04% | 0.09% |
-| news_api | news.cn | 2 | 0.04% | 0.09% |
-| news_api | news.mail.ru | 2 | 0.04% | 0.09% |
-| news_api | newtalk.tw | 2 | 0.04% | 0.09% |
-| news_api | nikkan-gendai.com | 2 | 0.04% | 0.09% |
-| news_api | nikkei.com | 2 | 0.04% | 0.09% |
-| news_api | ntdtv.com | 2 | 0.04% | 0.09% |
-| news_api | nuevodiarioweb.com.ar | 2 | 0.04% | 0.09% |
-| news_api | nvi.com.au | 2 | 0.04% | 0.09% |
-| news_api | ohmynews.com | 2 | 0.04% | 0.09% |
-| news_api | parisguardian.com | 2 | 0.04% | 0.09% |
-| news_api | pcwplus.hu | 2 | 0.04% | 0.09% |
-| news_api | phonandroid.com | 2 | 0.04% | 0.09% |
-| news_api | politika.rs | 2 | 0.04% | 0.09% |
-| news_api | posta.com.tr | 2 | 0.04% | 0.09% |
-| news_api | pravda.ru | 2 | 0.04% | 0.09% |
-| news_api | prensalibre.com | 2 | 0.04% | 0.09% |
-| news_api | presstv.ir | 2 | 0.04% | 0.09% |
-| news_api | prokerala.com | 2 | 0.04% | 0.09% |
-| news_api | propakistani.pk | 2 | 0.04% | 0.09% |
-| news_api | pv-magazine.com | 2 | 0.04% | 0.09% |
-| news_api | pymnts.com | 2 | 0.04% | 0.09% |
-| news_api | radiofrance.fr | 2 | 0.04% | 0.09% |
-| news_api | radiopolar.com | 2 | 0.04% | 0.09% |
-| news_api | rappler.com | 2 | 0.04% | 0.09% |
-| news_api | rediff.com | 2 | 0.04% | 0.09% |
-| news_api | riasv.ru | 2 | 0.04% | 0.09% |
-| news_api | russiaherald.com | 2 | 0.04% | 0.09% |
-| news_api | sanantoniopost.com | 2 | 0.04% | 0.09% |
-| news_api | sankei.com | 2 | 0.04% | 0.09% |
-| news_api | securitybrief.news | 2 | 0.04% | 0.09% |
-| news_api | securityinfowatch.com | 2 | 0.04% | 0.09% |
-| news_api | segye.com | 2 | 0.04% | 0.09% |
-| news_api | senego.com | 2 | 0.04% | 0.09% |
-| news_api | sentinel.ht | 2 | 0.04% | 0.09% |
-| news_api | sgvtribune.com | 2 | 0.04% | 0.09% |
-| news_api | simcoe.com | 2 | 0.04% | 0.09% |
-| news_api | smh.com.au | 2 | 0.04% | 0.09% |
-| news_api | stcn.com | 2 | 0.04% | 0.09% |
-| news_api | storm.mg | 2 | 0.04% | 0.09% |
-| news_api | t-online.de | 2 | 0.04% | 0.09% |
-| news_api | talk.ltn.com.tw | 2 | 0.04% | 0.09% |
-| news_api | tech.caijing.com.cn | 2 | 0.04% | 0.09% |
-| news_api | tech.ifeng.com | 2 | 0.04% | 0.09% |
-| news_api | techweez.com | 2 | 0.04% | 0.09% |
-| news_api | tennesseedaily.com | 2 | 0.04% | 0.09% |
-| news_api | tgrthaber.com | 2 | 0.04% | 0.09% |
-| news_api | theguardian.com | 2 | 0.04% | 0.09% |
-| news_api | thehindu.com | 2 | 0.04% | 0.09% |
-| news_api | thereporterethiopia.com | 2 | 0.04% | 0.09% |
-| news_api | thisdaylive.com | 2 | 0.04% | 0.09% |
-| news_api | timeslive.co.za | 2 | 0.04% | 0.09% |
-| news_api | tmtpost.com | 2 | 0.04% | 0.09% |
-| news_api | townhall.com | 2 | 0.04% | 0.09% |
-| news_api | tribune.net.ph | 2 | 0.04% | 0.09% |
-| news_api | turktime.com | 2 | 0.04% | 0.09% |
-| news_api | uainfo.org | 2 | 0.04% | 0.09% |
-| news_api | udn.com | 2 | 0.04% | 0.09% |
-| news_api | unn.ua | 2 | 0.04% | 0.09% |
-| news_api | unternehmen-heute.de | 2 | 0.04% | 0.09% |
-| news_api | vedomosti.ru | 2 | 0.04% | 0.09% |
-| news_api | vesti.ru | 2 | 0.04% | 0.09% |
-| news_api | vg.no | 2 | 0.04% | 0.09% |
-| news_api | vicnews.com | 2 | 0.04% | 0.09% |
-| news_api | wdrb.com | 2 | 0.04% | 0.09% |
-| news_api | webpronews.com | 2 | 0.04% | 0.09% |
-| news_api | welivesecurity.com | 2 | 0.04% | 0.09% |
-| news_api | welt.de | 2 | 0.04% | 0.09% |
-| news_api | weser-kurier.de | 2 | 0.04% | 0.09% |
-| news_api | wfmz.com | 2 | 0.04% | 0.09% |
-| news_api | wiwo.de | 2 | 0.04% | 0.09% |
-| news_api | wsbtv.com | 2 | 0.04% | 0.09% |
-| news_api | wwmt.com | 2 | 0.04% | 0.09% |
-| news_api | wzzm13.com | 2 | 0.04% | 0.09% |
-| news_api | y-mainichi.co.jp | 2 | 0.04% | 0.09% |
-| news_api | yeniakit.com.tr | 2 | 0.04% | 0.09% |
-| news_api | yeniasya.com.tr | 2 | 0.04% | 0.09% |
-| news_api | ziare.com | 2 | 0.04% | 0.09% |
-| news_api | zonebourse.com | 2 | 0.04% | 0.09% |
+| cve | NVD CVE | 1295 | 27.21% | 100.00% |
+| reddit_rss | cybersecurity | 198 | 4.16% | 25.85% |
+| reddit_rss | sysadmin | 158 | 3.32% | 20.63% |
+| reddit_rss | privacy | 92 | 1.93% | 12.01% |
+| reddit_rss | blueteamsec | 80 | 1.68% | 10.44% |
+| news_rss | The Hacker News | 66 | 1.39% | 33.67% |
+| reddit_rss | hacking | 42 | 0.88% | 5.48% |
+| news_rss | BleepingComputer | 40 | 0.84% | 20.41% |
+| reddit_rss | netsec | 39 | 0.82% | 5.09% |
+| reddit_rss | ReverseEngineering | 38 | 0.80% | 4.96% |
+| news_api | forbes.com | 35 | 0.74% | 1.40% |
+| reddit_rss | osint | 33 | 0.69% | 4.31% |
+| reddit_rss | AskNetsec | 32 | 0.67% | 4.18% |
+| news_api | techradar.com | 31 | 0.65% | 1.24% |
+| news_api | ascii.jp | 29 | 0.61% | 1.16% |
+| reddit_rss | Malware | 29 | 0.61% | 3.79% |
+| reddit_rss | ComputerSecurity | 25 | 0.53% | 3.26% |
+| news_api | cnews.ru | 23 | 0.48% | 0.92% |
+| news_api | ithome.com.tw | 23 | 0.48% | 0.92% |
+| news_rss | Rapid7 Blog | 23 | 0.48% | 11.73% |
+| news_api | boredpanda.com | 21 | 0.44% | 0.84% |
+| news_api | haberler.com | 21 | 0.44% | 0.84% |
+| news_api | theregister.com | 19 | 0.40% | 0.76% |
+| news_api | bankinfosecurity.com | 18 | 0.38% | 0.72% |
+| news_api | 163.com | 17 | 0.36% | 0.68% |
+| news_api | fnnews.com | 17 | 0.36% | 0.68% |
+| news_rss | Unit 42 | 17 | 0.36% | 8.67% |
+| news_api | itbrief.co.nz | 16 | 0.34% | 0.64% |
+| news_api | manilatimes.net | 16 | 0.34% | 0.64% |
+| news_rss | Cisco Talos Blog | 16 | 0.34% | 8.16% |
+| news_api | rpp.pe | 15 | 0.32% | 0.60% |
+| news_api | govinfosecurity.com | 14 | 0.29% | 0.56% |
+| news_rss | SANS Internet Storm Center | 14 | 0.29% | 7.14% |
+| news_api | finance.sina.com.cn | 13 | 0.27% | 0.52% |
+| news_api | cointelegraph.com | 12 | 0.25% | 0.48% |
+| news_api | el-balad.com | 12 | 0.25% | 0.48% |
+| news_api | esecurityplanet.com | 12 | 0.25% | 0.48% |
+| news_api | fool.com | 12 | 0.25% | 0.48% |
+| news_api | baijiahao.baidu.com | 11 | 0.23% | 0.44% |
+| news_api | economictimes.indiatimes.com | 11 | 0.23% | 0.44% |
+| news_api | finanznachrichten.de | 11 | 0.23% | 0.44% |
+| news_rss | KrebsOnSecurity | 11 | 0.23% | 5.61% |
+| news_api | csoonline.com | 10 | 0.21% | 0.40% |
+| news_api | dostor.org | 10 | 0.21% | 0.40% |
+| news_api | finance.yahoo.com | 10 | 0.21% | 0.40% |
+| news_api | moneycontrol.com | 10 | 0.21% | 0.40% |
+| news_api | techcrunch.com | 10 | 0.21% | 0.40% |
+| news_api | infosecurity-magazine.com | 9 | 0.19% | 0.36% |
+| news_api | jdsupra.com | 9 | 0.19% | 0.36% |
+| news_api | securitylab.ru | 9 | 0.19% | 0.36% |
+| news_api | timesofindia.indiatimes.com | 9 | 0.19% | 0.36% |
+| news_rss | Google Project Zero | 9 | 0.19% | 4.59% |
+| news_api | biz.heraldcorp.com | 8 | 0.17% | 0.32% |
+| news_api | channellife.co.nz | 8 | 0.17% | 0.32% |
+| news_api | edaily.co.kr | 8 | 0.17% | 0.32% |
+| news_api | bankingnews.gr | 7 | 0.15% | 0.28% |
+| news_api | birgun.net | 7 | 0.15% | 0.28% |
+| news_api | ddaily.co.kr | 7 | 0.15% | 0.28% |
+| news_api | excite.co.jp | 7 | 0.15% | 0.28% |
+| news_api | govtech.com | 7 | 0.15% | 0.28% |
+| news_api | sabah.com.tr | 7 | 0.15% | 0.28% |
+| news_api | yahoo.com | 7 | 0.15% | 0.28% |
+| news_api | zdnet.co.kr | 7 | 0.15% | 0.28% |
+| news_api | ensonhaber.com | 6 | 0.13% | 0.24% |
+| news_api | eturbonews.com | 6 | 0.13% | 0.24% |
+| news_api | foxnews.com | 6 | 0.13% | 0.24% |
+| news_api | laopcion.com.mx | 6 | 0.13% | 0.24% |
+| news_api | prnewswire.com | 6 | 0.13% | 0.24% |
+| news_api | screenrant.com | 6 | 0.13% | 0.24% |
+| news_api | tvguide.co.uk | 6 | 0.13% | 0.24% |
+| news_api | udayavani.com | 6 | 0.13% | 0.24% |
+| news_api | vz.ru | 6 | 0.13% | 0.24% |
+| news_api | zazoom.it | 6 | 0.13% | 0.24% |
+| news_api | aa.com.tr | 5 | 0.11% | 0.20% |
+| news_api | anlatilaninotesi.com.tr | 5 | 0.11% | 0.20% |
+| news_api | channellife.com.au | 5 | 0.11% | 0.20% |
+| news_api | collider.com | 5 | 0.11% | 0.20% |
+| news_api | europapress.es | 5 | 0.11% | 0.20% |
+| news_api | evrensel.net | 5 | 0.11% | 0.20% |
+| news_api | heise.de | 5 | 0.11% | 0.20% |
+| news_api | hothardware.com | 5 | 0.11% | 0.20% |
+| news_api | ibtimes.com.au | 5 | 0.11% | 0.20% |
+| news_api | inewsgr.com | 5 | 0.11% | 0.20% |
+| news_api | maliactu.net | 5 | 0.11% | 0.20% |
+| news_api | milliyet.com.tr | 5 | 0.11% | 0.20% |
+| news_api | pcmag.com | 5 | 0.11% | 0.20% |
+| news_api | punchng.com | 5 | 0.11% | 0.20% |
+| news_api | shorouknews.com | 5 | 0.11% | 0.20% |
+| news_api | 9to5mac.com | 4 | 0.08% | 0.16% |
+| news_api | aceshowbiz.com | 4 | 0.08% | 0.16% |
+| news_api | alquds.co.uk | 4 | 0.08% | 0.16% |
+| news_api | bd-pratidin.com | 4 | 0.08% | 0.16% |
+| news_api | boerse-express.com | 4 | 0.08% | 0.16% |
+| news_api | cbc.ca | 4 | 0.08% | 0.16% |
+| news_api | cnnturk.com | 4 | 0.08% | 0.16% |
+| news_api | coindesk.com | 4 | 0.08% | 0.16% |
+| news_api | computing.co.uk | 4 | 0.08% | 0.16% |
+| news_api | etoday.co.kr | 4 | 0.08% | 0.16% |
+| news_api | ghanamma.com | 4 | 0.08% | 0.16% |
+| news_api | iefimerida.gr | 4 | 0.08% | 0.16% |
+| news_api | insurancebusinessmag.com | 4 | 0.08% | 0.16% |
+| news_api | interfax.ru | 4 | 0.08% | 0.16% |
+| news_api | it-online.co.za | 4 | 0.08% | 0.16% |
+| news_api | itnews.com.au | 4 | 0.08% | 0.16% |
+| news_api | japan.zdnet.com | 4 | 0.08% | 0.16% |
+| news_api | kibrispostasi.com | 4 | 0.08% | 0.16% |
+| news_api | mainichi.jp | 4 | 0.08% | 0.16% |
+| news_api | mirror.co.uk | 4 | 0.08% | 0.16% |
+| news_api | n-tv.de | 4 | 0.08% | 0.16% |
+| news_api | natalie.mu | 4 | 0.08% | 0.16% |
+| news_api | natlawreview.com | 4 | 0.08% | 0.16% |
+| news_api | newjerseytelegraph.com | 4 | 0.08% | 0.16% |
+| news_api | scoop.co.nz | 4 | 0.08% | 0.16% |
+| news_api | sozcu.com.tr | 4 | 0.08% | 0.16% |
+| news_api | straitstimes.com | 4 | 0.08% | 0.16% |
+| news_api | sudanile.com | 4 | 0.08% | 0.16% |
+| news_api | thefastmode.com | 4 | 0.08% | 0.16% |
+| news_api | theglobeandmail.com | 4 | 0.08% | 0.16% |
+| news_api | thenews.com.pk | 4 | 0.08% | 0.16% |
+| news_api | time.mk | 4 | 0.08% | 0.16% |
+| news_api | tn.com.ar | 4 | 0.08% | 0.16% |
+| news_api | trthaber.com | 4 | 0.08% | 0.16% |
+| news_api | turkiyegazetesi.com.tr | 4 | 0.08% | 0.16% |
+| news_api | ura.news | 4 | 0.08% | 0.16% |
+| news_api | vanguardngr.com | 4 | 0.08% | 0.16% |
+| news_api | vetogate.com | 4 | 0.08% | 0.16% |
+| news_api | winnipegfreepress.com | 4 | 0.08% | 0.16% |
+| news_api | wired.com | 4 | 0.08% | 0.16% |
+| news_api | abc.es | 3 | 0.06% | 0.12% |
+| news_api | aljazeera.net | 3 | 0.06% | 0.12% |
+| news_api | alltoc.com | 3 | 0.06% | 0.12% |
+| news_api | am.com.mx | 3 | 0.06% | 0.12% |
+| news_api | androidauthority.com | 3 | 0.06% | 0.12% |
+| news_api | aninews.in | 3 | 0.06% | 0.12% |
+| news_api | biometricupdate.com | 3 | 0.06% | 0.12% |
+| news_api | bleedingcool.com | 3 | 0.06% | 0.12% |
+| news_api | bursadabugun.com | 3 | 0.06% | 0.12% |
+| news_api | busan.com | 3 | 0.06% | 0.12% |
+| news_api | business.scoop.co.nz | 3 | 0.06% | 0.12% |
+| news_api | businessday.co.za | 3 | 0.06% | 0.12% |
+| news_api | capital.ro | 3 | 0.06% | 0.12% |
+| news_api | ciudadccs.info | 3 | 0.06% | 0.12% |
+| news_api | claimsjournal.com | 3 | 0.06% | 0.12% |
+| news_api | dailymail.com | 3 | 0.06% | 0.12% |
+| news_api | defensenews.com | 3 | 0.06% | 0.12% |
+| news_api | divyabhaskar.co.in | 3 | 0.06% | 0.12% |
+| news_api | donanimgunlugu.com | 3 | 0.06% | 0.12% |
+| news_api | dw.com | 3 | 0.06% | 0.12% |
+| news_api | eldiariodechihuahua.mx | 3 | 0.06% | 0.12% |
+| news_api | elsiglodetorreon.com.mx | 3 | 0.06% | 0.12% |
+| news_api | etnews.com | 3 | 0.06% | 0.12% |
+| news_api | eurasiareview.com | 3 | 0.06% | 0.12% |
+| news_api | eurointegration.com.ua | 3 | 0.06% | 0.12% |
+| news_api | europesun.com | 3 | 0.06% | 0.12% |
+| news_api | finance.eastmoney.com | 3 | 0.06% | 0.12% |
+| news_api | focus.de | 3 | 0.06% | 0.12% |
+| news_api | freepressjournal.in | 3 | 0.06% | 0.12% |
+| news_api | glavcom.ua | 3 | 0.06% | 0.12% |
+| news_api | haksozhaber.net | 3 | 0.06% | 0.12% |
+| news_api | hindustantimes.com | 3 | 0.06% | 0.12% |
+| news_api | index.hu | 3 | 0.06% | 0.12% |
+| news_api | inews24.com | 3 | 0.06% | 0.12% |
+| news_api | insideottawavalley.com | 3 | 0.06% | 0.12% |
+| news_api | itbear.com.cn | 3 | 0.06% | 0.12% |
+| news_api | itbusinessnet.com | 3 | 0.06% | 0.12% |
+| news_api | itnewsonline.com | 3 | 0.06% | 0.12% |
+| news_api | itweb.co.za | 3 | 0.06% | 0.12% |
+| news_api | kmib.co.kr | 3 | 0.06% | 0.12% |
+| news_api | koreaherald.com | 3 | 0.06% | 0.12% |
+| news_api | marketscreener.com | 3 | 0.06% | 0.12% |
+| news_api | mashable.com | 3 | 0.06% | 0.12% |
+| news_api | miragenews.com | 3 | 0.06% | 0.12% |
+| news_api | mondaq.com | 3 | 0.06% | 0.12% |
+| news_api | n.yam.com | 3 | 0.06% | 0.12% |
+| news_api | newkerala.com | 3 | 0.06% | 0.12% |
+| news_api | newspim.com | 3 | 0.06% | 0.12% |
+| news_api | newsway.co.kr | 3 | 0.06% | 0.12% |
+| news_api | newswiretoday.com | 3 | 0.06% | 0.12% |
+| news_api | nypost.com | 3 | 0.06% | 0.12% |
+| news_api | nzherald.co.nz | 3 | 0.06% | 0.12% |
+| news_api | odatv.com | 3 | 0.06% | 0.12% |
+| news_api | oem.com.mx | 3 | 0.06% | 0.12% |
+| news_api | politis.com.cy | 3 | 0.06% | 0.12% |
+| news_api | portal.sina.com.hk | 3 | 0.06% | 0.12% |
+| news_api | prokerala.com | 3 | 0.06% | 0.12% |
+| news_api | rediff.com | 3 | 0.06% | 0.12% |
+| news_api | ria.ru | 3 | 0.06% | 0.12% |
+| news_api | russian.rt.com | 3 | 0.06% | 0.12% |
+| news_api | sapo.pt | 3 | 0.06% | 0.12% |
+| news_api | sb.by | 3 | 0.06% | 0.12% |
+| news_api | simcoe.com | 3 | 0.06% | 0.12% |
+| news_api | tgrthaber.com | 3 | 0.06% | 0.12% |
+| news_api | thenextweb.com | 3 | 0.06% | 0.12% |
+| news_api | thesun.ng | 3 | 0.06% | 0.12% |
+| news_api | tomshardware.com | 3 | 0.06% | 0.12% |
+| news_api | tribuneindia.com | 3 | 0.06% | 0.12% |
+| news_api | tumentoday.ru | 3 | 0.06% | 0.12% |
+| news_api | unian.net | 3 | 0.06% | 0.12% |
+| news_api | vietnamnet.vn | 3 | 0.06% | 0.12% |
+| news_api | wbaltv.com | 3 | 0.06% | 0.12% |
+| news_api | wesh.com | 3 | 0.06% | 0.12% |
+| news_api | wmur.com | 3 | 0.06% | 0.12% |
+| news_api | womannews.net | 3 | 0.06% | 0.12% |
+| news_api | yeniakit.com.tr | 3 | 0.06% | 0.12% |
+| news_api | yorkregion.com | 3 | 0.06% | 0.12% |
+| news_api | 1prime.ru | 2 | 0.04% | 0.08% |
+| news_api | abovethelaw.com | 2 | 0.04% | 0.08% |
+| news_api | ahaber.com.tr | 2 | 0.04% | 0.08% |
+| news_api | allafrica.com | 2 | 0.04% | 0.08% |
+| news_api | americanbanker.com | 2 | 0.04% | 0.08% |
+| news_api | amic.ru | 2 | 0.04% | 0.08% |
+| news_api | androidheadlines.com | 2 | 0.04% | 0.08% |
+| news_api | antaranews.com | 2 | 0.04% | 0.08% |
+| news_api | antimafiaduemila.com | 2 | 0.04% | 0.08% |
+| news_api | aol.co.uk | 2 | 0.04% | 0.08% |
+| news_api | aristeguinoticias.com | 2 | 0.04% | 0.08% |
+| news_api | arkansasonline.com | 2 | 0.04% | 0.08% |
+| news_api | arstechnica.com | 2 | 0.04% | 0.08% |
+| news_api | austinglobe.com | 2 | 0.04% | 0.08% |
+| news_api | batonrougepost.com | 2 | 0.04% | 0.08% |
+| news_api | begeek.fr | 2 | 0.04% | 0.08% |
+| news_api | bernerzeitung.ch | 2 | 0.04% | 0.08% |
+| news_api | bgr.com | 2 | 0.04% | 0.08% |
+| news_api | bignewsnetwork.com | 2 | 0.04% | 0.08% |
+| news_api | bjnews.com.cn | 2 | 0.04% | 0.08% |
+| news_api | bleepingcomputer.com | 2 | 0.04% | 0.08% |
+| news_api | brasil247.com | 2 | 0.04% | 0.08% |
+| news_api | breitbart.com | 2 | 0.04% | 0.08% |
+| news_api | brisbanetimes.com.au | 2 | 0.04% | 0.08% |
+| news_api | bunburymail.com.au | 2 | 0.04% | 0.08% |
+| news_api | business24.ro | 2 | 0.04% | 0.08% |
+| news_api | businessghana.com | 2 | 0.04% | 0.08% |
+| news_api | cambridgetimes.ca | 2 | 0.04% | 0.08% |
+| news_api | castanetkamloops.net | 2 | 0.04% | 0.08% |
+| news_api | chinanationalnews.com | 2 | 0.04% | 0.08% |
+| news_api | chip.de | 2 | 0.04% | 0.08% |
+| news_api | cloud.watch.impress.co.jp | 2 | 0.04% | 0.08% |
+| news_api | cna.com.tw | 2 | 0.04% | 0.08% |
+| news_api | comnews.ru | 2 | 0.04% | 0.08% |
+| news_api | computerweekly.com | 2 | 0.04% | 0.08% |
+| news_api | correiobraziliense.com.br | 2 | 0.04% | 0.08% |
+| news_api | correiodopovo.com.br | 2 | 0.04% | 0.08% |
+| news_api | daily.com.ua | 2 | 0.04% | 0.08% |
+| news_api | dailybreeze.com | 2 | 0.04% | 0.08% |
+| news_api | dailyemerald.com | 2 | 0.04% | 0.08% |
+| news_api | dailyinqilab.com | 2 | 0.04% | 0.08% |
+| news_api | dailykos.com | 2 | 0.04% | 0.08% |
+| news_api | dailynews.co.th | 2 | 0.04% | 0.08% |
+| news_api | dailynews.com | 2 | 0.04% | 0.08% |
+| news_api | dailypioneer.com | 2 | 0.04% | 0.08% |
+| news_api | dailypolitical.com | 2 | 0.04% | 0.08% |
+| news_api | danas.rs | 2 | 0.04% | 0.08% |
+| news_api | deadline.com | 2 | 0.04% | 0.08% |
+| news_api | denizlihaber.com | 2 | 0.04% | 0.08% |
+| news_api | dha.com.tr | 2 | 0.04% | 0.08% |
+| news_api | diario.mx | 2 | 0.04% | 0.08% |
+| news_api | diariosur.es | 2 | 0.04% | 0.08% |
+| news_api | digi24.ro | 2 | 0.04% | 0.08% |
+| news_api | digitaljournal.com | 2 | 0.04% | 0.08% |
+| news_api | dogruhaber.com.tr | 2 | 0.04% | 0.08% |
+| news_api | ecodibergamo.it | 2 | 0.04% | 0.08% |
+| news_api | ecodisicilia.com | 2 | 0.04% | 0.08% |
+| news_api | ecommercenews.co.nz | 2 | 0.04% | 0.08% |
+| news_api | eldestapeweb.com | 2 | 0.04% | 0.08% |
+| news_api | eldia.com.bo | 2 | 0.04% | 0.08% |
+| news_api | elmanana.com | 2 | 0.04% | 0.08% |
+| news_api | elpais.com | 2 | 0.04% | 0.08% |
+| news_api | eluniversal.com.mx | 2 | 0.04% | 0.08% |
+| news_api | filmfare.com | 2 | 0.04% | 0.08% |
+| news_api | focus.ua | 2 | 0.04% | 0.08% |
+| news_api | fontanka.ru | 2 | 0.04% | 0.08% |
+| news_api | fox4news.com | 2 | 0.04% | 0.08% |
+| news_api | fr.allafrica.com | 2 | 0.04% | 0.08% |
+| news_api | freemalaysiatoday.com | 2 | 0.04% | 0.08% |
+| news_api | gdnonline.com | 2 | 0.04% | 0.08% |
+| news_api | geeky-gadgets.com | 2 | 0.04% | 0.08% |
+| news_api | github.com | 2 | 0.04% | 0.08% |
+| news_api | gizmodo.com | 2 | 0.04% | 0.08% |
+| news_api | globalnews.ca | 2 | 0.04% | 0.08% |
+| news_api | greeleytribune.com | 2 | 0.04% | 0.08% |
+| news_api | haber1.com | 2 | 0.04% | 0.08% |
+| news_api | haber7.com | 2 | 0.04% | 0.08% |
+| news_api | haberturk.com | 2 | 0.04% | 0.08% |
+| news_api | habervitrini.com | 2 | 0.04% | 0.08% |
+| news_api | haberyazar.com | 2 | 0.04% | 0.08% |
+| news_api | hawaiitelegraph.com | 2 | 0.04% | 0.08% |
+| news_api | heraldk.com | 2 | 0.04% | 0.08% |
+| news_api | hindi.webdunia.com | 2 | 0.04% | 0.08% |
+| news_api | hinews.cn | 2 | 0.04% | 0.08% |
+| news_api | hollywoodreporter.com | 2 | 0.04% | 0.08% |
+| news_api | howtogeek.com | 2 | 0.04% | 0.08% |
+| news_api | htxt.co.za | 2 | 0.04% | 0.08% |
+| news_api | hurriyetdailynews.com | 2 | 0.04% | 0.08% |
+| news_api | ianslive.in | 2 | 0.04% | 0.08% |
+| news_api | index.hr | 2 | 0.04% | 0.08% |
+| news_api | inforum.com | 2 | 0.04% | 0.08% |
+| news_api | infoworld.com | 2 | 0.04% | 0.08% |
+| news_api | inosmi.ru | 2 | 0.04% | 0.08% |
+| news_api | insideclimatenews.org | 2 | 0.04% | 0.08% |
+| news_api | insight.co.kr | 2 | 0.04% | 0.08% |
+| news_api | insurancejournal.com | 2 | 0.04% | 0.08% |
+| news_api | internasional.kompas.com | 2 | 0.04% | 0.08% |
+| news_api | investegate.co.uk | 2 | 0.04% | 0.08% |
+| news_api | irishdentist.ie | 2 | 0.04% | 0.08% |
+| news_api | itc.ua | 2 | 0.04% | 0.08% |
+| news_api | itwire.com | 2 | 0.04% | 0.08% |
+| news_api | iz.ru | 2 | 0.04% | 0.08% |
+| news_api | jamaicaobserver.com | 2 | 0.04% | 0.08% |
+| news_api | japanherald.com | 2 | 0.04% | 0.08% |
+| news_api | jawapos.com | 2 | 0.04% | 0.08% |
+| news_api | jpost.com | 2 | 0.04% | 0.08% |
+| news_api | jugantor.com | 2 | 0.04% | 0.08% |
+| news_api | kathimerini.com.cy | 2 | 0.04% | 0.08% |
+| news_api | kitabat.com | 2 | 0.04% | 0.08% |
+| news_api | kommersant.ru | 2 | 0.04% | 0.08% |
+| news_api | koreatimes.com | 2 | 0.04% | 0.08% |
+| news_api | kten.com | 2 | 0.04% | 0.08% |
+| news_api | laleggepertutti.it | 2 | 0.04% | 0.08% |
+| news_api | lalsace.fr | 2 | 0.04% | 0.08% |
+| news_api | lbc.co.uk | 2 | 0.04% | 0.08% |
+| news_api | ledauphine.com | 2 | 0.04% | 0.08% |
+| news_api | lefigaro.fr | 2 | 0.04% | 0.08% |
+| news_api | lelezard.com | 2 | 0.04% | 0.08% |
+| news_api | lenta.ru | 2 | 0.04% | 0.08% |
+| news_api | lesnumeriques.com | 2 | 0.04% | 0.08% |
+| news_api | lexpress.fr | 2 | 0.04% | 0.08% |
+| news_api | libnanews.com | 2 | 0.04% | 0.08% |
+| news_api | life.ru | 2 | 0.04% | 0.08% |
+| news_api | lindependant.fr | 2 | 0.04% | 0.08% |
+| news_api | livehindustan.com | 2 | 0.04% | 0.08% |
+| news_api | livenews.co.nz | 2 | 0.04% | 0.08% |
+| news_api | lrytas.lt | 2 | 0.04% | 0.08% |
+| news_api | macleayargus.com.au | 2 | 0.04% | 0.08% |
+| news_api | makeuseof.com | 2 | 0.04% | 0.08% |
+| news_api | malijet.com | 2 | 0.04% | 0.08% |
+| news_api | marca.com | 2 | 0.04% | 0.08% |
+| news_api | mariettatimes.com | 2 | 0.04% | 0.08% |
+| news_api | massachusettssun.com | 2 | 0.04% | 0.08% |
+| news_api | medianama.com | 2 | 0.04% | 0.08% |
+| news_api | mersinhaber.com | 2 | 0.04% | 0.08% |
+| news_api | messengernewspapers.co.uk | 2 | 0.04% | 0.08% |
+| news_api | military.china.com | 2 | 0.04% | 0.08% |
+| news_api | mississauga.com | 2 | 0.04% | 0.08% |
+| news_api | mk.ru | 2 | 0.04% | 0.08% |
+| news_api | modernghana.com | 2 | 0.04% | 0.08% |
+| news_api | morningstar.com | 2 | 0.04% | 0.08% |
+| news_api | naftemporiki.gr | 2 | 0.04% | 0.08% |
+| news_api | newratings.de | 2 | 0.04% | 0.08% |
+| news_api | news.cn | 2 | 0.04% | 0.08% |
+| news_api | news.mail.ru | 2 | 0.04% | 0.08% |
+| news_api | newtalk.tw | 2 | 0.04% | 0.08% |
+| news_api | nikkan-gendai.com | 2 | 0.04% | 0.08% |
+| news_api | nikkei.com | 2 | 0.04% | 0.08% |
+| news_api | ntdtv.com | 2 | 0.04% | 0.08% |
+| news_api | nuevodiarioweb.com.ar | 2 | 0.04% | 0.08% |
+| news_api | nvi.com.au | 2 | 0.04% | 0.08% |
+| news_api | ohmynews.com | 2 | 0.04% | 0.08% |
+| news_api | parisguardian.com | 2 | 0.04% | 0.08% |
+| news_api | pcwplus.hu | 2 | 0.04% | 0.08% |
+| news_api | phonandroid.com | 2 | 0.04% | 0.08% |
+| news_api | politika.rs | 2 | 0.04% | 0.08% |
+| news_api | posta.com.tr | 2 | 0.04% | 0.08% |
+| news_api | pravda.ru | 2 | 0.04% | 0.08% |
+| news_api | prensalibre.com | 2 | 0.04% | 0.08% |
+| news_api | presstv.ir | 2 | 0.04% | 0.08% |
+| news_api | propakistani.pk | 2 | 0.04% | 0.08% |
+| news_api | pv-magazine.com | 2 | 0.04% | 0.08% |
+| news_api | pymnts.com | 2 | 0.04% | 0.08% |
+| news_api | radiofrance.fr | 2 | 0.04% | 0.08% |
+| news_api | radiopolar.com | 2 | 0.04% | 0.08% |
+| news_api | rappler.com | 2 | 0.04% | 0.08% |
+| news_api | riasv.ru | 2 | 0.04% | 0.08% |
+| news_api | russiaherald.com | 2 | 0.04% | 0.08% |
+| news_api | sanantoniopost.com | 2 | 0.04% | 0.08% |
+| news_api | sankei.com | 2 | 0.04% | 0.08% |
+| news_api | securitybrief.news | 2 | 0.04% | 0.08% |
+| news_api | securityinfowatch.com | 2 | 0.04% | 0.08% |
+| news_api | segye.com | 2 | 0.04% | 0.08% |
+| news_api | senego.com | 2 | 0.04% | 0.08% |
+| news_api | sentinel.ht | 2 | 0.04% | 0.08% |
+| news_api | sgvtribune.com | 2 | 0.04% | 0.08% |
+| news_api | smh.com.au | 2 | 0.04% | 0.08% |
+| news_api | stcn.com | 2 | 0.04% | 0.08% |
+| news_api | storm.mg | 2 | 0.04% | 0.08% |
+| news_api | t-l.ru | 2 | 0.04% | 0.08% |
+| news_api | t-online.de | 2 | 0.04% | 0.08% |
+| news_api | talk.ltn.com.tw | 2 | 0.04% | 0.08% |
+| news_api | tanea.gr | 2 | 0.04% | 0.08% |
+| news_api | tech.caijing.com.cn | 2 | 0.04% | 0.08% |
+| news_api | tech.ifeng.com | 2 | 0.04% | 0.08% |
+| news_api | techweez.com | 2 | 0.04% | 0.08% |
+| news_api | tekniikkatalous.fi | 2 | 0.04% | 0.08% |
+| news_api | tennesseedaily.com | 2 | 0.04% | 0.08% |
+| news_api | theguardian.com | 2 | 0.04% | 0.08% |
+| news_api | thehindu.com | 2 | 0.04% | 0.08% |
+| news_api | thereporterethiopia.com | 2 | 0.04% | 0.08% |
+| news_api | thisdaylive.com | 2 | 0.04% | 0.08% |
+| news_api | timeslive.co.za | 2 | 0.04% | 0.08% |
+| news_api | tmtpost.com | 2 | 0.04% | 0.08% |
+| news_api | townhall.com | 2 | 0.04% | 0.08% |
+| news_api | tribune.net.ph | 2 | 0.04% | 0.08% |
+| news_api | turktime.com | 2 | 0.04% | 0.08% |
+| news_api | uainfo.org | 2 | 0.04% | 0.08% |
+| news_api | udn.com | 2 | 0.04% | 0.08% |
+| news_api | unn.ua | 2 | 0.04% | 0.08% |
+| news_api | unternehmen-heute.de | 2 | 0.04% | 0.08% |
+| news_api | vedomosti.ru | 2 | 0.04% | 0.08% |
+| news_api | vesti.ru | 2 | 0.04% | 0.08% |
+| news_api | vg.no | 2 | 0.04% | 0.08% |
+| news_api | vicnews.com | 2 | 0.04% | 0.08% |
+| news_api | vol.at | 2 | 0.04% | 0.08% |
+| news_api | wdrb.com | 2 | 0.04% | 0.08% |
+| news_api | webpronews.com | 2 | 0.04% | 0.08% |
+| news_api | welivesecurity.com | 2 | 0.04% | 0.08% |
+| news_api | welt.de | 2 | 0.04% | 0.08% |
+| news_api | weser-kurier.de | 2 | 0.04% | 0.08% |
+| news_api | wfmz.com | 2 | 0.04% | 0.08% |
+| news_api | wiwo.de | 2 | 0.04% | 0.08% |
+| news_api | wsbtv.com | 2 | 0.04% | 0.08% |
+| news_api | wwmt.com | 2 | 0.04% | 0.08% |
+| news_api | wzzm13.com | 2 | 0.04% | 0.08% |
+| news_api | y-mainichi.co.jp | 2 | 0.04% | 0.08% |
+| news_api | yeniasya.com.tr | 2 | 0.04% | 0.08% |
+| news_api | ziare.com | 2 | 0.04% | 0.08% |
+| news_api | zonebourse.com | 2 | 0.04% | 0.08% |
 | news_api | 01net.com | 1 | 0.02% | 0.04% |
 | news_api | 1015vibe.com | 1 | 0.02% | 0.04% |
 | news_api | 1055thedove.com | 1 | 0.02% | 0.04% |
@@ -1780,6 +1881,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | abc6onyourside.com | 1 | 0.02% | 0.04% |
 | news_api | abc7news.com | 1 | 0.02% | 0.04% |
 | news_api | abclinuxu.cz | 1 | 0.02% | 0.04% |
+| news_api | abcnyheter.no | 1 | 0.02% | 0.04% |
 | news_api | acento.com.do | 1 | 0.02% | 0.04% |
 | news_api | actionnewsjax.com | 1 | 0.02% | 0.04% |
 | news_api | adevarul.ro | 1 | 0.02% | 0.04% |
@@ -1789,9 +1891,9 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | afr.com | 1 | 0.02% | 0.04% |
 | news_api | agenciagov.ebc.com.br | 1 | 0.02% | 0.04% |
 | news_api | agi.it | 1 | 0.02% | 0.04% |
-| news_api | ahaber.com.tr | 1 | 0.02% | 0.04% |
 | news_api | ai.zol.com.cn | 1 | 0.02% | 0.04% |
 | news_api | aif.ru | 1 | 0.02% | 0.04% |
+| news_api | aiwaegypt.com | 1 | 0.02% | 0.04% |
 | news_api | akhbarelyom.com | 1 | 0.02% | 0.04% |
 | news_api | aktifhaber.com | 1 | 0.02% | 0.04% |
 | news_api | aktivni.metropolitan.si | 1 | 0.02% | 0.04% |
@@ -1801,6 +1903,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | alaskasnewssource.com | 1 | 0.02% | 0.04% |
 | news_api | albayan.ae | 1 | 0.02% | 0.04% |
 | news_api | albiladpress.com | 1 | 0.02% | 0.04% |
+| news_api | alfajertv.com | 1 | 0.02% | 0.04% |
 | news_api | aliran.com | 1 | 0.02% | 0.04% |
 | news_api | aljazeera.com | 1 | 0.02% | 0.04% |
 | news_api | almontasaf.net | 1 | 0.02% | 0.04% |
@@ -1816,6 +1919,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | arede.info | 1 | 0.02% | 0.04% |
 | news_api | armenews.com | 1 | 0.02% | 0.04% |
 | news_api | armidaleexpress.com.au | 1 | 0.02% | 0.04% |
+| news_api | arynews.tv | 1 | 0.02% | 0.04% |
 | news_api | asahi.com | 1 | 0.02% | 0.04% |
 | news_api | asianews.it | 1 | 0.02% | 0.04% |
 | news_api | aspentimes.com | 1 | 0.02% | 0.04% |
@@ -1839,6 +1943,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | bbc.com | 1 | 0.02% | 0.04% |
 | news_api | beckershospitalreview.com | 1 | 0.02% | 0.04% |
 | news_api | berliner-zeitung.de | 1 | 0.02% | 0.04% |
+| news_api | beveiligingnieuws.nl | 1 | 0.02% | 0.04% |
 | news_api | bfmtv.com | 1 | 0.02% | 0.04% |
 | news_api | bgonair.bg | 1 | 0.02% | 0.04% |
 | news_api | bhaskar.com | 1 | 0.02% | 0.04% |
@@ -1850,6 +1955,8 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | blackseanews.net | 1 | 0.02% | 0.04% |
 | news_api | blic.rs | 1 | 0.02% | 0.04% |
 | news_api | blikk.hu | 1 | 0.02% | 0.04% |
+| news_api | blitzquotidiano.it | 1 | 0.02% | 0.04% |
+| news_api | blog.detail.dev | 1 | 0.02% | 0.04% |
 | news_api | blog.wenxuecity.com | 1 | 0.02% | 0.04% |
 | news_api | blogs.diariovasco.com | 1 | 0.02% | 0.04% |
 | news_api | blogs.itmedia.co.jp | 1 | 0.02% | 0.04% |
@@ -1858,6 +1965,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | bluemountainsgazette.com.au | 1 | 0.02% | 0.04% |
 | news_api | blueprint.ng | 1 | 0.02% | 0.04% |
 | news_api | bmmagazine.co.uk | 1 | 0.02% | 0.04% |
+| news_api | bollywoodhungama.com | 1 | 0.02% | 0.04% |
 | news_api | bollywoodlife.com | 1 | 0.02% | 0.04% |
 | news_api | bolognatoday.it | 1 | 0.02% | 0.04% |
 | news_api | book.asahi.com | 1 | 0.02% | 0.04% |
@@ -1868,21 +1976,19 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | braidwoodtimes.com.au | 1 | 0.02% | 0.04% |
 | news_api | bramptonguardian.com | 1 | 0.02% | 0.04% |
 | news_api | brandonsun.com | 1 | 0.02% | 0.04% |
-| news_api | brasil247.com | 1 | 0.02% | 0.04% |
 | news_api | brazilsun.com | 1 | 0.02% | 0.04% |
-| news_api | breitbart.com | 1 | 0.02% | 0.04% |
 | news_api | bresciaoggi.it | 1 | 0.02% | 0.04% |
 | news_api | brooklyneagle.com | 1 | 0.02% | 0.04% |
 | news_api | bt.no | 1 | 0.02% | 0.04% |
 | news_api | buffalobulletin.com | 1 | 0.02% | 0.04% |
 | news_api | bug.hr | 1 | 0.02% | 0.04% |
 | news_api | burgundywave.com | 1 | 0.02% | 0.04% |
-| news_api | bursadabugun.com | 1 | 0.02% | 0.04% |
 | news_api | bursahakimiyet.com.tr | 1 | 0.02% | 0.04% |
 | news_api | burytimes.co.uk | 1 | 0.02% | 0.04% |
 | news_api | business-review.eu | 1 | 0.02% | 0.04% |
 | news_api | business2community.com | 1 | 0.02% | 0.04% |
 | news_api | businessinsurance.com | 1 | 0.02% | 0.04% |
+| news_api | businessonline.it | 1 | 0.02% | 0.04% |
 | news_api | businesstimes.com.sg | 1 | 0.02% | 0.04% |
 | news_api | businesstoday.in | 1 | 0.02% | 0.04% |
 | news_api | businessworld.in | 1 | 0.02% | 0.04% |
@@ -1893,22 +1999,26 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | campbell.edu | 1 | 0.02% | 0.04% |
 | news_api | canal26.com | 1 | 0.02% | 0.04% |
 | news_api | canardpc.com | 1 | 0.02% | 0.04% |
+| news_api | capitalethiopia.com | 1 | 0.02% | 0.04% |
 | news_api | carolinajournal.com | 1 | 0.02% | 0.04% |
 | news_api | cas.sk | 1 | 0.02% | 0.04% |
 | news_api | catanzaroinforma.it | 1 | 0.02% | 0.04% |
+| news_api | cbnews.fr | 1 | 0.02% | 0.04% |
 | news_api | cbs2iowa.com | 1 | 0.02% | 0.04% |
 | news_api | cbs6albany.com | 1 | 0.02% | 0.04% |
 | news_api | cepro.com | 1 | 0.02% | 0.04% |
 | news_api | cesky.radio.cz | 1 | 0.02% | 0.04% |
 | news_api | cfi.net.cn | 1 | 0.02% | 0.04% |
+| news_api | challenges.fr | 1 | 0.02% | 0.04% |
 | news_api | channelbuzz.ca | 1 | 0.02% | 0.04% |
+| news_api | chaozhoudaily.com | 1 | 0.02% | 0.04% |
 | news_api | chattanoogan.com | 1 | 0.02% | 0.04% |
 | news_api | cherokeescout.com | 1 | 0.02% | 0.04% |
+| news_api | chilecomparte.cl | 1 | 0.02% | 0.04% |
 | news_api | china.com.cn | 1 | 0.02% | 0.04% |
 | news_api | chinapress.com.my | 1 | 0.02% | 0.04% |
 | news_api | chinatechnews.com | 1 | 0.02% | 0.04% |
 | news_api | chinesepress.com | 1 | 0.02% | 0.04% |
-| news_api | chip.de | 1 | 0.02% | 0.04% |
 | news_api | choice.com.au | 1 | 0.02% | 0.04% |
 | news_api | cincinnatisun.com | 1 | 0.02% | 0.04% |
 | news_api | circleid.com | 1 | 0.02% | 0.04% |
@@ -1930,8 +2040,8 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | cootamundraherald.com.au | 1 | 0.02% | 0.04% |
 | news_api | cope.es | 1 | 0.02% | 0.04% |
 | news_api | corp.cnews.ru | 1 | 0.02% | 0.04% |
-| news_api | correiodopovo.com.br | 1 | 0.02% | 0.04% |
 | news_api | corriereadriatico.it | 1 | 0.02% | 0.04% |
+| news_api | cosmopolitan.com | 1 | 0.02% | 0.04% |
 | news_api | countercurrents.org | 1 | 0.02% | 0.04% |
 | news_api | cp24.com | 1 | 0.02% | 0.04% |
 | news_api | cqnews.net | 1 | 0.02% | 0.04% |
@@ -1946,8 +2056,10 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | dailyheraldtribune.com | 1 | 0.02% | 0.04% |
 | news_api | dailyjournalonline.com | 1 | 0.02% | 0.04% |
 | news_api | dailymail.co.uk | 1 | 0.02% | 0.04% |
+| news_api | dailymaverick.co.za | 1 | 0.02% | 0.04% |
 | news_api | dailypakistan.pk | 1 | 0.02% | 0.04% |
 | news_api | dailypost.ng | 1 | 0.02% | 0.04% |
+| news_api | dailyrecord.co.uk | 1 | 0.02% | 0.04% |
 | news_api | dailysabah.com | 1 | 0.02% | 0.04% |
 | news_api | dailytrust.com | 1 | 0.02% | 0.04% |
 | news_api | dailyuw.com | 1 | 0.02% | 0.04% |
@@ -1963,9 +2075,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | designboom.com | 1 | 0.02% | 0.04% |
 | news_api | devondispatch.ca | 1 | 0.02% | 0.04% |
 | news_api | dglobe.com | 1 | 0.02% | 0.04% |
-| news_api | dha.com.tr | 1 | 0.02% | 0.04% |
 | news_api | dialogos.com.cy | 1 | 0.02% | 0.04% |
-| news_api | diario.mx | 1 | 0.02% | 0.04% |
 | news_api | diariodeburgos.es | 1 | 0.02% | 0.04% |
 | news_api | diariodemorelos.com | 1 | 0.02% | 0.04% |
 | news_api | diarioelargentino.com | 1 | 0.02% | 0.04% |
@@ -1975,7 +2085,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | diena.lt | 1 | 0.02% | 0.04% |
 | news_api | digg.com | 1 | 0.02% | 0.04% |
 | news_api | digi.china.com | 1 | 0.02% | 0.04% |
-| news_api | digi24.ro | 1 | 0.02% | 0.04% |
 | news_api | digit.in | 1 | 0.02% | 0.04% |
 | news_api | digitaltrends.com | 1 | 0.02% | 0.04% |
 | news_api | directionsmag.com | 1 | 0.02% | 0.04% |
@@ -1985,7 +2094,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | dna.fr | 1 | 0.02% | 0.04% |
 | news_api | dnes.bg | 1 | 0.02% | 0.04% |
 | news_api | dnews.gr | 1 | 0.02% | 0.04% |
-| news_api | dogruhaber.com.tr | 1 | 0.02% | 0.04% |
 | news_api | dol.com.br | 1 | 0.02% | 0.04% |
 | news_api | dominicanrepublicpost.com | 1 | 0.02% | 0.04% |
 | news_api | donanimhaber.com | 1 | 0.02% | 0.04% |
@@ -1996,7 +2104,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | drimble.nl | 1 | 0.02% | 0.04% |
 | news_api | dunya.com | 1 | 0.02% | 0.04% |
 | news_api | dunyanews.tv | 1 | 0.02% | 0.04% |
-| news_api | dw.com | 1 | 0.02% | 0.04% |
 | news_api | dynamicbusiness.com | 1 | 0.02% | 0.04% |
 | news_api | e.dennikn.sk | 1 | 0.02% | 0.04% |
 | news_api | eadt.co.uk | 1 | 0.02% | 0.04% |
@@ -2009,6 +2116,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | edition.cnn.com | 1 | 0.02% | 0.04% |
 | news_api | eejournal.com | 1 | 0.02% | 0.04% |
 | news_api | eenadu.net | 1 | 0.02% | 0.04% |
+| news_api | eeo.com.cn | 1 | 0.02% | 0.04% |
 | news_api | egyptindependent.com | 1 | 0.02% | 0.04% |
 | news_api | elcomercio.es | 1 | 0.02% | 0.04% |
 | news_api | elconfidencial.com | 1 | 0.02% | 0.04% |
@@ -2027,17 +2135,19 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | elperiodico.com.do | 1 | 0.02% | 0.04% |
 | news_api | elperiodicodearagon.com | 1 | 0.02% | 0.04% |
 | news_api | elpuntavui.cat | 1 | 0.02% | 0.04% |
-| news_api | eluniversal.com.mx | 1 | 0.02% | 0.04% |
 | news_api | eluniverso.com | 1 | 0.02% | 0.04% |
 | news_api | elvocero.com | 1 | 0.02% | 0.04% |
 | news_api | elwatannews.com | 1 | 0.02% | 0.04% |
 | news_api | emaratalyoum.com | 1 | 0.02% | 0.04% |
 | news_api | en.dailypakistan.com.pk | 1 | 0.02% | 0.04% |
+| news_api | en.globes.co.il | 1 | 0.02% | 0.04% |
 | news_api | eng.kavkaz-uzel.eu | 1 | 0.02% | 0.04% |
+| news_api | english.elpais.com | 1 | 0.02% | 0.04% |
 | news_api | english.pravda.ru | 1 | 0.02% | 0.04% |
 | news_api | ennaharonline.com | 1 | 0.02% | 0.04% |
 | news_api | estadao.com.br | 1 | 0.02% | 0.04% |
 | news_api | ettoday.net | 1 | 0.02% | 0.04% |
+| news_api | expert.ru | 1 | 0.02% | 0.04% |
 | news_api | explosion.com | 1 | 0.02% | 0.04% |
 | news_api | express.pk | 1 | 0.02% | 0.04% |
 | news_api | extra.ec | 1 | 0.02% | 0.04% |
@@ -2050,13 +2160,13 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | femina.hu | 1 | 0.02% | 0.04% |
 | news_api | ferra.ru | 1 | 0.02% | 0.04% |
 | news_api | finance.ifeng.com | 1 | 0.02% | 0.04% |
+| news_api | finance.walla.co.il | 1 | 0.02% | 0.04% |
 | news_api | financial-news.co.uk | 1 | 0.02% | 0.04% |
 | news_api | financialafrik.com | 1 | 0.02% | 0.04% |
 | news_api | finans.mynet.com | 1 | 0.02% | 0.04% |
 | news_api | firstpost.com | 1 | 0.02% | 0.04% |
 | news_api | floridastatesman.com | 1 | 0.02% | 0.04% |
 | news_api | fnp.de | 1 | 0.02% | 0.04% |
-| news_api | focus.de | 1 | 0.02% | 0.04% |
 | news_api | fool.ca | 1 | 0.02% | 0.04% |
 | news_api | forbes.ru | 1 | 0.02% | 0.04% |
 | news_api | fox17online.com | 1 | 0.02% | 0.04% |
@@ -2074,6 +2184,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | gazetaexpress.com | 1 | 0.02% | 0.04% |
 | news_api | geekzone.co.nz | 1 | 0.02% | 0.04% |
 | news_api | generation-nt.com | 1 | 0.02% | 0.04% |
+| news_api | geo.tv | 1 | 0.02% | 0.04% |
 | news_api | georgeherald.com | 1 | 0.02% | 0.04% |
 | news_api | german.china.org.cn | 1 | 0.02% | 0.04% |
 | news_api | ghanaiantimes.com.gh | 1 | 0.02% | 0.04% |
@@ -2087,6 +2198,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | guelphmercury.com | 1 | 0.02% | 0.04% |
 | news_api | gulte.com | 1 | 0.02% | 0.04% |
 | news_api | gundemkibris.com | 1 | 0.02% | 0.04% |
+| news_api | gunes.com | 1 | 0.02% | 0.04% |
 | news_api | gx94radio.com | 1 | 0.02% | 0.04% |
 | news_api | haber.mynet.com | 1 | 0.02% | 0.04% |
 | news_api | haber3.com | 1 | 0.02% | 0.04% |
@@ -2115,9 +2227,10 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | hokkoku.co.jp | 1 | 0.02% | 0.04% |
 | news_api | hometownstation.com | 1 | 0.02% | 0.04% |
 | news_api | hongkongherald.com | 1 | 0.02% | 0.04% |
-| news_api | howtogeek.com | 1 | 0.02% | 0.04% |
 | news_api | hoy.es | 1 | 0.02% | 0.04% |
+| news_api | huffingtonpost.co.uk | 1 | 0.02% | 0.04% |
 | news_api | hydrocarbonprocessing.com | 1 | 0.02% | 0.04% |
+| news_api | iafrica.com | 1 | 0.02% | 0.04% |
 | news_api | ibtimes.co.uk | 1 | 0.02% | 0.04% |
 | news_api | ici.fr | 1 | 0.02% | 0.04% |
 | news_api | icij.org | 1 | 0.02% | 0.04% |
@@ -2127,11 +2240,12 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | ifj.org | 1 | 0.02% | 0.04% |
 | news_api | igamingbusiness.com | 1 | 0.02% | 0.04% |
 | news_api | ihalla.com | 1 | 0.02% | 0.04% |
+| news_api | ilfattonisseno.it | 1 | 0.02% | 0.04% |
 | news_api | ilgiorno.it | 1 | 0.02% | 0.04% |
 | news_api | illawarramercury.com.au | 1 | 0.02% | 0.04% |
+| news_api | ilpost.it | 1 | 0.02% | 0.04% |
 | news_api | ilsimplicissimus2.com | 1 | 0.02% | 0.04% |
 | news_api | independent.co.uk | 1 | 0.02% | 0.04% |
-| news_api | index.hu | 1 | 0.02% | 0.04% |
 | news_api | india.com | 1 | 0.02% | 0.04% |
 | news_api | indiagazette.com | 1 | 0.02% | 0.04% |
 | news_api | indianexpress.com | 1 | 0.02% | 0.04% |
@@ -2139,12 +2253,12 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | infobae.com | 1 | 0.02% | 0.04% |
 | news_api | informationweek.com | 1 | 0.02% | 0.04% |
 | news_api | infotechlead.com | 1 | 0.02% | 0.04% |
+| news_api | infranken.de | 1 | 0.02% | 0.04% |
 | news_api | inquirer.com | 1 | 0.02% | 0.04% |
 | news_api | insidephilanthropy.com | 1 | 0.02% | 0.04% |
 | news_api | insidermonkey.com | 1 | 0.02% | 0.04% |
 | news_api | insight.scmagazineuk.com | 1 | 0.02% | 0.04% |
 | news_api | interaksyon.philstar.com | 1 | 0.02% | 0.04% |
-| news_api | internasional.kompas.com | 1 | 0.02% | 0.04% |
 | news_api | internetua.com | 1 | 0.02% | 0.04% |
 | news_api | inverelltimes.com.au | 1 | 0.02% | 0.04% |
 | news_api | investorplace.com | 1 | 0.02% | 0.04% |
@@ -2179,6 +2293,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | jpnn.com | 1 | 0.02% | 0.04% |
 | news_api | juneesoutherncross.com.au | 1 | 0.02% | 0.04% |
 | news_api | jurnalul.ro | 1 | 0.02% | 0.04% |
+| news_api | jutarnji.hr | 1 | 0.02% | 0.04% |
 | news_api | k991fm.com | 1 | 0.02% | 0.04% |
 | news_api | kamuajans.com | 1 | 0.02% | 0.04% |
 | news_api | kannadaprabha.com | 1 | 0.02% | 0.04% |
@@ -2192,13 +2307,13 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | kenyastar.com | 1 | 0.02% | 0.04% |
 | news_api | kesq.com | 1 | 0.02% | 0.04% |
 | news_api | kibrisgazetesi.com | 1 | 0.02% | 0.04% |
+| news_api | kikar.co.il | 1 | 0.02% | 0.04% |
 | news_api | kincardinenews.com | 1 | 0.02% | 0.04% |
 | news_api | king5.com | 1 | 0.02% | 0.04% |
 | news_api | kingfm.com | 1 | 0.02% | 0.04% |
 | news_api | kiplinger.com | 1 | 0.02% | 0.04% |
 | news_api | kiro7.com | 1 | 0.02% | 0.04% |
 | news_api | kissrocks.com | 1 | 0.02% | 0.04% |
-| news_api | kitabat.com | 1 | 0.02% | 0.04% |
 | news_api | kjzz.org | 1 | 0.02% | 0.04% |
 | news_api | kmbc.com | 1 | 0.02% | 0.04% |
 | news_api | ko.com.ua | 1 | 0.02% | 0.04% |
@@ -2217,12 +2332,13 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | kyivpost.com | 1 | 0.02% | 0.04% |
 | news_api | kztv10.com | 1 | 0.02% | 0.04% |
 | news_api | labs.watchtowr.com | 1 | 0.02% | 0.04% |
+| news_api | ladepeche.fr | 1 | 0.02% | 0.04% |
 | news_api | lafranceagricole.fr | 1 | 0.02% | 0.04% |
 | news_api | lagacetadesalamanca.es | 1 | 0.02% | 0.04% |
 | news_api | lakersnation.com | 1 | 0.02% | 0.04% |
-| news_api | laleggepertutti.it | 1 | 0.02% | 0.04% |
 | news_api | lancashiretelegraph.co.uk | 1 | 0.02% | 0.04% |
 | news_api | laosnews.net | 1 | 0.02% | 0.04% |
+| news_api | lapresse.tn | 1 | 0.02% | 0.04% |
 | news_api | laprovence.com | 1 | 0.02% | 0.04% |
 | news_api | laprovincia.es | 1 | 0.02% | 0.04% |
 | news_api | larazon.es | 1 | 0.02% | 0.04% |
@@ -2238,15 +2354,12 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | lejsl.com | 1 | 0.02% | 0.04% |
 | news_api | lematin.ma | 1 | 0.02% | 0.04% |
 | news_api | lesmobiles.com | 1 | 0.02% | 0.04% |
-| news_api | lesnumeriques.com | 1 | 0.02% | 0.04% |
 | news_api | letemps.ch | 1 | 0.02% | 0.04% |
 | news_api | lewrockwell.com | 1 | 0.02% | 0.04% |
-| news_api | lexpress.fr | 1 | 0.02% | 0.04% |
 | news_api | lgz.ru | 1 | 0.02% | 0.04% |
 | news_api | liberta.it | 1 | 0.02% | 0.04% |
 | news_api | ligaportal.at | 1 | 0.02% | 0.04% |
 | news_api | lina.sh | 1 | 0.02% | 0.04% |
-| news_api | lindependant.fr | 1 | 0.02% | 0.04% |
 | news_api | linux.org.ru | 1 | 0.02% | 0.04% |
 | news_api | liputan6.com | 1 | 0.02% | 0.04% |
 | news_api | lite987.com | 1 | 0.02% | 0.04% |
@@ -2267,12 +2380,15 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | maldonandburnhamstandard.co.uk | 1 | 0.02% | 0.04% |
 | news_api | mandurahmail.com.au | 1 | 0.02% | 0.04% |
 | news_api | manningrivertimes.com.au | 1 | 0.02% | 0.04% |
+| news_api | manoramanews.com | 1 | 0.02% | 0.04% |
 | news_api | maravipost.com | 1 | 0.02% | 0.04% |
 | news_api | marketintelligencecenter.com | 1 | 0.02% | 0.04% |
 | news_api | mathrubhumi.com | 1 | 0.02% | 0.04% |
 | news_api | mdjonline.com | 1 | 0.02% | 0.04% |
+| news_api | mdzol.com | 1 | 0.02% | 0.04% |
 | news_api | mebpersonel.com | 1 | 0.02% | 0.04% |
 | news_api | megamodo.com | 1 | 0.02% | 0.04% |
+| news_api | mekomi.walla.co.il | 1 | 0.02% | 0.04% |
 | news_api | memeburn.com | 1 | 0.02% | 0.04% |
 | news_api | mensxp.com | 1 | 0.02% | 0.04% |
 | news_api | merdeka.com | 1 | 0.02% | 0.04% |
@@ -2282,6 +2398,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | metroseoul.co.kr | 1 | 0.02% | 0.04% |
 | news_api | michigandaily.com | 1 | 0.02% | 0.04% |
 | news_api | midmichigannow.com | 1 | 0.02% | 0.04% |
+| news_api | military.com | 1 | 0.02% | 0.04% |
 | news_api | minuto30.com | 1 | 0.02% | 0.04% |
 | news_api | mirrorspectator.com | 1 | 0.02% | 0.04% |
 | news_api | mittelstandcafe.de | 1 | 0.02% | 0.04% |
@@ -2295,6 +2412,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | montereyherald.com | 1 | 0.02% | 0.04% |
 | news_api | mopo.de | 1 | 0.02% | 0.04% |
 | news_api | morgenpost.de | 1 | 0.02% | 0.04% |
+| news_api | morningstaronline.co.uk | 1 | 0.02% | 0.04% |
 | news_api | morungexpress.com | 1 | 0.02% | 0.04% |
 | news_api | mp.cnfol.com | 1 | 0.02% | 0.04% |
 | news_api | mpacorn.com | 1 | 0.02% | 0.04% |
@@ -2302,11 +2420,13 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | mudgeeguardian.com.au | 1 | 0.02% | 0.04% |
 | news_api | mundiario.com | 1 | 0.02% | 0.04% |
 | news_api | mundoenlinea.cl | 1 | 0.02% | 0.04% |
+| news_api | muskokaregion.com | 1 | 0.02% | 0.04% |
 | news_api | myanmarnews.net | 1 | 0.02% | 0.04% |
 | news_api | myhostnews.com | 1 | 0.02% | 0.04% |
 | news_api | mymagic949.com | 1 | 0.02% | 0.04% |
 | news_api | mynews4.com | 1 | 0.02% | 0.04% |
 | news_api | nagpurtoday.in | 1 | 0.02% | 0.04% |
+| news_api | nakedcapitalism.com | 1 | 0.02% | 0.04% |
 | news_api | nashvilleherald.com | 1 | 0.02% | 0.04% |
 | news_api | nationalmortgagenews.com | 1 | 0.02% | 0.04% |
 | news_api | naturalnews.com | 1 | 0.02% | 0.04% |
@@ -2326,12 +2446,14 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | news.cnfol.com | 1 | 0.02% | 0.04% |
 | news_api | news.cts.com.tw | 1 | 0.02% | 0.04% |
 | news_api | news.cyol.com | 1 | 0.02% | 0.04% |
+| news_api | news.ifeng.com | 1 | 0.02% | 0.04% |
 | news_api | news.ltn.com.tw | 1 | 0.02% | 0.04% |
 | news_api | news.tuoitre.vn | 1 | 0.02% | 0.04% |
 | news_api | news.ycwb.com | 1 | 0.02% | 0.04% |
 | news_api | news3lv.com | 1 | 0.02% | 0.04% |
 | news_api | news8000.com | 1 | 0.02% | 0.04% |
 | news_api | newsbomb.gr | 1 | 0.02% | 0.04% |
+| news_api | newscentralasia.net | 1 | 0.02% | 0.04% |
 | news_api | newsday.co.zw | 1 | 0.02% | 0.04% |
 | news_api | newsit.gr | 1 | 0.02% | 0.04% |
 | news_api | newsitaliane.it | 1 | 0.02% | 0.04% |
@@ -2342,6 +2464,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | newstribune.com | 1 | 0.02% | 0.04% |
 | news_api | newsweek.com | 1 | 0.02% | 0.04% |
 | news_api | newsx.com | 1 | 0.02% | 0.04% |
+| news_api | newuniversity.org | 1 | 0.02% | 0.04% |
 | news_api | newyorkstatesman.com | 1 | 0.02% | 0.04% |
 | news_api | niagarathisweek.com | 1 | 0.02% | 0.04% |
 | news_api | nieuws.nl | 1 | 0.02% | 0.04% |
@@ -2354,6 +2477,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | nj.com | 1 | 0.02% | 0.04% |
 | news_api | nordbayern.de | 1 | 0.02% | 0.04% |
 | news_api | norran.se | 1 | 0.02% | 0.04% |
+| news_api | northbaynipissing.com | 1 | 0.02% | 0.04% |
 | news_api | northcountrynow.com | 1 | 0.02% | 0.04% |
 | news_api | northerndailyleader.com.au | 1 | 0.02% | 0.04% |
 | news_api | northweststar.com.au | 1 | 0.02% | 0.04% |
@@ -2380,8 +2504,10 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | pakistantelegraph.com | 1 | 0.02% | 0.04% |
 | news_api | pakobserver.net | 1 | 0.02% | 0.04% |
 | news_api | panorama.com.al | 1 | 0.02% | 0.04% |
+| news_api | parrysound.com | 1 | 0.02% | 0.04% |
 | news_api | pastemagazine.com | 1 | 0.02% | 0.04% |
 | news_api | paymentweek.com | 1 | 0.02% | 0.04% |
+| news_api | pc.co.il | 1 | 0.02% | 0.04% |
 | news_api | pcchip.hr | 1 | 0.02% | 0.04% |
 | news_api | pctechmag.com | 1 | 0.02% | 0.04% |
 | news_api | pcwelt.de | 1 | 0.02% | 0.04% |
@@ -2399,16 +2525,20 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | pln-pskov.ru | 1 | 0.02% | 0.04% |
 | news_api | pocket-lint.com | 1 | 0.02% | 0.04% |
 | news_api | podrobnosti.ua | 1 | 0.02% | 0.04% |
+| news_api | politicamentecorretto.com | 1 | 0.02% | 0.04% |
 | news_api | polityka.pl | 1 | 0.02% | 0.04% |
 | news_api | polygon.com | 1 | 0.02% | 0.04% |
 | news_api | pontianak.tribunnews.com | 1 | 0.02% | 0.04% |
 | news_api | portalsamorzadowy.pl | 1 | 0.02% | 0.04% |
+| news_api | portfolio.hu | 1 | 0.02% | 0.04% |
 | news_api | portnews.com.au | 1 | 0.02% | 0.04% |
 | news_api | postandcourier.com | 1 | 0.02% | 0.04% |
 | news_api | posttoday.com | 1 | 0.02% | 0.04% |
 | news_api | powerorlando.com | 1 | 0.02% | 0.04% |
+| news_api | pplware.sapo.pt | 1 | 0.02% | 0.04% |
 | news_api | pr.com | 1 | 0.02% | 0.04% |
 | news_api | prabhasakshi.com | 1 | 0.02% | 0.04% |
+| news_api | praca.egospodarka.pl | 1 | 0.02% | 0.04% |
 | news_api | pratahkal.com | 1 | 0.02% | 0.04% |
 | news_api | press24.mk | 1 | 0.02% | 0.04% |
 | news_api | pressdemocrat.com | 1 | 0.02% | 0.04% |
@@ -2417,6 +2547,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | presstelegram.com | 1 | 0.02% | 0.04% |
 | news_api | primerafuente.com.ar | 1 | 0.02% | 0.04% |
 | news_api | profitline.hu | 1 | 0.02% | 0.04% |
+| news_api | progressive-charlestown.com | 1 | 0.02% | 0.04% |
 | news_api | pronedra.ru | 1 | 0.02% | 0.04% |
 | news_api | pronto.com.ar | 1 | 0.02% | 0.04% |
 | news_api | publico.es | 1 | 0.02% | 0.04% |
@@ -2449,6 +2580,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | rstreet.org | 1 | 0.02% | 0.04% |
 | news_api | rte.ie | 1 | 0.02% | 0.04% |
 | news_api | rtl.nl | 1 | 0.02% | 0.04% |
+| news_api | rtp.pt | 1 | 0.02% | 0.04% |
 | news_api | rtv.rs | 1 | 0.02% | 0.04% |
 | news_api | rtvutrecht.nl | 1 | 0.02% | 0.04% |
 | news_api | ruhrnachrichten.de | 1 | 0.02% | 0.04% |
@@ -2459,8 +2591,8 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | salzburg24.at | 1 | 0.02% | 0.04% |
 | news_api | sana.sy | 1 | 0.02% | 0.04% |
 | news_api | sandiegouniontribune.com | 1 | 0.02% | 0.04% |
+| news_api | sangbadpratidin.in | 1 | 0.02% | 0.04% |
 | news_api | santamariatimes.com | 1 | 0.02% | 0.04% |
-| news_api | sapo.pt | 1 | 0.02% | 0.04% |
 | news_api | sbctv.gr | 1 | 0.02% | 0.04% |
 | news_api | sbsun.com | 1 | 0.02% | 0.04% |
 | news_api | sc.stock.cnfol.com | 1 | 0.02% | 0.04% |
@@ -2502,8 +2634,9 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | studiob.rs | 1 | 0.02% | 0.04% |
 | news_api | sud.ua | 1 | 0.02% | 0.04% |
 | news_api | sueddeutsche.de | 1 | 0.02% | 0.04% |
-| news_api | t-l.ru | 1 | 0.02% | 0.04% |
+| news_api | suedtirolnews.it | 1 | 0.02% | 0.04% |
 | news_api | t13.cl | 1 | 0.02% | 0.04% |
+| news_api | t24.com.tr | 1 | 0.02% | 0.04% |
 | news_api | t3n.de | 1 | 0.02% | 0.04% |
 | news_api | tageblatt.lu | 1 | 0.02% | 0.04% |
 | news_api | tagesanzeiger.ch | 1 | 0.02% | 0.04% |
@@ -2511,8 +2644,8 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | tagesspiegel.de | 1 | 0.02% | 0.04% |
 | news_api | taiwandaily.net | 1 | 0.02% | 0.04% |
 | news_api | talouselama.fi | 1 | 0.02% | 0.04% |
-| news_api | tanea.gr | 1 | 0.02% | 0.04% |
 | news_api | tass.ru | 1 | 0.02% | 0.04% |
+| news_api | taxydromos.gr | 1 | 0.02% | 0.04% |
 | news_api | taz.de | 1 | 0.02% | 0.04% |
 | news_api | tazabek.kg | 1 | 0.02% | 0.04% |
 | news_api | tech.china.com | 1 | 0.02% | 0.04% |
@@ -2522,7 +2655,6 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | techtudo.com.br | 1 | 0.02% | 0.04% |
 | news_api | tecmundo.com.br | 1 | 0.02% | 0.04% |
 | news_api | tecnoandroid.it | 1 | 0.02% | 0.04% |
-| news_api | tekniikkatalous.fi | 1 | 0.02% | 0.04% |
 | news_api | tercerainformacion.es | 1 | 0.02% | 0.04% |
 | news_api | texasguardian.com | 1 | 0.02% | 0.04% |
 | news_api | thailand-business-news.com | 1 | 0.02% | 0.04% |
@@ -2536,6 +2668,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | thecable.ng | 1 | 0.02% | 0.04% |
 | news_api | thecamarilloacorn.com | 1 | 0.02% | 0.04% |
 | news_api | thecourier.com.au | 1 | 0.02% | 0.04% |
+| news_api | thedailystar.net | 1 | 0.02% | 0.04% |
 | news_api | thedailyworld.com | 1 | 0.02% | 0.04% |
 | news_api | theeagleonline.com.ng | 1 | 0.02% | 0.04% |
 | news_api | thefrontierpost.com | 1 | 0.02% | 0.04% |
@@ -2577,10 +2710,10 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | townandcountrymag.com | 1 | 0.02% | 0.04% |
 | news_api | travelweekly.com.au | 1 | 0.02% | 0.04% |
 | news_api | tribuna.com.mx | 1 | 0.02% | 0.04% |
+| news_api | tribunademinas.com.br | 1 | 0.02% | 0.04% |
 | news_api | troyrecord.com | 1 | 0.02% | 0.04% |
 | news_api | trustedreviews.com | 1 | 0.02% | 0.04% |
 | news_api | tucsonpost.com | 1 | 0.02% | 0.04% |
-| news_api | tumentoday.ru | 1 | 0.02% | 0.04% |
 | news_api | tuttomercatoweb.com | 1 | 0.02% | 0.04% |
 | news_api | tvanouvelles.ca | 1 | 0.02% | 0.04% |
 | news_api | tvline.com | 1 | 0.02% | 0.04% |
@@ -2591,6 +2724,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | ukrinform.ua | 1 | 0.02% | 0.04% |
 | news_api | ultimahora.es | 1 | 0.02% | 0.04% |
 | news_api | understandingwar.org | 1 | 0.02% | 0.04% |
+| news_api | unsertirol24.com | 1 | 0.02% | 0.04% |
 | news_api | upi.com | 1 | 0.02% | 0.04% |
 | news_api | us.cnn.com | 1 | 0.02% | 0.04% |
 | news_api | utilitydive.com | 1 | 0.02% | 0.04% |
@@ -2605,6 +2739,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | vietnam.vnanet.vn | 1 | 0.02% | 0.04% |
 | news_api | vm.ru | 1 | 0.02% | 0.04% |
 | news_api | volksstimme.de | 1 | 0.02% | 0.04% |
+| news_api | voria.gr | 1 | 0.02% | 0.04% |
 | news_api | vrt.be | 1 | 0.02% | 0.04% |
 | news_api | vv.com.ua | 1 | 0.02% | 0.04% |
 | news_api | wahpetondailynews.com | 1 | 0.02% | 0.04% |
@@ -2615,6 +2750,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | war.obozrevatel.com | 1 | 0.02% | 0.04% |
 | news_api | warrackherald.com.au | 1 | 0.02% | 0.04% |
 | news_api | washingtonexaminer.com | 1 | 0.02% | 0.04% |
+| news_api | washingtonmonthly.com | 1 | 0.02% | 0.04% |
 | news_api | watfordobserver.co.uk | 1 | 0.02% | 0.04% |
 | news_api | watoday.com.au | 1 | 0.02% | 0.04% |
 | news_api | watson.ch | 1 | 0.02% | 0.04% |
@@ -2640,6 +2776,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | wikitree.co.kr | 1 | 0.02% | 0.04% |
 | news_api | winfuture.de | 1 | 0.02% | 0.04% |
 | news_api | wirtualnemedia.pl | 1 | 0.02% | 0.04% |
+| news_api | wlos.com | 1 | 0.02% | 0.04% |
 | news_api | wlox.com | 1 | 0.02% | 0.04% |
 | news_api | wlwt.com | 1 | 0.02% | 0.04% |
 | news_api | wnnj.iheart.com | 1 | 0.02% | 0.04% |
@@ -2650,6 +2787,7 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | wosu.org | 1 | 0.02% | 0.04% |
 | news_api | wowo.com | 1 | 0.02% | 0.04% |
 | news_api | wpxi.com | 1 | 0.02% | 0.04% |
+| news_api | wral.com | 1 | 0.02% | 0.04% |
 | news_api | wsbradio.com | 1 | 0.02% | 0.04% |
 | news_api | wset.com | 1 | 0.02% | 0.04% |
 | news_api | wshu.org | 1 | 0.02% | 0.04% |
@@ -2673,11 +2811,13 @@ Diagnostic report for `data/live/raw/live_items_raw.csv`. This report does not m
 | news_api | yn.xinhuanet.com | 1 | 0.02% | 0.04% |
 | news_api | ynet.co.il | 1 | 0.02% | 0.04% |
 | news_api | yorkpress.co.uk | 1 | 0.02% | 0.04% |
+| news_api | yourtango.com | 1 | 0.02% | 0.04% |
 | news_api | zavtra.ru | 1 | 0.02% | 0.04% |
 | news_api | zdg.md | 1 | 0.02% | 0.04% |
 | news_api | zdnet.com | 1 | 0.02% | 0.04% |
 | news_api | zeit.de | 1 | 0.02% | 0.04% |
 | news_api | zetatijuana.com | 1 | 0.02% | 0.04% |
+| news_api | zvw.de | 1 | 0.02% | 0.04% |
 
 ## Top 30 Inspection Words By source_type
 
@@ -2687,12 +2827,12 @@ vulnerability (967), file (413), kernel (369), may (348), issue (339), fix (328)
 
 ### news_api
 
-security (92), cyber (92), data (91), new (75), scam (71), says (70), breach (63), ransomware (49), ddos (48), malware (47), attack (46), cyberattack (45), financial (42), report (41), risk (38), news (36), china (36), web (35), safe (34), exploit (34), openai (34), day (33), aile (33), targeting (32), dark (32), iran (32), rebel (32), amid (32), hackers (31), attacks (30)
+cyber (95), data (94), security (93), new (77), scam (73), says (70), breach (64), ransomware (49), malware (48), ddos (48), cyberattack (46), attack (46), report (43), financial (42), news (41), risk (40), china (37), web (35), aile (35), safe (34), iran (34), exploit (34), openai (34), day (33), amid (33), trump (33), targeting (32), dark (32), cybersecurity (32), rebel (32)
 
 ### news_rss
 
-vulnerability (504), security (409), exploitation (380), windows (371), data (324), likely (302), access (286), less (240), process (226), code (208), privilege (206), new (204), elevation (198), file (190), exploit (179), microsoft (178), system (176), vulnerabilities (170), one (169), used (166), also (164), pointer (159), teams (157), attack (154), using (153), user (152), buffer (150), execution (145), would (143), attacks (136)
+vulnerability (505), security (411), exploitation (381), windows (371), data (324), likely (302), access (287), less (240), process (226), code (208), privilege (207), new (204), elevation (198), file (190), exploit (179), microsoft (178), system (176), vulnerabilities (171), one (169), used (166), also (164), pointer (159), teams (157), attack (154), using (153), user (152), buffer (150), execution (145), would (143), attacks (136)
 
 ### reddit_rss
 
-link (745), comments (733), submitted (720), like (259), security (200), would (190), use (190), one (172), data (150), work (141), something (134), know (133), time (131), people (130), anyone (130), new (125), don (123), using (123), also (123), get (120), actually (117), still (117), want (113), need (113), https (111), windows (107), way (102), access (102), even (99), system (98)
+link (792), comments (780), submitted (766), like (269), security (209), would (201), use (199), one (184), data (155), work (146), time (144), anyone (142), know (138), people (137), something (137), get (130), using (130), don (129), also (129), new (128), actually (125), need (121), want (120), still (120), https (116), windows (116), access (114), way (108), even (104), help (102)

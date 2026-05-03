@@ -6,42 +6,42 @@ Preprocessing report for `data/live/processed/02_live_filtered_dataset.csv`. `te
 
 | Metric | Value |
 | --- | --- |
-| Initial rows | 2854 |
-| Rows removed because text_clean is empty | 293 |
-| Final rows | 2561 |
-| Mean text_clean length in tokens | 44.18 |
+| Initial rows | 3047 |
+| Rows removed because text_clean is empty | 324 |
+| Final rows | 2723 |
+| Mean text_clean length in tokens | 42.67 |
 
 ## Source Type Distribution Before
 
 | source_type | rows | percent_dataset |
 | --- | --- | --- |
-| news_api | 1975 | 69.20% |
-| reddit_rss | 691 | 24.21% |
-| news_rss | 188 | 6.59% |
+| news_api | 2122 | 69.64% |
+| reddit_rss | 736 | 24.15% |
+| news_rss | 189 | 6.20% |
 
 ## Source Type Distribution After
 
 | source_type | rows | percent_dataset |
 | --- | --- | --- |
-| news_api | 1682 | 65.68% |
-| reddit_rss | 691 | 26.98% |
-| news_rss | 188 | 7.34% |
+| news_api | 1798 | 66.03% |
+| reddit_rss | 736 | 27.03% |
+| news_rss | 189 | 6.94% |
 
 ## Analysis Role Distribution Before
 
 | analysis_role | rows | percent_dataset |
 | --- | --- | --- |
-| p2_primary_source | 2854 | 100.00% |
+| p2_primary_source | 3047 | 100.00% |
 
 ## Analysis Role Distribution After
 
 | analysis_role | rows | percent_dataset |
 | --- | --- | --- |
-| p2_primary_source | 2561 | 100.00% |
+| p2_primary_source | 2723 | 100.00% |
 
 ## Top 30 Tokens After Preprocessing
 
-vulnerability (726), security (680), data (554), window (554), cve (550), system (471), attack (422), access (411), exploitation (407), user (383), file (382), time (370), process (345), use (331), code (321), likely (318), service (304), device (304), team (302), using (286), attacker (277), exploit (272), tool (272), less (269), privilege (264), year (250), threat (246), microsoft (246), used (241), server (238)
+vulnerability (730), security (691), window (564), data (563), cve (552), system (477), attack (424), access (424), exploitation (409), file (390), user (386), time (386), process (346), use (340), code (327), likely (319), device (315), team (309), service (304), using (293), tool (287), attacker (279), exploit (272), less (269), privilege (265), year (253), threat (251), microsoft (248), used (245), server (242)
 
 ## Methodological Note
 

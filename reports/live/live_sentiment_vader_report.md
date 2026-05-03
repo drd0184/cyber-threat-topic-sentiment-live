@@ -4,9 +4,9 @@
 
 | Metric | Value |
 | --- | --- |
-| Input rows | 2561 |
-| Output rows | 2561 |
-| Mean vader_compound | -0.0278 |
+| Input rows | 2723 |
+| Output rows | 2723 |
+| Mean vader_compound | -0.0272 |
 | Min vader_compound | -0.9999 |
 | Max vader_compound | 0.9999 |
 | Encoding used | utf-8 |
@@ -15,75 +15,75 @@
 
 | sentiment_class | rows | percent_dataset |
 | --- | --- | --- |
-| neutral | 993 | 38.77% |
-| negative | 888 | 34.67% |
-| positive | 680 | 26.55% |
+| neutral | 1083 | 39.77% |
+| negative | 929 | 34.12% |
+| positive | 711 | 26.11% |
 
 ## Sentiment Class by Source Type
 
 | source_type | sentiment_class | rows |
 | --- | --- | --- |
-| news_api | neutral | 861 |
-| news_api | negative | 538 |
-| news_api | positive | 283 |
+| news_api | neutral | 947 |
+| news_api | negative | 561 |
+| news_api | positive | 290 |
 | news_rss | negative | 127 |
-| news_rss | positive | 55 |
+| news_rss | positive | 56 |
 | news_rss | neutral | 6 |
-| reddit_rss | positive | 342 |
-| reddit_rss | negative | 223 |
-| reddit_rss | neutral | 126 |
+| reddit_rss | positive | 365 |
+| reddit_rss | negative | 241 |
+| reddit_rss | neutral | 130 |
 
 ## Sentiment Class by Analysis Role
 
 | analysis_role | sentiment_class | rows |
 | --- | --- | --- |
-| p2_primary_source | neutral | 993 |
-| p2_primary_source | negative | 888 |
-| p2_primary_source | positive | 680 |
+| p2_primary_source | neutral | 1083 |
+| p2_primary_source | negative | 929 |
+| p2_primary_source | positive | 711 |
 
 ## Sentiment Class by Topic
 
 | dominant_topic | topic_label | sentiment_class | rows |
 | --- | --- | --- | --- |
-| -1 | Unassigned / Empty BoW | neutral | 187 |
-| -1 | Unassigned / Empty BoW | negative | 11 |
-| 0 | Network Attacks / Device Access | negative | 226 |
-| 0 | Network Attacks / Device Access | neutral | 127 |
-| 0 | Network Attacks / Device Access | positive | 122 |
-| 1 | Command Execution / Payload Delivery | neutral | 74 |
-| 1 | Command Execution / Payload Delivery | negative | 57 |
-| 1 | Command Execution / Payload Delivery | positive | 57 |
-| 2 | Cybercrime / Fraud / Law Enforcement | negative | 124 |
-| 2 | Cybercrime / Fraud / Law Enforcement | neutral | 120 |
-| 2 | Cybercrime / Fraud / Law Enforcement | positive | 78 |
-| 3 | Memory Exploitation / Buffer & Heap Bugs | negative | 26 |
-| 3 | Memory Exploitation / Buffer & Heap Bugs | positive | 24 |
+| -1 | Unassigned / Empty BoW | neutral | 220 |
+| -1 | Unassigned / Empty BoW | negative | 13 |
+| 0 | Network Attacks / Device Access | negative | 232 |
+| 0 | Network Attacks / Device Access | neutral | 134 |
+| 0 | Network Attacks / Device Access | positive | 128 |
+| 1 | Command Execution / Payload Delivery | neutral | 77 |
+| 1 | Command Execution / Payload Delivery | negative | 59 |
+| 1 | Command Execution / Payload Delivery | positive | 59 |
+| 2 | Cybercrime / Fraud / Law Enforcement | negative | 133 |
+| 2 | Cybercrime / Fraud / Law Enforcement | neutral | 132 |
+| 2 | Cybercrime / Fraud / Law Enforcement | positive | 79 |
+| 3 | Memory Exploitation / Buffer & Heap Bugs | negative | 27 |
+| 3 | Memory Exploitation / Buffer & Heap Bugs | positive | 25 |
 | 3 | Memory Exploitation / Buffer & Heap Bugs | neutral | 22 |
-| 4 | Access Control / Process & API Abuse | negative | 72 |
-| 4 | Access Control / Process & API Abuse | positive | 44 |
-| 4 | Access Control / Process & API Abuse | neutral | 37 |
-| 5 | Exploit Tooling / Metasploit / RCE | neutral | 82 |
-| 5 | Exploit Tooling / Metasploit / RCE | negative | 51 |
-| 5 | Exploit Tooling / Metasploit / RCE | positive | 26 |
-| 6 | Security Risk / Exposure Management | positive | 156 |
-| 6 | Security Risk / Exposure Management | negative | 108 |
-| 6 | Security Risk / Exposure Management | neutral | 81 |
-| 7 | Cybersecurity Tools / Generic Discussion | neutral | 118 |
-| 7 | Cybersecurity Tools / Generic Discussion | negative | 113 |
-| 7 | Cybersecurity Tools / Generic Discussion | positive | 111 |
-| 8 | Microsoft / Privilege Escalation / Patch Exploitation | negative | 44 |
-| 8 | Microsoft / Privilege Escalation / Patch Exploitation | neutral | 42 |
-| 8 | Microsoft / Privilege Escalation / Patch Exploitation | positive | 29 |
-| 9 | Ransomware / Malware / Email Campaigns | neutral | 103 |
-| 9 | Ransomware / Malware / Email Campaigns | negative | 56 |
-| 9 | Ransomware / Malware / Email Campaigns | positive | 33 |
+| 4 | Access Control / Process & API Abuse | negative | 74 |
+| 4 | Access Control / Process & API Abuse | positive | 47 |
+| 4 | Access Control / Process & API Abuse | neutral | 39 |
+| 5 | Exploit Tooling / Metasploit / RCE | neutral | 91 |
+| 5 | Exploit Tooling / Metasploit / RCE | negative | 52 |
+| 5 | Exploit Tooling / Metasploit / RCE | positive | 28 |
+| 6 | Security Risk / Exposure Management | positive | 164 |
+| 6 | Security Risk / Exposure Management | negative | 118 |
+| 6 | Security Risk / Exposure Management | neutral | 90 |
+| 7 | Cybersecurity Tools / Generic Discussion | neutral | 129 |
+| 7 | Cybersecurity Tools / Generic Discussion | negative | 117 |
+| 7 | Cybersecurity Tools / Generic Discussion | positive | 114 |
+| 8 | Microsoft / Privilege Escalation / Patch Exploitation | negative | 46 |
+| 8 | Microsoft / Privilege Escalation / Patch Exploitation | neutral | 45 |
+| 8 | Microsoft / Privilege Escalation / Patch Exploitation | positive | 30 |
+| 9 | Ransomware / Malware / Email Campaigns | neutral | 104 |
+| 9 | Ransomware / Malware / Email Campaigns | negative | 58 |
+| 9 | Ransomware / Malware / Email Campaigns | positive | 37 |
 
 ## Top 10 Most Negative Texts
 
 | id | created_at | source_type | topic_label | vader_compound | title |
 | --- | --- | --- | --- | --- | --- |
-| t3_1pyfmdx | 2025-12-29T07:08:37Z | reddit_rss | Cybercrime / Fraud / Law Enforcement | -0.9999 | Information about how/where to report Internet crimes |
 | blt6be9cec698ae1713 | 2026-04-14T21:48:16Z | news_rss | Microsoft / Privilege Escalation / Patch Exploitation | -0.9999 | Patch Tuesday - April 2026 |
+| t3_1pyfmdx | 2025-12-29T07:08:37Z | reddit_rss | Cybercrime / Fraud / Law Enforcement | -0.9999 | Information about how/where to report Internet crimes |
 | https://projectzero.google/2025/12/thinking-outside-the-box | 2025-12-16T09:00:00Z | news_rss | Memory Exploitation / Buffer & Heap Bugs | -0.9989 | Thinking Outside The Box [dusted off draft from 2017] |
 | https://krebsonsecurity.com/?p=73470 | 2026-04-21T14:53:59Z | news_rss | Network Attacks / Device Access | -0.9982 | ‘Scattered Spider’ Member ‘Tylerb’ Pleads Guilty |
 | https://krebsonsecurity.com/?p=73488 | 2026-04-30T14:04:26Z | news_rss | Network Attacks / Device Access | -0.9979 | Anti-DDoS Firm Heaped Attacks on Brazilian ISPs |
@@ -101,8 +101,8 @@
 | https://projectzero.google/2026/26/windows-administrator-protection | 2026-01-26T08:00:00Z | news_rss | Memory Exploitation / Buffer & Heap Bugs | 0.9999 | Bypassing Windows Administrator Protection |
 | blt76d15aecf237782c | 2026-04-15T12:37:00Z | news_rss | Security Risk / Exposure Management | 0.9998 | A Clearer Path from Prioritized Exposures to Remediation Progress |
 | blt067c529962c6a487 | 2026-04-28T08:00:00Z | news_rss | Security Risk / Exposure Management | 0.9997 | MDR Selection is a Partnership Decision |
-| bltc6b62f52a9995f21 | 2026-04-20T16:20:32Z | news_rss | Security Risk / Exposure Management | 0.9996 | Project Glasswing and the Next Challenge for Defenders: Turning Faster Discovery into Faster Action |
 | https://projectzero.google/2026/02/windows-administrator-protection | 2026-02-26T08:00:00Z | news_rss | Access Control / Process & API Abuse | 0.9996 | A Deep Dive into the GetProcessHandleFromHwnd API |
+| bltc6b62f52a9995f21 | 2026-04-20T16:20:32Z | news_rss | Security Risk / Exposure Management | 0.9996 | Project Glasswing and the Next Challenge for Defenders: Turning Faster Discovery into Faster Action |
 | bltf188bfe7ed9149dc | 2026-04-23T13:25:47Z | news_rss | Security Risk / Exposure Management | 0.9994 | AI is Changing Vulnerability Discovery and your Software Supply Chain Strategy has to Change with it |
 | blt71ca5e4ec0fd2ade | 2026-04-29T23:00:00Z | news_rss | Security Risk / Exposure Management | 0.9991 | Five Things we Took Away from Gartner SRM Sydney 2026 |
 | https://projectzero.google/2026/03/mutational-grammar-fuzzing | 2026-03-05T08:00:00Z | news_rss | Memory Exploitation / Buffer & Heap Bugs | 0.9990 | On the Effectiveness of Mutational Grammar Fuzzing |
