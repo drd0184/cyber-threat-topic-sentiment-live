@@ -6,7 +6,7 @@ Official manual labels and confidence levels applied to the live 10-topic LDA da
 
 | Metric | Value |
 | --- | --- |
-| Rows | 2882 |
+| Rows | 3096 |
 | Encoding used | utf-8 |
 | Output dataset | /home/runner/work/cyber-threat-topic-sentiment-live/cyber-threat-topic-sentiment-live/data/live/processed/04_live_lda_topics_dataset.csv |
 
@@ -14,23 +14,23 @@ Official manual labels and confidence levels applied to the live 10-topic LDA da
 
 | topic_label | rows | percent_dataset |
 | --- | --- | --- |
-| Network Attacks / Device Access | 527 | 18.29% |
-| Cybersecurity Tools / Generic Discussion | 389 | 13.50% |
-| Security Risk / Exposure Management | 382 | 13.25% |
-| Cybercrime / Fraud / Law Enforcement | 368 | 12.77% |
-| Unassigned / Empty BoW | 247 | 8.57% |
-| Command Execution / Payload Delivery | 208 | 7.22% |
-| Ransomware / Malware / Email Campaigns | 208 | 7.22% |
-| Exploit Tooling / Metasploit / RCE | 179 | 6.21% |
-| Access Control / Process & API Abuse | 174 | 6.04% |
-| Microsoft / Privilege Escalation / Patch Exploitation | 123 | 4.27% |
-| Memory Exploitation / Buffer & Heap Bugs | 77 | 2.67% |
+| Network Attacks / Device Access | 567 | 18.31% |
+| Cybersecurity Tools / Generic Discussion | 410 | 13.24% |
+| Cybercrime / Fraud / Law Enforcement | 405 | 13.08% |
+| Security Risk / Exposure Management | 405 | 13.08% |
+| Unassigned / Empty BoW | 277 | 8.95% |
+| Command Execution / Payload Delivery | 223 | 7.20% |
+| Ransomware / Malware / Email Campaigns | 212 | 6.85% |
+| Exploit Tooling / Metasploit / RCE | 201 | 6.49% |
+| Access Control / Process & API Abuse | 179 | 5.78% |
+| Microsoft / Privilege Escalation / Patch Exploitation | 135 | 4.36% |
+| Memory Exploitation / Buffer & Heap Bugs | 82 | 2.65% |
 
 ## Topic Confidence Distribution
 
 | topic_confidence | rows | percent_dataset |
 | --- | --- | --- |
-| medium | 1451 | 50.35% |
-| high | 795 | 27.59% |
-| low | 389 | 13.50% |
-| none | 247 | 8.57% |
+| medium | 1556 | 50.26% |
+| high | 853 | 27.55% |
+| low | 410 | 13.24% |
+| none | 277 | 8.95% |
